@@ -136,18 +136,18 @@ const EyeSVG = ({ hidden }) =>
     </svg>
   );
 
-const LangDropdown = ({ language, setLanguage, dir }) => (
+const LangDropdown = ({ language, setLanguage }) => (
   <div
     className="lang-dropdown-fix"
     style={{
       position: 'absolute',
       top: 70,
-      [dir === 'rtl' ? 'left' : 'right']: 23,
+      right: 23,
       zIndex: 2103,
       display: 'flex',
       alignItems: 'center',
       gap: 6,
-      flexDirection: dir === 'rtl' ? 'row-reverse' : 'row',
+      flexDirection: 'row',
       background: 'rgba(0,0,0,0.3)',
       borderRadius: '6px',
       padding: '2px 9px',
@@ -156,8 +156,8 @@ const LangDropdown = ({ language, setLanguage, dir }) => (
       fontSize: 14,
       userSelect: 'none'
     }}>
-    <label htmlFor="lang-select" style={{ marginLeft: dir === 'rtl' ? 0 : 3, marginRight: dir === 'rtl' ? 3 : 0 }}>
-      {dir === 'rtl' ? 'اللغة' : dir === 'he' ? 'שפה' : 'Language'}:
+    <label htmlFor="lang-select" style={{ marginLeft: 3, marginRight: 0 }}>
+      Language:
     </label>
     <select
       id="lang-select"
@@ -225,7 +225,6 @@ const Login = () => {
 
   const [error, setError] = useState('');
   const [language, setLanguage] = useState('en');
-  const dir = ['ar', 'he'].includes(language) ? 'rtl' : 'ltr';
 
   useEffect(() => {
     document.title = 'Login - ForStackly Business Solutions';
@@ -336,8 +335,8 @@ const Login = () => {
 
   return (
     <div
-      className={`glass-login-bg ${dir === 'rtl' ? 'rtl' : ''}`}
-      style={{ direction: dir, position: 'relative' }}
+      className="glass-login-bg"
+      style={{ position: 'relative' }}
     >
       {/* Logo */}
       <div
@@ -367,7 +366,7 @@ const Login = () => {
         />
       </div>
       {/* Language Picker */}
-      <LangDropdown language={language} setLanguage={setLanguage} dir={dir} />
+      <LangDropdown language={language} setLanguage={setLanguage} />
       <motion.div
         className={`glass-login-card${showSignup && !showForgot ? " signup-active" : ""}`}
         initial={{ opacity: 0, y: 30 }}
@@ -388,7 +387,7 @@ const Login = () => {
                 <h2>{translations[language].signin}</h2>
                 <p>{translations[language].enterCredentials}</p>
               </div>
-              <form onSubmit={handleLogin} className="login-form" dir={dir}>
+              <form onSubmit={handleLogin} className="login-form">
                 <div className="form-group">
                   <label htmlFor="loginEmail">{translations[language].emailAddress}</label>
                   <input
@@ -399,7 +398,7 @@ const Login = () => {
                     onChange={(e) => setLoginEmail(e.target.value)}
                     placeholder={translations[language].emailAddress}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <div className="form-group">
@@ -413,7 +412,7 @@ const Login = () => {
                       onChange={(e) => setLoginPassword(e.target.value)}
                       placeholder={translations[language].password}
                       required
-                      style={{ direction: dir }}
+                      style={{ direction: 'ltr' }}
                     />
                     <button
                       type="button"
@@ -422,15 +421,15 @@ const Login = () => {
                       aria-label={showPassword ? translations[language].hidePassword : translations[language].showPassword}
                       tabIndex="-1"
                       style={{
-                        right: dir === 'rtl' ? 'auto' : 7,
-                        left: dir === 'rtl' ? 7 : 'auto'
+                        right: 7,
+                        left: 'auto'
                       }}
                     >
                       <EyeSVG hidden={showPassword} />
                     </button>
                   </div>
                 </div>
-                <div className="form-options" style={{ textAlign: dir === 'rtl' ? 'left' : 'right' }}>
+                <div className="form-options" style={{ textAlign: 'right' }}>
                   <button
                     type="button"
                     className="forgot-link"
@@ -451,7 +450,7 @@ const Login = () => {
                   {translations[language].loginBtn}
                 </motion.button>
               </form>
-              <div className="signup-link" style={{ direction: dir, textAlign: dir === 'rtl' ? 'left' : 'right' }}>
+              <div className="signup-link" style={{ textAlign: 'right' }}>
                 {translations[language].dontHaveAccount}&nbsp;
                 <button
                   type="button"
@@ -473,7 +472,7 @@ const Login = () => {
                 <h2 className="signup-header-main">{translations[language].createAccount}</h2>
                 <p className="signup-header-sub">{translations[language].createAccountSubtitle}</p>
               </div>
-              <form onSubmit={handleSignup} className="login-form signup-form" dir={dir}>
+              <form onSubmit={handleSignup} className="login-form signup-form">
                 <div className="form-group">
                   <label htmlFor="firstName">{translations[language].firstName}</label>
                   <input
@@ -483,7 +482,7 @@ const Login = () => {
                     value={signupData.firstName}
                     onChange={(e) => setSignupData({ ...signupData, firstName: e.target.value })}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <div className="form-group">
@@ -495,7 +494,7 @@ const Login = () => {
                     value={signupData.lastName}
                     onChange={(e) => setSignupData({ ...signupData, lastName: e.target.value })}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <div className="form-group">
@@ -507,7 +506,7 @@ const Login = () => {
                     value={signupData.email}
                     onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <div className="form-group">
@@ -519,7 +518,7 @@ const Login = () => {
                     value={signupData.phone}
                     onChange={(e) => setSignupData({ ...signupData, phone: e.target.value })}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <div className="form-group">
@@ -531,7 +530,7 @@ const Login = () => {
                     value={signupData.password}
                     onChange={(e) => setSignupData({ ...signupData, password: e.target.value })}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <div className="form-group">
@@ -543,7 +542,7 @@ const Login = () => {
                     value={signupData.confirmPassword}
                     onChange={(e) => setSignupData({ ...signupData, confirmPassword: e.target.value })}
                     required
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 <motion.button
@@ -555,7 +554,7 @@ const Login = () => {
                   {translations[language].signupBtn}
                 </motion.button>
               </form>
-              <div className="signup-link" style={{ direction: dir, textAlign: dir === 'rtl' ? 'left' : 'right' }}>
+              <div className="signup-link" style={{ textAlign: 'right' }}>
                 {translations[language].alreadyAccount}&nbsp;
                 <button
                   type="button"
@@ -577,7 +576,7 @@ const Login = () => {
                 <h2>{translations[language].resetPassword}</h2>
                 <p>{translations[language].enterEmailNewPass}</p>
               </div>
-              <form onSubmit={forgotStep === 1 ? handleForgotVerify : handleForgotPassword} className="login-form" dir={dir}>
+              <form onSubmit={forgotStep === 1 ? handleForgotVerify : handleForgotPassword} className="login-form">
                 <div className="form-group">
                   <label htmlFor="forgotEmail">{translations[language].email}</label>
                   <input
@@ -588,7 +587,7 @@ const Login = () => {
                     onChange={(e) => setForgotEmail(e.target.value)}
                     required
                     disabled={forgotStep === 2}
-                    style={{ direction: dir }}
+                    style={{ direction: 'ltr' }}
                   />
                 </div>
                 {forgotStep === 1 && (
@@ -612,7 +611,7 @@ const Login = () => {
                         value={forgotPassword}
                         onChange={(e) => setForgotPassword(e.target.value)}
                         required
-                        style={{ direction: dir }}
+                        style={{ direction: 'ltr' }}
                       />
                     </div>
                     <div className="form-group">
@@ -624,7 +623,7 @@ const Login = () => {
                         value={forgotConfirm}
                         onChange={(e) => setForgotConfirm(e.target.value)}
                         required
-                        style={{ direction: dir }}
+                        style={{ direction: 'ltr' }}
                       />
                     </div>
                     <motion.button
@@ -658,7 +657,7 @@ const Login = () => {
         <style>{`
         .glass-login-bg {
           min-height: 100vh;
-          background: radial-gradient(circle at 60% 15%, #1849b9 0%, #223953 50%, #0f121b 100%);
+          background: linear-gradient(135deg, #000000 0%, #1a1a1a 25%, #2d2d2d 50%, #1a1a1a 75%, #000000 100%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -666,16 +665,16 @@ const Login = () => {
           overflow: hidden;
         }
         .glass-login-card {
-          background: rgba(28, 39, 60, 0.75);
+          background: rgba(0, 0, 0, 0.4);
           border-radius: 28px;
-          box-shadow: 0 0 56px 12px #2798ee44, 0 0 24px #11d0fa30;
+          box-shadow: 0 0 56px 12px rgba(255, 215, 0, 0.2), 0 0 24px rgba(255, 215, 0, 0.1);
           padding: 30px 15px 18px 15px;
           max-width: 400px;
           min-width: 300px;
           width: 100%;
           margin: auto;
           backdrop-filter: blur(18px) saturate(145%);
-          border: 2.1px solid #14cdff49;
+          border: 2.1px solid rgba(255, 215, 0, 0.3);
         }
         .glass-login-card.signup-active {
           padding: 18px 10px 10px 10px;
@@ -684,7 +683,7 @@ const Login = () => {
         .signup-header-main {
           font-size: 2.3rem;
           font-weight: 900;
-          color: #eaf8ff;
+          color: #ffd700;
           text-align: center;
           letter-spacing: 0.5px;
           margin-top: 0;
@@ -692,7 +691,7 @@ const Login = () => {
           margin-bottom: 2px;
         }
         .signup-header-sub {
-          color: #aad9ff;
+          color: #f0f0f0;
           font-size: 1.14rem;
           font-weight: 400;
           text-align: center;
@@ -706,23 +705,23 @@ const Login = () => {
           .signup-header-main { font-size: 1.38rem; }
           .signup-header-sub { font-size: 0.89rem; }
         }
-        .form-header h2 { color: #eaf8ff; text-align: center; font-size: 2.2rem; font-weight: 800; margin-bottom: 8px;}
-        .form-header p { color: #77d7fc; text-align: center; margin-bottom: 16px; font-size: 1.08rem;}
+        .form-header h2 { color: #ffd700; text-align: center; font-size: 2.2rem; font-weight: 800; margin-bottom: 8px;}
+        .form-header p { color: #f0f0f0; text-align: center; margin-bottom: 16px; font-size: 1.08rem;}
         .form-group { margin-bottom: 10px;}
-        .form-group label { color: #b2e7ff; font-size: 0.96rem; margin-bottom: 5px; font-weight: 500;}
+        .form-group label { color: #ffd700; font-size: 0.96rem; margin-bottom: 5px; font-weight: 500;}
         .form-control {
           width: 100%;
           padding: 6.2px 11px;
           font-size: 0.97rem;
           border-radius: 8px;
-          background: rgba(33, 70, 120, 0.14);
-          color: #e6f4ff;
-          border: 1.07px solid #0abaff35;
+          background: rgba(0, 0, 0, 0.3);
+          color: #ffffff;
+          border: 1.07px solid rgba(255, 215, 0, 0.3);
           box-sizing: border-box;
         }
         .form-control:focus {
-          border-color: #18d8fd;
-          background: rgba(75, 205, 255, 0.09);
+          border-color: #ffd700;
+          background: rgba(255, 215, 0, 0.1);
         }
         .glass-login-field { margin-bottom: 12px; }
         .glass-password-toggle {
@@ -738,10 +737,10 @@ const Login = () => {
           width: 32px;
           height: 32px;
           border-radius: 7px;
-          box-shadow: 0 0 6px #12b3ff38, 0 1.5px 7px #20e8ff25;
+          box-shadow: 0 0 6px rgba(255, 215, 0, 0.3), 0 1.5px 7px rgba(255, 215, 0, 0.2);
           transition: box-shadow 0.2s, border-color 0.18s;
         }
-        .glass-password-toggle:focus { outline: 2px solid #12b3ff; }
+        .glass-password-toggle:focus { outline: 2px solid #ffd700; }
         .glass-password-toggle svg { display: block; }
         .btn, .btn-primary, .btn-block {
           width: 100%;
@@ -753,9 +752,9 @@ const Login = () => {
           cursor: pointer;
           border-radius: 10px;
           padding: 8.5px 0 7px 0;
-          background: linear-gradient(98deg, #26acff 5%, #3745f3 100%);
-          color: #f6feff;
-          box-shadow: 0 1px 7px #18c8ff33, 0 0 3px #2b5cff35;
+          background: linear-gradient(98deg, #ffd700 5%, #b8860b 100%);
+          color: #000000;
+          box-shadow: 0 1px 7px rgba(255, 215, 0, 0.3), 0 0 3px rgba(184, 134, 11, 0.3);
           letter-spacing: 1.1px;
           margin-top: 10px;
           transition: background 0.13s, box-shadow 0.11s, filter 0.13s;
@@ -766,19 +765,19 @@ const Login = () => {
           margin-top: 7px;
         }
         .btn:hover, .btn-primary:hover, .btn-block:hover {
-          background: linear-gradient(92deg, #35c5ff 0%, #2940e6 100%);
+          background: linear-gradient(92deg, #ffed4e 0%, #daa520 100%);
           filter: brightness(1.055);
-          box-shadow: 0 5px 18px #17e3ff40, 0 0 12px #2b5cff77;
+          box-shadow: 0 5px 18px rgba(255, 215, 0, 0.4), 0 0 12px rgba(218, 165, 32, 0.5);
         }
         .btn:active, .btn-primary:active, .btn-block:active {
           filter: brightness(0.98);
-          box-shadow: 0 2px 8px #008cff45;
+          box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
         }
-        .signup-link, .form-header p { color: #b2e7ff; }
+        .signup-link, .form-header p { color: #f0f0f0; }
         .inline-link, .forgot-link {
-          background: none; border: none; color: #1ee1ff; text-decoration: underline; font-weight: 700; cursor: pointer; transition: color 0.16s;
+          background: none; border: none; color: #ffd700; text-decoration: underline; font-weight: 700; cursor: pointer; transition: color 0.16s;
         }
-        .inline-link:hover, .forgot-link:hover { color: #eafdff; }
+        .inline-link:hover, .forgot-link:hover { color: #ffed4e; }
         .error-message {
           background: rgba(36, 0, 38, 0.65);
           color: #fe4a7a;

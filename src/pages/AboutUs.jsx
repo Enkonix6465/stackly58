@@ -12,8 +12,85 @@ const translations = {
   en: {
     hero: {
       title: "About Us",
-      paragraph: "At the heart of our business solutions is a commitment to innovation, reliability, and customer success.",
-      cta: "Reach Out Today",
+      paragraph: "At the heart of our business solutions is a commitment to innovation and customer success.",
+      cta: "Enquire",
+    },
+    whoWeAre: {
+      subtitle: "Who We Are",
+      title: "Providing strategic business solutions and digital transformation",
+      description: "We are committed to delivering innovative solutions that help businesses grow and succeed in the competitive market.",
+      featureText: "We're No.1 Business Consulting Platform",
+      checklistItems: [
+        "Strategic business transformation",
+        "Digital innovation solutions",
+        "Improving operational efficiency"
+      ]
+    },
+    trustedBy: {
+      title: "Trusted by 30,000 world-class brands and organizations of all sizes",
+      companies: {
+        mckinsey: "McKinsey Explainers",
+        deloitte: "Deloitte",
+        pwc: "PwC"
+      }
+    },
+    globalPresence: {
+      title: "We Spread Around The World",
+      description: "Laoreet lorem consectetuer hendrerit dictumst curae volutpat cubilia elit velit natoque. Eleifend diam volutpat lectus aliquam aenean. Dolor sed orci scelerisque taciti sodales tortor.",
+      stats: {
+        years: "Years of Experience",
+        offices: "Office Worldwide",
+        workers: "Workers Employed"
+      }
+    },
+    preserveConserve: {
+      subtitle: "Preserve And Conserve",
+      title: "A Vital Energy Resource For A Better Tomorrow",
+      description: "Cubilia scelerisque ultricies at cras tempus phasellus primis habitant. Penatibus pulvinar at vel cursus dignissim sem condimentum molestie. Lobortis hac aenean posuere justo letius laoreet augue.",
+      button: "DISCOVER MORE",
+      items: {
+        aspiration: {
+          title: "Aspiration",
+          description: "Metus montes cras massa venenatis id dignissim suspendisse purus nibh. Mollis sapien facilisis luctus."
+        },
+        vision: {
+          title: "Vision",
+          description: "Metus montes cras massa venenatis id dignissim suspendisse purus nibh. Mollis sapien facilisis luctus."
+        },
+        mission: {
+          title: "Mission",
+          description: "Metus montes cras massa venenatis id dignissim suspendisse purus nibh. Mollis sapien facilisis luctus."
+        }
+      }
+    },
+    expertConsultants: {
+      title: "Our Expert Consultants",
+      subtitle: "Meet the strategic advisors who drive your business success",
+      consultants: {
+        sarah: {
+          name: "Sarah Johnson",
+          role: "Strategic Business Advisor",
+          description: "Leading strategic initiatives for Fortune 500 companies, Sarah specializes in organizational transformation and market expansion strategies that deliver measurable results.",
+          skills: ["Strategic Planning", "Business Transformation", "Market Expansion"]
+        },
+        michael: {
+          name: "Michael Chen",
+          role: "Digital Transformation Consultant",
+          description: "Expert in guiding enterprises through digital transformation journeys, Michael helps organizations leverage emerging technologies to gain competitive advantage and operational excellence.",
+          skills: ["Digital Strategy", "Technology Integration", "Process Optimization"]
+        },
+        emily: {
+          name: "Emily Rodriguez",
+          role: "Operations Excellence Consultant",
+          description: "Specializing in operational strategy and performance optimization, Emily delivers comprehensive consulting solutions that enhance productivity and drive sustainable business growth.",
+          skills: ["Operations Strategy", "Performance Optimization", "Business Growth"]
+        }
+      }
+    },
+    consultationCta: {
+      title: "NEED A CONSULTATION?",
+      description: "Trucks are also used in the construction industry on dump trucks and portable concrete mixers move the large amounts of rocks, dirt, concrete, and other building materials used in construction.",
+      button: "Request a call"
     },
     cardsData: [
       {
@@ -148,6 +225,83 @@ const translations = {
       paragraph: "في جوهر حلول أعمالنا التزام بالابتكار والموثوقية ونجاح العملاء.",
       cta: "تواصل اليوم"
     },
+    whoWeAre: {
+      subtitle: "من نحن",
+      title: "نقدم حلول أعمال استراتيجية والتحول الرقمي",
+      description: "نحن ملتزمون بتقديم حلول مبتكرة تساعد الشركات على النمو والنجاح في السوق التنافسي.",
+      featureText: "نحن منصة الاستشارات التجارية رقم 1",
+      checklistItems: [
+        "التحول التجاري الاستراتيجي",
+        "حلول الابتكار الرقمي",
+        "تحسين الكفاءة التشغيلية"
+      ]
+    },
+    trustedBy: {
+      title: "موثوق من قبل 30,000 علامة تجارية عالمية ومنظمات من جميع الأحجام",
+      companies: {
+        mckinsey: "ماكينزي إكسبلينرز",
+        deloitte: "ديلويت",
+        pwc: "بي دبليو سي"
+      }
+    },
+    globalPresence: {
+      title: "ننتشر حول العالم",
+      description: "نحن ملتزمون بتقديم خدمات عالية الجودة لعملائنا في جميع أنحاء العالم. خبرتنا الواسعة ووجودنا العالمي يضمن تقديم حلول متميزة تلبي احتياجات السوق المحلية والعالمية.",
+      stats: {
+        years: "سنوات من الخبرة",
+        offices: "مكتب حول العالم",
+        workers: "عامل موظف"
+      }
+    },
+    preserveConserve: {
+      subtitle: "الحفاظ والحماية",
+      title: "مورد طاقة حيوي لمستقبل أفضل",
+      description: "نحن ملتزمون بحماية البيئة وتطوير حلول الطاقة المستدامة. رؤيتنا تركز على خلق مستقبل أكثر استدامة للأجيال القادمة من خلال الابتكار والتكنولوجيا المتقدمة.",
+      button: "اكتشف المزيد",
+      items: {
+        aspiration: {
+          title: "الطموح",
+          description: "نسعى لتحقيق أهدافنا الطموحة في مجال الطاقة المستدامة والابتكار التكنولوجي لخدمة المجتمع."
+        },
+        vision: {
+          title: "الرؤية",
+          description: "رؤيتنا تتمثل في خلق عالم أكثر استدامة من خلال تطوير حلول الطاقة النظيفة والمتجددة."
+        },
+        mission: {
+          title: "المهمة",
+          description: "مهمتنا هي تقديم حلول مبتكرة في مجال الطاقة المستدامة والمساهمة في حماية البيئة."
+        }
+      }
+    },
+    expertConsultants: {
+      title: "خبراء الاستشارات لدينا",
+      subtitle: "تعرف على المستشارين الاستراتيجيين الذين يقودون نجاح عملك",
+      consultants: {
+        sarah: {
+          name: "سارة جونسون",
+          role: "مستشارة الأعمال الاستراتيجية",
+          description: "تقود المبادرات الاستراتيجية لشركات فورتشن 500، وتتخصص سارة في التحول التنظيمي واستراتيجيات التوسع في السوق التي تحقق نتائج قابلة للقياس.",
+          skills: ["التخطيط الاستراتيجي", "التحول التجاري", "التوسع في السوق"]
+        },
+        michael: {
+          name: "مايكل تشين",
+          role: "مستشار التحول الرقمي",
+          description: "خبير في إرشاد المؤسسات خلال رحلات التحول الرقمي، يساعد مايكل المنظمات على الاستفادة من التقنيات الناشئة لتحقيق ميزة تنافسية والتميز التشغيلي.",
+          skills: ["الاستراتيجية الرقمية", "تكامل التكنولوجيا", "تحسين العمليات"]
+        },
+        emily: {
+          name: "إيميلي رودريغيز",
+          role: "مستشارة التميز التشغيلي",
+          description: "متخصصة في الاستراتيجية التشغيلية وتحسين الأداء، تقدم إيميلي حلول استشارية شاملة تعزز الإنتاجية وتدفع النمو التجاري المستدام.",
+          skills: ["استراتيجية العمليات", "تحسين الأداء", "النمو التجاري"]
+        }
+      }
+    },
+    consultationCta: {
+      title: "تحتاج إلى استشارة؟",
+      description: "نحن نقدم استشارات متخصصة لمساعدتك في اتخاذ القرارات الصحيحة لعملك. خبرتنا الواسعة في مختلف المجالات تضمن حصولك على أفضل الحلول المخصصة لاحتياجاتك.",
+      button: "اطلب مكالمة"
+    },
     cardsData: [
       {
         id: "vision",
@@ -260,6 +414,83 @@ const translations = {
       title: "אודותינו",
       paragraph: "בלב פתרונות העסק שלנו מחויבות לחדשנות, אמינות והצלחה של הלקוח.",
       cta: "צרו קשר היום"
+    },
+    whoWeAre: {
+      subtitle: "מי אנחנו",
+      title: "מספקים פתרונות עסקיים אסטרטגיים וטרנספורמציה דיגיטלית",
+      description: "אנחנו מחויבים לספק פתרונות חדשניים המסייעים לחברות לצמוח ולהצליח בשוק התחרותי.",
+      featureText: "אנחנו פלטפורמת הייעוץ העסקי מספר 1",
+      checklistItems: [
+        "טרנספורמציה עסקית אסטרטגית",
+        "פתרונות חדשנות דיגיטלית",
+        "שיפור יעילות תפעולית"
+      ]
+    },
+    trustedBy: {
+      title: "מהימן על ידי 30,000 מותגים עולמיים וארגונים מכל הגדלים",
+      companies: {
+        mckinsey: "מקינזי אקספליינרס",
+        deloitte: "דלויט",
+        pwc: "פי דבליו סי"
+      }
+    },
+    globalPresence: {
+      title: "אנחנו מתפשטים ברחבי העולם",
+      description: "אנחנו מחויבים לספק שירותים איכותיים ללקוחותינו ברחבי העולם. הניסיון הרחב שלנו והנוכחות הגלובלית מבטיחים אספקת פתרונות מעולים העונים על צרכי השוק המקומי והעולמי.",
+      stats: {
+        years: "שנות ניסיון",
+        offices: "משרדים ברחבי העולם",
+        workers: "עובדים מועסקים"
+      }
+    },
+    preserveConserve: {
+      subtitle: "שימור ושמירה",
+      title: "משאב אנרגיה חיוני למחר טוב יותר",
+      description: "אנחנו מחויבים להגנה על הסביבה ופיתוח פתרונות אנרגיה בת קיימא. החזון שלנו מתמקד ביצירת עתיד בר קיימא יותר לדורות הבאים באמצעות חדשנות וטכנולוגיה מתקדמת.",
+      button: "גלה עוד",
+      items: {
+        aspiration: {
+          title: "שאיפה",
+          description: "אנחנו שואפים להשיג את המטרות השאפתניות שלנו בתחום האנרגיה בת קיימא והחדשנות הטכנולוגית לשירות הקהילה."
+        },
+        vision: {
+          title: "חזון",
+          description: "החזון שלנו הוא ליצור עולם בר קיימא יותר באמצעות פיתוח פתרונות אנרגיה נקייה ומתחדשת."
+        },
+        mission: {
+          title: "משימה",
+          description: "המשימה שלנו היא לספק פתרונות חדשניים בתחום האנרגיה בת קיימא ולתרום להגנה על הסביבה."
+        }
+      }
+    },
+    expertConsultants: {
+      title: "יועצים מומחים שלנו",
+      subtitle: "פגשו את היועצים האסטרטגיים שמניעים את הצלחת העסק שלכם",
+      consultants: {
+        sarah: {
+          name: "שרה ג'ונסון",
+          role: "יועצת עסקית אסטרטגית",
+          description: "מובילה יוזמות אסטרטגיות לחברות פורצ'ן 500, שרה מתמחה בטרנספורמציה ארגונית ואסטרטגיות הרחבת שווקים שמביאות תוצאות מדידות.",
+          skills: ["תכנון אסטרטגי", "טרנספורמציה עסקית", "הרחבת שווקים"]
+        },
+        michael: {
+          name: "מייקל צ'ן",
+          role: "יועץ טרנספורמציה דיגיטלית",
+          description: "מומחה בהנחיית ארגונים במסעות טרנספורמציה דיגיטלית, מייקל עוזר לארגונים לנצל טכנולוגיות מתפתחות להשגת יתרון תחרותי ומצוינות תפעולית.",
+          skills: ["אסטרטגיה דיגיטלית", "אינטגרציה טכנולוגית", "אופטימיזציה של תהליכים"]
+        },
+        emily: {
+          name: "אמילי רודריגז",
+          role: "יועצת מצוינות תפעולית",
+          description: "מתמחה באסטרטגיה תפעולית ואופטימיזציה של ביצועים, אמילי מספקת פתרונות ייעוץ מקיפים שמשפרים פרודוקטיביות ומניעים צמיחה עסקית בת קיימא.",
+          skills: ["אסטרטגיה תפעולית", "אופטימיזציה של ביצועים", "צמיחה עסקית"]
+        }
+      }
+    },
+    consultationCta: {
+      title: "צריכים ייעוץ?",
+      description: "אנחנו מספקים ייעוץ מקצועי כדי לעזור לכם לקבל החלטות נכונות לעסק שלכם. הניסיון הרחב שלנו בתחומים שונים מבטיח שתקבלו את הפתרונות הטובים ביותר המותאמים לצרכים שלכם.",
+      button: "בקש שיחה"
     },
     cardsData: [
       {
@@ -378,8 +609,10 @@ const AboutUs = () => {
   const [visibleCount, setVisibleCount] = useState(3);
   const [selected, setSelected] = useState(null);
   const [openIndex, setOpenIndex] = useState(-1);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
   const marqueeRef = useRef(null);
+  const videoRef = useRef(null);
   const cardOrder = ["innovative", "strategic", "digital"];
   const items = [...t.values, ...t.values];
 
@@ -426,6 +659,35 @@ const AboutUs = () => {
   const visibleItems = t.whatWeDoItems.slice(0, visibleCount);
   const activeContent = t.businessContent[active];
 
+  const toggleVideo = () => {
+    if (videoRef.current) {
+      if (isVideoPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+    }
+  };
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      const handlePlay = () => setIsVideoPlaying(true);
+      const handlePause = () => setIsVideoPlaying(false);
+      const handleEnded = () => setIsVideoPlaying(false);
+
+      video.addEventListener('play', handlePlay);
+      video.addEventListener('pause', handlePause);
+      video.addEventListener('ended', handleEnded);
+
+      return () => {
+        video.removeEventListener('play', handlePlay);
+        video.removeEventListener('pause', handlePause);
+        video.removeEventListener('ended', handleEnded);
+      };
+    }
+  }, []);
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -437,238 +699,830 @@ const AboutUs = () => {
         <div className="hero-overlay">
           <div className="hero-content">
             <h1 className="hero-title animate-slide-in">{t.hero.title}</h1>
-            <p className="hero-paragraph animate-fade-up">{t.hero.paragraph}</p>
+            <p className="hero-paragraph animate-fade-up whitespace-nowrap">{t.hero.paragraph}</p>
             <Link to="/contact" className="hero-button animate-fade-up-delayed">{t.hero.cta}</Link>
           </div>
         </div>
       </section>
-      {/* Vision & Mission Section */}
-      <section className="min-h-screen flex items-center py-8 px-2" style={{ background: "var(--bg-color)" }}>
-        <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto">
-          <div className="flex-1 flex flex-col justify-center items-start px-4 xl:px-10 md:max-w-xl mb-10 md:mb-0">
-            <h2 className="text-[2rem] sm:text-4xl font-extrabold uppercase tracking-[0.15em] mb-6" style={{ color: "var(--primary-color)" }}>
-              {t.mainHeading}
-            </h2>
-            <h1 className="text-2xl sm:text-4xl font-extrabold mb-5 leading-tight" style={{ color: "var(--heading-color)" }}>
-              {t.subHeading}
-            </h1>
-            <p className="text-base md:text-lg" style={{ color: "var(--text-muted)" }}>
-              {t.subDescription}
-            </p>
-          </div>
-          <div className="flex-1 flex flex-col space-y-8 w-full">
-            {t.cardsData.map((card) => {
-              const isActive = activeCard === card.id;
-              return (
-                <div
-                  key={card.id}
-                  role="button"
-                  tabIndex={0}
-                  aria-expanded={isActive}
-                  onClick={() => toggleCard(card.id)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") toggleCard(card.id);
-                  }}
-                  className="w-full md:w-[580px] rounded-2xl shadow-md cursor-pointer relative transition-transform duration-300 mx-auto focus:outline-none"
-                  style={{
-                    background: card.gradient,
-                    boxShadow: isActive ? "var(--shadow-hover)" : "var(--shadow)",
-                    minHeight: "120px",
-                    transform: isActive ? "scale(1.03)" : "scale(1)",
-                    border: "none",
-                  }}>
-                  <div className="px-8 py-7 sm:pr-10 flex-1 transition-all duration-500">
-                    <h3 className="text-lg sm:text-xl font-bold mb-1" style={{ color: "var(--heading-color)", transition: "color 0.3s" }}>
-                      {isActive ? card.titleSecondary : card.titlePrimary}
-                    </h3>
-                    <p className="mt-1 text-sm sm:text-base" style={{ color: "var(--text-color)", opacity: "0.92", transition: "color 0.3s" }}>
-                      {isActive ? card.descriptionSecondary : card.descriptionPrimary}
-                    </p>
+      
+       {/* Trusted By Section */}
+       <section className="trusted-by-section">
+         <div className="trusted-by-container">
+           <motion.div 
+             className="trusted-by-content"
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, ease: "easeOut" }}
+             viewport={{ once: true, threshold: 0.3 }}
+           >
+             <motion.div 
+               className="trusted-by-text"
+               initial={{ opacity: 0, x: -30 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               transition={{ duration: 0.6, delay: 0.2 }}
+               viewport={{ once: true, threshold: 0.3 }}
+             >
+               <motion.h2 
+                 className="trusted-by-title"
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 0.4 }}
+                 viewport={{ once: true, threshold: 0.3 }}
+               >
+                 {t.trustedBy.title}
+               </motion.h2>
+               <motion.div 
+                 className="trusted-by-underline"
+                 initial={{ width: 0 }}
+                 whileInView={{ width: "60px" }}
+                 transition={{ duration: 0.8, delay: 0.6 }}
+                 viewport={{ once: true, threshold: 0.3 }}
+               ></motion.div>
+             </motion.div>
+             <motion.div 
+               className="trusted-by-logos"
+               initial={{ opacity: 0, x: 30 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               transition={{ duration: 0.6, delay: 0.3 }}
+               viewport={{ once: true, threshold: 0.3 }}
+             >
+               <motion.div 
+                 className="logo-item"
+                 initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                 transition={{ duration: 0.5, delay: 0.5 }}
+                 viewport={{ once: true, threshold: 0.3 }}
+                 whileHover={{ scale: 1.05, y: -5 }}
+               >
+                 <motion.img 
+                   src="images/McKinsey Explainers.jpg" 
+                   alt={t.trustedBy.companies.mckinsey} 
+                   className="brand-logo"
+                   initial={{ opacity: 0, rotate: -10 }}
+                   whileInView={{ opacity: 1, rotate: 0 }}
+                   transition={{ duration: 0.6, delay: 0.7 }}
+                   viewport={{ once: true, threshold: 0.3 }}
+                 />
+                 <motion.span 
+                   className="logo-text"
+                   initial={{ opacity: 0 }}
+                   whileInView={{ opacity: 1 }}
+                   transition={{ duration: 0.4, delay: 0.9 }}
+                   viewport={{ once: true, threshold: 0.3 }}
+                 >
+                   {t.trustedBy.companies.mckinsey}
+                 </motion.span>
+               </motion.div>
+               <motion.div 
+                 className="logo-item"
+                 initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                 transition={{ duration: 0.5, delay: 0.6 }}
+                 viewport={{ once: true, threshold: 0.3 }}
+                 whileHover={{ scale: 1.05, y: -5 }}
+               >
+                 <motion.img 
+                   src="images/Deloittelogo.jpg" 
+                   alt={t.trustedBy.companies.deloitte} 
+                   className="brand-logo"
+                   initial={{ opacity: 0, rotate: -10 }}
+                   whileInView={{ opacity: 1, rotate: 0 }}
+                   transition={{ duration: 0.6, delay: 0.8 }}
+                   viewport={{ once: true, threshold: 0.3 }}
+                 />
+                 <motion.span 
+                   className="logo-text"
+                   initial={{ opacity: 0 }}
+                   whileInView={{ opacity: 1 }}
+                   transition={{ duration: 0.4, delay: 1.0 }}
+                   viewport={{ once: true, threshold: 0.3 }}
+                 >
+                   {t.trustedBy.companies.deloitte}
+                 </motion.span>
+               </motion.div>
+               <motion.div 
+                 className="logo-item"
+                 initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                 transition={{ duration: 0.5, delay: 0.7 }}
+                 viewport={{ once: true, threshold: 0.3 }}
+                 whileHover={{ scale: 1.05, y: -5 }}
+               >
+                 <motion.img 
+                   src="images/PwC.jpg" 
+                   alt={t.trustedBy.companies.pwc} 
+                   className="brand-logo"
+                   initial={{ opacity: 0, rotate: -10 }}
+                   whileInView={{ opacity: 1, rotate: 0 }}
+                   transition={{ duration: 0.6, delay: 0.9 }}
+                   viewport={{ once: true, threshold: 0.3 }}
+                 />
+                 <motion.span 
+                   className="logo-text"
+                   initial={{ opacity: 0 }}
+                   whileInView={{ opacity: 1 }}
+                   transition={{ duration: 0.4, delay: 1.1 }}
+                   viewport={{ once: true, threshold: 0.3 }}
+                 >
+                   {t.trustedBy.companies.pwc}
+                 </motion.span>
+               </motion.div>
+             </motion.div>
+           </motion.div>
+         </div>
+       </section>
+       
+       {/* Who We Are Section */}
+       <section className="who-we-are-section">
+         <div className="who-we-are-container">
+           <motion.div 
+             className="who-we-are-content"
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, ease: "easeOut" }}
+             viewport={{ once: true, threshold: 0.2 }}
+           >
+             <motion.div 
+               className="who-we-are-text"
+               initial={{ opacity: 0, x: -50 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               transition={{ duration: 0.7, delay: 0.2 }}
+               viewport={{ once: true, threshold: 0.2 }}
+             >
+               <motion.div 
+                 className="section-subtitle"
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.5, delay: 0.3 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 {t.whoWeAre.subtitle}
+               </motion.div>
+               <motion.h2 
+                 className="who-we-are-title"
+                 initial={{ opacity: 0, y: 30 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 0.4 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 {t.whoWeAre.title}
+               </motion.h2>
+               <motion.p 
+                 className="who-we-are-description"
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 0.5 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 {t.whoWeAre.description}
+               </motion.p>
+               
+               <motion.div 
+                 className="who-we-are-features"
+                 initial={{ opacity: 0, y: 40 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.7, delay: 0.6 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 <motion.div 
+                   className="feature-box"
+                   initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+                   whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                   transition={{ duration: 0.6, delay: 0.7 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ scale: 1.05, y: -5 }}
+                 >
+                   <motion.div 
+                     className="feature-badge"
+                     initial={{ opacity: 0, scale: 0 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     transition={{ duration: 0.5, delay: 0.8, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     <img src="images/tropy.jpg" alt="Trophy" className="trophy-image" />
+                   </motion.div>
+                   <motion.p 
+                     className="feature-text"
+                     initial={{ opacity: 0 }}
+                     whileInView={{ opacity: 1 }}
+                     transition={{ duration: 0.4, delay: 0.9 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     {t.whoWeAre.featureText}
+                   </motion.p>
+                 </motion.div>
+                 
+                 <motion.div 
+                   className="feature-checklist"
+                   initial={{ opacity: 0, x: 20 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.6, delay: 0.8 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                 >
+                   {t.whoWeAre.checklistItems.map((item, index) => (
+                     <motion.div 
+                       key={index} 
+                       className="checklist-item"
+                       initial={{ opacity: 0, x: 30 }}
+                       whileInView={{ opacity: 1, x: 0 }}
+                       transition={{ duration: 0.5, delay: 0.9 + (index * 0.1) }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                       whileHover={{ x: 5, scale: 1.02 }}
+                     >
+                       <motion.span 
+                         className="checkmark"
+                         initial={{ opacity: 0, scale: 0 }}
+                         whileInView={{ opacity: 1, scale: 1 }}
+                         transition={{ duration: 0.3, delay: 1.0 + (index * 0.1), type: "spring" }}
+                         viewport={{ once: true, threshold: 0.2 }}
+                       >
+                         ✓
+                       </motion.span>
+                       <span>{item}</span>
+                     </motion.div>
+                   ))}
+                 </motion.div>
+               </motion.div>
+             </motion.div>
+             
+             <motion.div 
+               className="who-we-are-video"
+               initial={{ opacity: 0, x: 50, scale: 0.9 }}
+               whileInView={{ opacity: 1, x: 0, scale: 1 }}
+               transition={{ duration: 0.8, delay: 0.3 }}
+               viewport={{ once: true, threshold: 0.2 }}
+               whileHover={{ scale: 1.02 }}
+             >
+               <motion.video 
+                 ref={videoRef}
+                 className="consulting-video" 
+                 poster="images/bs5.jpg"
+                 onClick={toggleVideo}
+                 initial={{ opacity: 0, scale: 0.95 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.6, delay: 0.5 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 <source src="images/about (2).mp4" type="video/mp4" />
+                 Your browser does not support the video tag.
+               </motion.video>
+               <motion.div 
+                 className="play-button-overlay" 
+                 onClick={toggleVideo}
+                 initial={{ opacity: 0, scale: 0 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 0.4, delay: 0.7, type: "spring", stiffness: 300 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+                 whileHover={{ scale: 1.1 }}
+                 whileTap={{ scale: 0.95 }}
+               >
+                 <motion.div 
+                   className="play-icon"
+                   animate={{ 
+                     scale: isVideoPlaying ? [1, 1.1, 1] : [1, 1.05, 1],
+                     rotate: isVideoPlaying ? [0, 5, 0] : [0, -5, 0]
+                   }}
+                   transition={{ 
+                     duration: 2, 
+                     repeat: Infinity, 
+                     ease: "easeInOut" 
+                   }}
+                 >
+                   {isVideoPlaying ? '⏸' : '▶'}
+                 </motion.div>
+               </motion.div>
+             </motion.div>
+           </motion.div>
+         </div>
+       </section>
+       
+       {/* We Spread Around The World Section */}
+       <section className="global-presence-section">
+         <div className="global-presence-container">
+           <motion.div 
+             className="global-presence-content"
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, ease: "easeOut" }}
+             viewport={{ once: true, threshold: 0.2 }}
+           >
+             <motion.div 
+               className="global-presence-map"
+               initial={{ opacity: 0, x: -50, scale: 0.9 }}
+               whileInView={{ opacity: 1, x: 0, scale: 1 }}
+               transition={{ duration: 0.8, delay: 0.2 }}
+               viewport={{ once: true, threshold: 0.2 }}
+               whileHover={{ scale: 1.02 }}
+             >
+               <motion.div 
+                 className="world-map"
+                 initial={{ opacity: 0, scale: 0.8 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 1, delay: 0.4 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+               </motion.div>
+             </motion.div>
+             
+             <motion.div 
+               className="global-presence-text"
+               initial={{ opacity: 0, x: 50 }}
+               whileInView={{ opacity: 1, x: 0 }}
+               transition={{ duration: 0.7, delay: 0.3 }}
+               viewport={{ once: true, threshold: 0.2 }}
+             >
+               <motion.h2 
+                 className="global-presence-title"
+                 initial={{ opacity: 0, y: 30 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 0.4 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 {t.globalPresence.title}
+               </motion.h2>
+               <motion.p 
+                 className="global-presence-description"
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.6, delay: 0.5 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 {t.globalPresence.description}
+               </motion.p>
+               
+               <motion.div 
+                 className="global-stats"
+                 initial={{ opacity: 0, y: 40 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.7, delay: 0.6 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 <motion.div 
+                   className="stat-card"
+                   initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                   transition={{ duration: 0.5, delay: 0.7 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ scale: 1.05, y: -5 }}
+                 >
+                   <motion.div 
+                     className="stat-number"
+                     initial={{ opacity: 0, scale: 0 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     transition={{ duration: 0.6, delay: 0.8, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     25+
+                   </motion.div>
+                   <motion.div 
+                     className="stat-label"
+                     initial={{ opacity: 0 }}
+                     whileInView={{ opacity: 1 }}
+                     transition={{ duration: 0.4, delay: 0.9 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     {t.globalPresence.stats.years}
+                   </motion.div>
+                 </motion.div>
+                 <motion.div 
+                   className="stat-card"
+                   initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                   transition={{ duration: 0.5, delay: 0.8 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ scale: 1.05, y: -5 }}
+                 >
+                   <motion.div 
+                     className="stat-number"
+                     initial={{ opacity: 0, scale: 0 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     transition={{ duration: 0.6, delay: 0.9, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     77
+                   </motion.div>
+                   <motion.div 
+                     className="stat-label"
+                     initial={{ opacity: 0 }}
+                     whileInView={{ opacity: 1 }}
+                     transition={{ duration: 0.4, delay: 1.0 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     {t.globalPresence.stats.offices}
+                   </motion.div>
+                 </motion.div>
+                 <motion.div 
+                   className="stat-card"
+                   initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                   transition={{ duration: 0.5, delay: 0.9 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ scale: 1.05, y: -5 }}
+                 >
+                   <motion.div 
+                     className="stat-number"
+                     initial={{ opacity: 0, scale: 0 }}
+                     whileInView={{ opacity: 1, scale: 1 }}
+                     transition={{ duration: 0.6, delay: 1.0, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     38K
+                   </motion.div>
+                   <motion.div 
+                     className="stat-label"
+                     initial={{ opacity: 0 }}
+                     whileInView={{ opacity: 1 }}
+                     transition={{ duration: 0.4, delay: 1.1 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                   >
+                     {t.globalPresence.stats.workers}
+                   </motion.div>
+                 </motion.div>
+               </motion.div>
+             </motion.div>
+           </motion.div>
+         </div>
+       </section>
+       
+       {/* Vision & Mission Section */}
+       <section className="vision-mission-section">
+         <motion.div 
+           className="vision-mission-overlay"
+           initial={{ opacity: 0 }}
+           whileInView={{ opacity: 1 }}
+           transition={{ duration: 1, delay: 0.2 }}
+           viewport={{ once: true, threshold: 0.1 }}
+         >
+           <div className="vision-mission-container">
+             <motion.div 
+               className="vision-mission-content"
+               initial={{ opacity: 0, y: 50 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.8, delay: 0.3 }}
+               viewport={{ once: true, threshold: 0.2 }}
+             >
+               <motion.div 
+                 className="vision-mission-left"
+                 initial={{ opacity: 0, x: -50 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 transition={{ duration: 0.7, delay: 0.4 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 <motion.div 
+                   className="vision-mission-subtitle"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.5, delay: 0.5 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                 >
+                   {t.preserveConserve.subtitle}
+                 </motion.div>
+                 <motion.h2 
+                   className="vision-mission-title"
+                   initial={{ opacity: 0, y: 30 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.6, delay: 0.6 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                 >
+                   {t.preserveConserve.title}
+                 </motion.h2>
+                 <motion.p 
+                   className="vision-mission-description"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ duration: 0.6, delay: 0.7 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                 >
+                   {t.preserveConserve.description}
+                 </motion.p>
+                 <Link to="/services">
+                   <motion.button 
+                     className="vision-mission-button"
+                     initial={{ opacity: 0, y: 20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.5, delay: 0.8 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                     whileHover={{ scale: 1.05, y: -2 }}
+                     whileTap={{ scale: 0.95 }}
+                   >
+                     {t.preserveConserve.button}
+                   </motion.button>
+                 </Link>
+               </motion.div>
+               
+               <motion.div 
+                 className="vision-mission-right"
+                 initial={{ opacity: 0, x: 50 }}
+                 whileInView={{ opacity: 1, x: 0 }}
+                 transition={{ duration: 0.7, delay: 0.5 }}
+                 viewport={{ once: true, threshold: 0.2 }}
+               >
+                 <motion.div 
+                   className="vision-mission-item"
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.5, delay: 0.6 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ x: 10, scale: 1.02 }}
+                 >
+                   <motion.div 
+                     className="vision-mission-icon"
+                     initial={{ opacity: 0, scale: 0, rotate: -180 }}
+                     whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                     transition={{ duration: 0.6, delay: 0.7, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                     whileHover={{ scale: 1.2, rotate: 5 }}
+                   >
+                     &gt;
+                   </motion.div>
+                   <div className="vision-mission-item-content">
+                     <motion.h3 
+                       className="vision-mission-item-title"
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.4, delay: 0.8 }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                     >
+                       {t.preserveConserve.items.aspiration.title}
+                     </motion.h3>
+                     <motion.p 
+                       className="vision-mission-item-description"
+                       initial={{ opacity: 0, y: 15 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.4, delay: 0.9 }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                     >
+                       {t.preserveConserve.items.aspiration.description}
+                     </motion.p>
+                   </div>
+                 </motion.div>
+                 
+                 <motion.div 
+                   className="vision-mission-item"
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.5, delay: 0.7 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ x: 10, scale: 1.02 }}
+                 >
+                   <motion.div 
+                     className="vision-mission-icon"
+                     initial={{ opacity: 0, scale: 0, rotate: -180 }}
+                     whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                     transition={{ duration: 0.6, delay: 0.8, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                     whileHover={{ scale: 1.2, rotate: 5 }}
+                   >
+                     &gt;
+                   </motion.div>
+                   <div className="vision-mission-item-content">
+                     <motion.h3 
+                       className="vision-mission-item-title"
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.4, delay: 0.9 }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                     >
+                       {t.preserveConserve.items.vision.title}
+                     </motion.h3>
+                     <motion.p 
+                       className="vision-mission-item-description"
+                       initial={{ opacity: 0, y: 15 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.4, delay: 1.0 }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                     >
+                       {t.preserveConserve.items.vision.description}
+                     </motion.p>
+                   </div>
+                 </motion.div>
+                 
+                 <motion.div 
+                   className="vision-mission-item"
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.5, delay: 0.8 }}
+                   viewport={{ once: true, threshold: 0.2 }}
+                   whileHover={{ x: 10, scale: 1.02 }}
+                 >
+                   <motion.div 
+                     className="vision-mission-icon"
+                     initial={{ opacity: 0, scale: 0, rotate: -180 }}
+                     whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                     transition={{ duration: 0.6, delay: 0.9, type: "spring", stiffness: 200 }}
+                     viewport={{ once: true, threshold: 0.2 }}
+                     whileHover={{ scale: 1.2, rotate: 5 }}
+                   >
+                     &gt;
+                   </motion.div>
+                   <div className="vision-mission-item-content">
+                     <motion.h3 
+                       className="vision-mission-item-title"
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.4, delay: 1.0 }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                     >
+                       {t.preserveConserve.items.mission.title}
+                     </motion.h3>
+                     <motion.p 
+                       className="vision-mission-item-description"
+                       initial={{ opacity: 0, y: 15 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ duration: 0.4, delay: 1.1 }}
+                       viewport={{ once: true, threshold: 0.2 }}
+                     >
+                       {t.preserveConserve.items.mission.description}
+                     </motion.p>
+                   </div>
+                 </motion.div>
+               </motion.div>
+             </motion.div>
+           </div>
+         </motion.div>
+       </section>
+      
+       {/* Business Content Switcher */}
+       <div className="min-h-screen flex flex-col items-center justify-center p-6 sm:p-10" style={{backgroundColor: 'var(--bg-color)', transition: 'background-color 0.5s ease'}}>
+         <div className="container mx-auto w-full max-w-7xl">
+           <div className="relative rounded-3xl overflow-hidden mb-12 shadow-xl aspect-[2/1] md:aspect-[3/1] w-full" style={{ minHeight: "280px" }}>
+             <img src={activeContent.image} alt={activeContent.heading} className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" style={{ opacity: fade ? 0 : 1 }} />
+             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75" />
+             <div className="relative z-10 flex items-end h-full p-8 md:p-16">
+               <div className={`max-w-xl transition-opacity duration-500 ${fade ? "opacity-0" : "opacity-100"}`}>
+                 <h1 className="text-white text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
+                   {activeContent.heading}
+                 </h1>
+                 <p className="mt-3 text-white text-lg md:text-xl max-w-lg drop-shadow-md">
+                   {activeContent.text}
+                 </p>
+               </div>
+             </div>
+           </div>
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+             {cardOrder.map((key) => {
+               const item = t.businessContent[key];
+               const isActive = key === active;
+               return (
+                 <button
+                   key={key}
+                   className={`flex flex-col items-center text-center rounded-3xl transition-transform duration-300 cursor-pointer focus:outline-none ${
+                     isActive ? "scale-105 shadow-2xl ring-4 ring-[var(--primary-color)]" : "shadow-lg"
+                   }`}
+                   onClick={() => changeContent(key)}
+                   onKeyDown={(e) => {
+                     if (e.key === "Enter" || e.key === " ") changeContent(key);
+                   }}
+                   aria-pressed={isActive}
+                 >
+                   <img
+                     src={item.cardImg}
+                     alt={item.cardTitle}
+                     className="w-24 h-24 md:w-28 md:h-28 rounded-full shadow-md object-cover mb-4 transition-transform duration-300"
+                     style={{ objectFit: "cover" }}
+                   />
+                   <h3 className={`font-bold text-lg md:text-xl mb-2 transition-colors duration-300 ${isActive ? "text-[var(--primary-color)]" : "text-[var(--text-color)]"}`}>
+                     {item.cardTitle}
+                   </h3>
+                   <p className={`text-sm md:text-base transition-colors duration-300 ${isActive ? "text-[var(--primary-color)]" : "text-[var(--text-muted)]"}`}>
+                     {item.cardDesc}
+                   </p>
+                 </button>
+               );
+             })}
+           </div>
+         </div>
+       </div>
+      
+      {/* Our Expert Consultants Section */}
+      <section className="agents-section">
+        <div className="agents-container">
+           <motion.div 
+             className="agents-header"
+             initial={{ opacity: 0, y: 30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.6 }}
+             viewport={{ once: true, threshold: 0.3 }}
+           >
+             <motion.h2 
+               className="agents-title"
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.2 }}
+               viewport={{ once: true, threshold: 0.3 }}
+             >
+               {t.expertConsultants.title}
+             </motion.h2>
+             <motion.p 
+               className="agents-subtitle"
+               initial={{ opacity: 0, y: 15 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.3 }}
+               viewport={{ once: true, threshold: 0.3 }}
+             >
+               {t.expertConsultants.subtitle}
+             </motion.p>
+           </motion.div>
+          
+          <div className="agents-grid">
+            <div className="agent-card">
+              <div className="agent-card-inner">
+                <div className="agent-card-front">
+                  <img src="images/Aboutt1.jpg" alt={t.expertConsultants.consultants.sarah.name} className="agent-image" />
+                  <div className="agent-info">
+                    <h3 className="agent-name">{t.expertConsultants.consultants.sarah.name}</h3>
+                    <p className="agent-role">{t.expertConsultants.consultants.sarah.role}</p>
                   </div>
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      {/* Business Content Switcher */}
-      <div className="min-h-screen flex flex-col items-center justify-center p-6 sm:p-10 bg-[var(--bg-color)] transition-colors duration-500">
-        <div className="container mx-auto w-full max-w-7xl">
-          <div className="relative rounded-3xl overflow-hidden mb-12 shadow-xl aspect-[2/1] md:aspect-[3/1] w-full" style={{ minHeight: "280px" }}>
-            <img src={activeContent.image} alt={activeContent.heading} className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500" style={{ opacity: fade ? 0 : 1 }} />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-75" />
-            <div className="relative z-10 flex items-end h-full p-8 md:p-16">
-              <div className={`max-w-xl transition-opacity duration-500 ${fade ? "opacity-0" : "opacity-100"}`}>
-                <h1 className="text-white text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
-                  {activeContent.heading}
-                </h1>
-                <p className="mt-3 text-white text-lg md:text-xl max-w-lg drop-shadow-md">
-                  {activeContent.text}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {cardOrder.map((key) => {
-              const item = t.businessContent[key];
-              const isActive = key === active;
-              return (
-                <button
-                  key={key}
-                  className={`flex flex-col items-center text-center rounded-3xl transition-transform duration-300 cursor-pointer focus:outline-none ${
-                    isActive ? "scale-105 shadow-2xl ring-4 ring-[var(--primary-color)]" : "shadow-lg"
-                  }`}
-                  onClick={() => changeContent(key)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ") changeContent(key);
-                  }}
-                  aria-pressed={isActive}
-                >
-                  <img
-                    src={item.cardImg}
-                    alt={item.cardTitle}
-                    className="w-24 h-24 md:w-28 md:h-28 rounded-full shadow-md object-cover mb-4 transition-transform duration-300"
-                    style={{ objectFit: "cover" }}
-                  />
-                  <h3 className={`font-bold text-lg md:text-xl mb-2 transition-colors duration-300 ${isActive ? "text-[var(--primary-color)]" : "text-[var(--text-color)]"}`}>
-                    {item.cardTitle}
-                  </h3>
-                  <p className={`text-sm md:text-base transition-colors duration-300 ${isActive ? "text-[var(--primary-color)]" : "text-[var(--text-muted)]"}`}>
-                    {item.cardDesc}
+                <div className="agent-card-back">
+                  <h3 className="agent-name">{t.expertConsultants.consultants.sarah.name}</h3>
+                  <p className="agent-role">{t.expertConsultants.consultants.sarah.role}</p>
+                  <p className="agent-description">
+                    {t.expertConsultants.consultants.sarah.description}
                   </p>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-      {/* What We Do */}
-      <div className="min-h-screen bg-[var(--bg-color)] px-4 py-16">
-        <h1 className="text-center text-[var(--heading-color)] text-4xl font-extrabold mb-12">{t.whatWeDoTitle}</h1>
-        <motion.div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-          {visibleItems.map((item) => (
-            <motion.div key={item.id} className="cursor-pointer rounded-xl shadow-lg overflow-hidden bg-[var(--card-bg)]" whileHover={{ scale: 1.05 }} onClick={() => setSelected(item)}>
-              <img src={item.img} alt={item.title} className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <h2 className="text-xl font-semibold text-[var(--heading-color)] mb-2">{item.title}</h2>
-                <p className="text-[var(--text-muted)] line-clamp-3">{item.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-        {visibleCount < t.whatWeDoItems.length && (
-          <div className="flex justify-center mt-12">
-            <button
-              onClick={loadMore}
-              className="px-6 py-3 rounded-full bg-[var(--primary-color)] text-white text-lg font-semibold hover:brightness-110 transition"
-            >
-              {language === "ar" ? "عرض المزيد" : language === "he" ? "הצג עוד" : "Load More"}
-            </button>
-          </div>
-        )}
-        <AnimatePresence>
-          {selected && (
-            <motion.div
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSelected(null)}
-            >
-              <motion.div
-                className="bg-[var(--card-bg)] rounded-xl max-w-lg w-full p-6 relative mx-4"
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.8, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <button
-                  onClick={() => setSelected(null)}
-                  className="absolute top-4 right-4 p-2 rounded-full bg-[var(--primary-color)] text-white hover:brightness-110 transition"
-                  aria-label="Close modal"
-                >
-                  &times;
-                </button>
-                <img src={selected.img} alt={selected.title} className="w-full h-48 object-cover rounded-md mb-4" />
-                <h2 className="text-2xl font-bold text-[var(--heading-color)] mb-2">{selected.title}</h2>
-                <p className="text-[var(--text-muted)]">{selected.description}</p>
-              </motion.div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-      {/* Values Scroller */}
-      <section className="values-section full-width">
-        <div className="sectionss-header text-center">
-          <h2>{language === 'ar' ? "قيمنا الجوهرية" : language === 'he' ? "הערכים המרכזיים שלנו" : "My Core Values"}</h2>
-          <p>{language === 'ar' ? "المبادئ التي ترشد رحلتي المهنية" : language === 'he' ? "העקרונות המנחים את דרכי המקצועית" : "The principles guiding my freelance journey"}</p>
-        </div>
-        <div className="values-marquee-outer">
-          <div className="values-marquee-inner" ref={marqueeRef}>
-            {items.map((value, idx) => {
-              const Icon = value.icon;
-              return (
-                <div className="value-card" key={idx}>
-                  <Icon className="value-icon" />
-                  <h4>{value.title}</h4>
-                  <p>{value.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      {/* Team */}
-      <section className="section team-section full-width">
-        <div className="sections-header text-center">
-          <h2>{t.teamSectionTitle}</h2>
-          <p>{t.teamSectionSubtitle}</p>
-        </div>
-        <div className="team-grid">
-          {t.team.map((member, index) => (
-            <div
-              className="team-card leader-card"
-              key={index}
-              onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
-            >
-              <div className="team-image leader-image">
-                <img src={member.image} alt={member.name} />
-                <div className={'leader-overlay' + (openIndex === index ? ' open' : '')}>
-                  <div className="leader-overlay-content">
-                    <h4>{member.name}</h4>
-                    <span className="team-role">{member.role}</span>
-                    <p className="team-bio">{member.bio}</p>
-                    <div className="team-social">
-                      <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-                      <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter"><FaTwitter /></a>
-                      <a href={member.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
-                    </div>
+                  <div className="agent-skills">
+                    {t.expertConsultants.consultants.sarah.skills.map((skill, index) => (
+                      <span key={index} className="skill-tag">{skill}</span>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
-          ))}
+            
+            <div className="agent-card">
+              <div className="agent-card-inner">
+                <div className="agent-card-front">
+                  <img src="images/bs30.jpg" alt={t.expertConsultants.consultants.michael.name} className="agent-image" />
+                  <div className="agent-info">
+                    <h3 className="agent-name">{t.expertConsultants.consultants.michael.name}</h3>
+                    <p className="agent-role">{t.expertConsultants.consultants.michael.role}</p>
+                  </div>
+                </div>
+                <div className="agent-card-back">
+                  <h3 className="agent-name">{t.expertConsultants.consultants.michael.name}</h3>
+                  <p className="agent-role">{t.expertConsultants.consultants.michael.role}</p>
+                  <p className="agent-description">
+                    {t.expertConsultants.consultants.michael.description}
+                  </p>
+                  <div className="agent-skills">
+                    {t.expertConsultants.consultants.michael.skills.map((skill, index) => (
+                      <span key={index} className="skill-tag">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="agent-card">
+              <div className="agent-card-inner">
+                <div className="agent-card-front">
+                  <img src="images/bs31.jpg" alt={t.expertConsultants.consultants.emily.name} className="agent-image" />
+                  <div className="agent-info">
+                    <h3 className="agent-name">{t.expertConsultants.consultants.emily.name}</h3>
+                    <p className="agent-role">{t.expertConsultants.consultants.emily.role}</p>
+                  </div>
+                </div>
+                <div className="agent-card-back">
+                  <h3 className="agent-name">{t.expertConsultants.consultants.emily.name}</h3>
+                  <p className="agent-role">{t.expertConsultants.consultants.emily.role}</p>
+                  <p className="agent-description">
+                    {t.expertConsultants.consultants.emily.description}
+                  </p>
+                  <div className="agent-skills">
+                    {t.expertConsultants.consultants.emily.skills.map((skill, index) => (
+                      <span key={index} className="skill-tag">{skill}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </section>
+      
       {/* Timeline */}
     
       {/* CTA */}
       <section className="cta-section">
         <div className="cta-overlay">
-          <div className="container">
+          <div className="cta-container">
             <motion.div
-              className="cta-content text-center"
+              className="cta-content"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2>{t.cta.title}</h2>
-              <p>{t.cta.paragraph}</p>
-              <div className="cta-buttons">
-                <Link to="/contact" className="btn btn-primary btn-large">{t.cta.startJourneyText} <FaArrowRight /></Link>
-                <Link to="/about" className="btn btn-outline btn-large">{t.cta.learnMoreText}</Link>
+              <div className="cta-left">
+                <div className="cta-heading">
+                  <div className="cta-accent-line"></div>
+                  <h2>{t.consultationCta.title}</h2>
+                </div>
+                <p className="cta-description">
+                  {t.consultationCta.description}
+                </p>
+                <Link to="/contact" className="cta-button">{t.consultationCta.button}</Link>
               </div>
             </motion.div>
           </div>
@@ -684,7 +1538,735 @@ const AboutUs = () => {
           padding-top: 80px;
         }
 
-       .hero-section {
+        /* Who We Are Section */
+        .who-we-are-section {
+          padding: 80px 20px;
+          background-color: var(--sidebar-bg);
+          position: relative;
+          overflow: hidden;
+        }
+
+        [data-theme="dark"] .who-we-are-section {
+          background-color: #2d2d2d;
+        }
+
+        .who-we-are-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .who-we-are-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 60px;
+          align-items: center;
+        }
+
+        .who-we-are-text {
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .section-subtitle {
+          font-size: 0.9rem;
+          font-weight: bold;
+          color: var(--text-muted);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 15px;
+        }
+
+        .who-we-are-title {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: var(--heading-color);
+          line-height: 1.2;
+          margin-bottom: 20px;
+        }
+
+        .who-we-are-description {
+          font-size: 1rem;
+          color: var(--text-muted);
+          line-height: 1.6;
+          margin-bottom: 40px;
+        }
+
+        .who-we-are-features {
+          display: flex;
+          gap: 30px;
+          margin-bottom: 40px;
+          align-items: stretch;
+          justify-content: flex-start;
+        }
+
+        .feature-box {
+          background-color: var(--card-bg);
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: var(--shadow-light);
+          text-align: center;
+          min-width: 180px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 0 0 auto;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+        }
+
+        .feature-box:hover {
+          box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .feature-badge {
+          width: 60px;
+          height: 60px;
+          background-color: #ffd700;
+          border: none;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 15px;
+          transition: transform 0.3s ease;
+        }
+
+        .feature-box:hover .feature-badge {
+          transform: rotate(5deg) scale(1.05);
+        }
+
+        .badge-number {
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: #333;
+        }
+
+        .trophy-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+
+        .feature-text {
+          font-size: 0.9rem;
+          color: var(--heading-color);
+          font-weight: 600;
+          margin: 0;
+          line-height: 1.3;
+          transition: color 0.3s ease;
+        }
+
+        .feature-box:hover .feature-text {
+          color: var(--primary-color);
+        }
+
+        .feature-checklist {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          flex: 1;
+          justify-content: center;
+        }
+
+        .checklist-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+          padding: 5px;
+          border-radius: 5px;
+        }
+
+        .checklist-item:hover {
+          background-color: rgba(255, 215, 0, 0.1);
+        }
+
+        .checkmark {
+          color: #ffd700;
+          font-weight: bold;
+          font-size: 1.1rem;
+          transition: transform 0.3s ease;
+        }
+
+        .checklist-item:hover .checkmark {
+          transform: scale(1.2);
+        }
+
+        .checklist-item span:last-child {
+          font-size: 0.9rem;
+          color: var(--text-muted);
+          transition: color 0.3s ease;
+        }
+
+        .checklist-item:hover span:last-child {
+          color: var(--heading-color);
+        }
+
+        .who-we-are-video {
+          position: relative;
+          border-radius: 8px;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+        }
+
+        .consulting-video {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+        }
+
+        .who-we-are-video:hover .consulting-video {
+          transform: scale(1.02);
+        }
+
+        .play-button-overlay {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          background-color: #ffd700;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .play-button-overlay:hover {
+          background-color: #e6c200;
+          transform: scale(1.1);
+          box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .play-icon {
+          color: #333;
+          font-size: 1.2rem;
+          margin-left: 3px;
+          transition: transform 0.3s ease;
+        }
+
+        /* Global Presence Section */
+        .global-presence-section {
+          padding: 80px 20px;
+          background-color: var(--bg-color);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .global-presence-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .global-presence-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 60px;
+          align-items: center;
+        }
+
+        .global-presence-map {
+          position: relative;
+          height: 400px;
+          background: var(--sidebar-bg);
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: var(--shadow-light);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .global-presence-map:hover {
+          box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .world-map {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          background-image: url('images/Map.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: transform 0.3s ease;
+        }
+
+        .global-presence-map:hover .world-map {
+          transform: scale(1.05);
+        }
+
+        .map-dots {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .map-dot {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 12px solid #fff;
+          filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.2); opacity: 0.7; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+
+        .global-presence-text {
+          padding: 20px;
+        }
+
+        .global-presence-title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: var(--heading-color);
+          line-height: 1.2;
+          margin-bottom: 20px;
+          white-space: nowrap;
+        }
+
+        .global-presence-description {
+          font-size: 1rem;
+          color: var(--text-muted);
+          line-height: 1.6;
+          margin-bottom: 40px;
+        }
+
+        .global-stats {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+
+        .stat-card {
+          background: var(--card-bg);
+          padding: 30px 20px;
+          border-radius: 12px;
+          text-align: center;
+          box-shadow: var(--shadow-light);
+          border: 1px solid var(--border-color);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          cursor: pointer;
+        }
+
+        .stat-card:hover {
+          box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .stat-number {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: var(--heading-color);
+          margin-bottom: 8px;
+          transition: color 0.3s ease;
+        }
+
+        .stat-card:hover .stat-number {
+          color: var(--primary-color);
+        }
+
+        .stat-label {
+          font-size: 0.9rem;
+          color: var(--text-muted);
+          font-weight: 500;
+          transition: color 0.3s ease;
+        }
+
+        .stat-card:hover .stat-label {
+          color: var(--heading-color);
+        }
+
+        /* Vision & Mission Section */
+        .vision-mission-section {
+          position: relative;
+          min-height: 100vh;
+          background-image: url('images/aboutbg.jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          overflow: hidden;
+        }
+
+        .vision-mission-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.8);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background 0.3s ease;
+        }
+
+        .vision-mission-container {
+          max-width: 1200px;
+          width: 100%;
+          padding: 80px 20px;
+        }
+
+        .vision-mission-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 80px;
+          align-items: center;
+        }
+
+        .vision-mission-left {
+          color: white;
+        }
+
+        .vision-mission-subtitle {
+          font-size: 0.9rem;
+          font-weight: 600;
+          color: #ffd700;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+        }
+
+        .vision-mission-title {
+          font-size: 2.5rem;
+          font-weight: bold;
+          line-height: 1.2;
+          margin-bottom: 30px;
+          color: white;
+        }
+
+        .vision-mission-description {
+          font-size: 1rem;
+          line-height: 1.6;
+          margin-bottom: 40px;
+          color: white;
+          opacity: 0.9;
+        }
+
+        .vision-mission-button {
+          background-color: #ffd700;
+          color: #333;
+          padding: 15px 30px;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        .vision-mission-button:hover {
+          background-color: #e6c200;
+          box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .vision-mission-right {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .vision-mission-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+          padding: 10px;
+          border-radius: 8px;
+        }
+
+        .vision-mission-item:hover {
+          background-color: rgba(255, 215, 0, 0.1);
+        }
+
+        .vision-mission-icon {
+          width: 40px;
+          height: 40px;
+          background-color: #ffd700;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #333;
+          flex-shrink: 0;
+          transition: all 0.3s ease;
+          box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        .vision-mission-item:hover .vision-mission-icon {
+          box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+        }
+
+        .vision-mission-item-content {
+          flex: 1;
+        }
+
+        .vision-mission-item-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: white;
+          margin-bottom: 15px;
+          transition: color 0.3s ease;
+        }
+
+        .vision-mission-item:hover .vision-mission-item-title {
+          color: #ffd700;
+        }
+
+        .vision-mission-item-description {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: white;
+          opacity: 0.9;
+          transition: opacity 0.3s ease;
+        }
+
+        .vision-mission-item:hover .vision-mission-item-description {
+          opacity: 1;
+        }
+
+        /* Agents Section */
+        .agents-section {
+          padding: 80px 20px;
+          background-color: var(--sidebar-bg);
+        }
+
+        .agents-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .agents-header {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .agents-title {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: var(--heading-color);
+          margin-bottom: 15px;
+        }
+
+        .agents-subtitle {
+          font-size: 1.1rem;
+          color: var(--text-muted);
+        }
+
+        .agents-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 30px;
+        }
+
+        .agent-card {
+          perspective: 1000px;
+          height: 400px;
+        }
+
+        .agent-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+
+        .agent-card:hover .agent-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .agent-card-front, .agent-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 15px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .agent-card-front {
+          background-color: var(--card-bg);
+          display: flex;
+          flex-direction: column;
+        }
+
+        .agent-card-back {
+          background-color: var(--heading-color);
+          color: var(--bg-color);
+          transform: rotateY(180deg);
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .agent-image {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          object-position: center top;
+          border-radius: 15px 15px 0 0;
+        }
+
+        .agent-info {
+          padding: 20px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .agent-name {
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: var(--heading-color);
+          margin-bottom: 8px;
+        }
+
+        .agent-role {
+          font-size: 1rem;
+          color: var(--text-muted);
+        }
+
+        .agent-card-back .agent-name {
+          color: var(--bg-color);
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+
+        .agent-card-back .agent-role {
+          color: #ffd700;
+          font-size: 1.1rem;
+          margin-bottom: 20px;
+        }
+
+        .agent-description {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          margin-bottom: 25px;
+          color: var(--text-muted);
+        }
+
+        .agent-skills {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          justify-content: center;
+        }
+
+        .skill-tag {
+          background-color: #ffd700;
+          color: #333;
+          padding: 5px 12px;
+          border-radius: 15px;
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+
+        /* Trusted By Section */
+        .trusted-by-section {
+          padding: 80px 20px;
+          background-color: var(--bg-color);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .trusted-by-container {
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .trusted-by-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 60px;
+        }
+
+        .trusted-by-text {
+          flex: 1;
+        }
+
+        .trusted-by-title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: var(--heading-color);
+          line-height: 1.3;
+          margin-bottom: 15px;
+        }
+
+        .trusted-by-underline {
+          height: 3px;
+          background-color: #ffd700;
+          border-radius: 2px;
+          transition: width 0.8s ease;
+        }
+
+        .trusted-by-logos {
+          display: flex;
+          gap: 40px;
+          align-items: center;
+        }
+
+        .logo-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+        }
+
+        .logo-item:hover {
+          transform: translateY(-2px);
+        }
+
+        .brand-logo {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .brand-logo:hover {
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .logo-text {
+          font-size: 1rem;
+          color: var(--text-muted);
+          font-weight: 500;
+          transition: color 0.3s ease;
+        }
+
+        .logo-item:hover .logo-text {
+          color: var(--heading-color);
+        }
+
+        .hero-section {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -732,7 +2314,7 @@ const AboutUs = () => {
 }
 
 .hero-title {
-  color: #fff; /* ✅ force white text so it’s visible on dark video background in light mode */
+  color: #fff; /* ✅ force white text so it's visible on dark video background in both themes */
   font-size: 2.8rem;
   font-weight: bold;
   line-height: 1.1;
@@ -755,7 +2337,7 @@ const AboutUs = () => {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  background-color: #224DB7;
+  background-color: #ffd700;
   border-radius: 10px;
   text-decoration: none;
   border: none;
@@ -765,27 +2347,139 @@ const AboutUs = () => {
 }
 
 .hero-button:hover {
-  background-color: #000;
-  transform: scale(1.05);
+  background-color: #e6c200;
+  transform: scale(1.1);
 }
 
-/* Responsive adjustments */
-@media (max-width: 700px) {
-  .hero-content {
-    max-width: 95vw;
-    padding: 0 10px;
-    gap: 18px;
+ /* Responsive adjustments */
+ @media (max-width: 700px) {
+   .hero-content {
+     max-width: 95vw;
+     padding: 0 10px;
+     gap: 18px;
+   }
+   .hero-title {
+     font-size: 2rem;
+   }
+   .hero-paragraph {
+     font-size: 1rem;
+   }
+   .hero-button {
+     font-size: 1rem;
+   }
+   
+   .trusted-by-content {
+     flex-direction: column;
+     text-align: center;
+     gap: 40px;
+   }
+   
+   .trusted-by-title {
+     font-size: 1.5rem;
+   }
+   
+   .trusted-by-logos {
+     flex-direction: column;
+     gap: 20px;
+   }
+   
+   .who-we-are-content {
+     grid-template-columns: 1fr;
+     gap: 40px;
+   }
+   
+   .who-we-are-title {
+     font-size: 2rem;
+   }
+   
+   .who-we-are-features {
+     flex-direction: column;
+     gap: 20px;
+   }
+   
+    .consulting-video {
+      height: 300px;
+    }
+    
+    .global-presence-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    .global-presence-map {
+      height: 300px;
+    }
+    
+    .global-presence-title {
+      font-size: 2rem;
+    }
+    
+    .global-stats {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .stat-card {
+      padding: 20px 15px;
+    }
+    
+    .stat-number {
+      font-size: 2rem;
+    }
+    
+    .vision-mission-content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    .vision-mission-title {
+      font-size: 2rem;
+    }
+    
+    .vision-mission-right {
+      gap: 30px;
+    }
+    
+    .vision-mission-item {
+      gap: 15px;
+    }
+    
+    .vision-mission-icon {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+    
+    .vision-mission-item-title {
+      font-size: 1.3rem;
+    }
+    
+    .agents-title {
+      font-size: 2rem;
+    }
+    
+    .agents-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .agent-card {
+      height: 350px;
+    }
+    
+    .agent-image {
+      height: 200px;
+    }
+    
+    .agent-card-back {
+      padding: 20px;
+    }
+    
+    .agent-description {
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
   }
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-paragraph {
-    font-size: 1rem;
-  }
-  .hero-button {
-    font-size: 1rem;
-  }
-}
 
 /* Animations */
 @keyframes slideIn {
@@ -1199,107 +2893,84 @@ const AboutUs = () => {
         /* ===== Timeline ===== */
 
 {/* CTA Section */}
-               .cta-section {
+.cta-section {
   position: relative;
-  background: url('/images/bs69.jpg') center/cover no-repeat fixed; /* fixed background */
-  padding: 0 0;
+  background: url('/images/bs69.jpg') center/cover no-repeat fixed;
+  padding: 0;
   color: white;
 }
 
-  .cta-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-    padding: 100px 0;
-  }
+.cta-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 100px 0;
+}
 
-  .cta-content {
-    max-width: 700px;
-    margin: auto;
-    color:#fff;
-  }
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  .cta-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color:#fff;
-  }
+.cta-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
 
-  .cta-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
+.cta-left {
+  padding: 20px;
+  max-width: 600px;
+  text-align: left;
+}
 
-  .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
+.cta-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
 
-  .btn {
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-    .btn-primary, .btn-outline, .btn-large {
-    display: inline-flex;           /* Ensures horizontal layout! */
-    align-items: center;            /* Vertically centers content */
-    justify-content: center;        /* Centers content horizontally */
-    gap: 8px;                       /* Space between text and icon */
-  }
+.cta-accent-line {
+  width: 4px;
+  height: 60px;
+  background-color: #ffd700;
+  margin-right: 20px;
+  border-radius: 2px;
+}
 
-  .btn-primary svg {
-    font-size: 1.3rem;
-    vertical-align: middle;
-  }
+.cta-heading h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+}
 
+.cta-description {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
 
-  .btn-primary {
-    background: #ff6600;
-    color: white;
-  }
+.cta-button {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #333;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-  .btn-primary:hover {
-    background: #e65c00;
-  }
+.cta-button:hover {
+  background-color: #e6c200;
+  transform: translateY(-2px);
+}
 
-  .btn-outline {
-    border: 2px solid white;
-    color: white;
-  }
-
-  .btn-outline:hover {
-    background: white;
-    color: black;
-  }
-
-
-  .btn {
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .btn-primary {
-    background: #224DB7;
-    color: white;
-  }
-
-  .btn-primary:hover {
-    background: #224DB7;
-  }
-
-  .btn-outline {
-    border: 2px solid white;
-    color: white;
-  }
-
-  .btn-outline:hover {
-    background: white;
-    color: black;
-  }
 
 
           @media (max-width: 768px) {
@@ -1328,11 +2999,25 @@ const AboutUs = () => {
             font-size: 1.9rem;
             margin-bottom: 15px;
           }
-            .cta-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color:#fff;
-  }
+            
+            /* CTA Responsive */
+            .cta-content {
+              justify-content: center;
+            }
+            
+            .cta-left {
+              text-align: center;
+              max-width: 100%;
+            }
+            
+            .cta-heading h2 {
+              font-size: 2rem;
+            }
+            
+            .cta-accent-line {
+              height: 40px;
+              margin-right: 15px;
+            }
         `}</style>
       </div>
     );

@@ -107,9 +107,8 @@ const Blog1 = () => {
   const t = translations[language] || translations.en;
   const imageSrc = blogImages[language] || blogImages.en;
 
-  React.useEffect(() => {
+  React.  useEffect(() => {
     document.title = t.title;
-    document.documentElement.dir = ["ar", "he"].includes(language) ? "rtl" : "ltr";
   }, [language, t.title]);
 
   return (

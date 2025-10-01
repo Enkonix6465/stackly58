@@ -109,7 +109,6 @@ const Blog1 = () => {
 
   useEffect(() => {
     document.title = t.title;
-    document.documentElement.dir = ["ar", "he"].includes(language) ? "rtl" : "ltr";
   }, [language, t.title]);
 
   return (

@@ -95,7 +95,7 @@ const ThemeToggle = () => {
         }
 
         .theme-toggle-icon.sun {
-          color: #f39c12;
+          color: var(--primary-color);
         }
 
         .theme-toggle-icon.moon {

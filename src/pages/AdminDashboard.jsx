@@ -273,7 +273,7 @@ const LanguageDropdown = ({ language, setLanguage, label }) => (
     <label className="text-sm font-semibold" htmlFor="lang-sel">{label}:</label>
     <select
       id="lang-sel"
-      className="px-2 py-1 border rounded bg-white text-blue-900 font-semibold"
+      className="px-2 py-1 border rounded bg-white text-black font-semibold"
       value={language}
       onChange={e => setLanguage(e.target.value)}
       title={label}
@@ -288,7 +288,6 @@ const LanguageDropdown = ({ language, setLanguage, label }) => (
 const AdminDashboard = () => {
   const [language, setLanguage] = useState("en");
   const t = translations[language] || translations.en;
-  const dir = ["ar", "he", "fa", "ur"].includes(language) ? "rtl" : "ltr";
   const [activeMenu, setActiveMenu] = useState("dashboard");
   const [users, setUsers] = useState([]);
   const [currentUser] = useState({
@@ -427,27 +426,27 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="min-h-screen flex bg-gradient-to-tr from-blue-900 to-indigo-900 font-inter" dir={dir}>
+    <div className="min-h-screen flex bg-black font-inter">
       <aside
         ref={sidebarRef}
         className={`
           ${isSidebarOpen ? 'w-64' : 'w-16'}
-          min-h-screen bg-gradient-to-b from-blue-800 to-indigo-900 shadow-xl flex flex-col py-3 px-2 sticky top-0 z-40
+          min-h-screen bg-yellow-500 shadow-xl flex flex-col py-3 px-2 sticky top-0 z-40
           transition-all duration-300 ease-in-out
         `}
         onMouseEnter={() => setSidebarHovered(true)}
         onMouseLeave={() => setSidebarHovered(false)}
         style={{ minWidth: isSidebarOpen ? 200 : 56 }}
       >
-        <button
-          className={`my-4 ml-1 p-2 rounded-full bg-blue-700 text-white transition hover:bg-blue-800 focus:outline-none ${isSidebarOpen ? '' : 'mx-auto'}`}
-          aria-label={isSidebarOpen ? "Collapse Menu" : "Expand Menu"}
-          onClick={handleSidebarToggle}
-          tabIndex={0}
-        >
+         <button
+           className={`my-4 ml-1 p-2 rounded-full bg-black text-yellow-500 transition hover:bg-gray-800 focus:outline-none ${isSidebarOpen ? '' : 'mx-auto'}`}
+           aria-label={isSidebarOpen ? "Collapse Menu" : "Expand Menu"}
+           onClick={handleSidebarToggle}
+           tabIndex={0}
+         >
           {isSidebarOpen ? <FaChevronLeft size={20} /> : <FaBars size={20} />}
         </button>
-        <div className={`text-2xl font-extrabold text-white mb-10 text-center tracking-wide transition-opacity duration-200
+        <div className={`text-2xl font-extrabold text-black mb-10 text-center tracking-wide transition-opacity duration-200
             ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none hidden'}`}>
           IT Services
         </div>
@@ -458,8 +457,8 @@ const AdminDashboard = () => {
                 <button
                   className={`flex items-center w-full p-3 rounded-lg font-semibold text-left transition-all duration-150
                     ${activeMenu === item.key
-                      ? "bg-blue-700 text-white shadow"
-                      : "text-gray-200 hover:bg-blue-700 hover:text-white"} 
+                      ? "bg-black text-yellow-500 shadow"
+                      : "text-black hover:bg-black hover:text-yellow-500"} 
                     ${isSidebarOpen ? '' : 'justify-center'}
                   `}
                   onClick={() => {
@@ -481,13 +480,13 @@ const AdminDashboard = () => {
           </ul>
         </nav>
       </aside>
-      <main className="flex-1 p-7 bg-blue-50 min-h-screen">
+       <main className="flex-1 p-7 bg-white min-h-screen">
         {/* ---- HEADER: Language dropdown at right, Operations Panel left ---- */}
         <header className="flex flex-col-reverse sm:flex-row justify-between items-stretch border-b pb-5 mb-5">
           {/* Left: Title and OperationsPanel */}
           <div className="flex flex-col flex-1">
-            <h1 className="text-3xl font-bold text-blue-800 mb-1">{t.adminDashboard}</h1>
-            <p className="text-gray-600">{t.operationsPanel}</p>
+            <h1 className="text-3xl font-bold text-black mb-1">{t.adminDashboard}</h1>
+            <p className="text-black">{t.operationsPanel}</p>
           </div>
           {/* Right: Language Dropdown */}
           <div className="flex items-center justify-end mb-3 sm:mb-0" style={{ minWidth: 210 }}>
@@ -498,22 +497,22 @@ const AdminDashboard = () => {
         {activeMenu === "dashboard" && (
           <section>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-              <StatCard title={t.totalUsers} value={users.length} icon={<FaUsers size={28} />} color="bg-blue-600" />
-              <StatCard title={t.registeredToday} value={regCounts.day} icon={<FaUserPlus size={28} />} color="bg-green-600" />
-              <StatCard title={t.thisMonth} value={regCounts.month} icon={<FaRegCalendarAlt size={28} />} color="bg-yellow-500" />
-              <StatCard title={t.openTickets} value={tickets.filter(ti => ti.status === "Open").length} icon={<FaClipboardList size={28} />} color="bg-indigo-600" />
+               <StatCard title={t.totalUsers} value={users.length} icon={<FaUsers size={28} />} color="bg-yellow-500" />
+               <StatCard title={t.registeredToday} value={regCounts.day} icon={<FaUserPlus size={28} />} color="bg-yellow-500" />
+               <StatCard title={t.thisMonth} value={regCounts.month} icon={<FaRegCalendarAlt size={28} />} color="bg-yellow-500" />
+               <StatCard title={t.openTickets} value={tickets.filter(ti => ti.status === "Open").length} icon={<FaClipboardList size={28} />} color="bg-yellow-500" />
             </div>
             <div className="mb-4 flex gap-3 items-center flex-wrap">
-              <span className="font-semibold mr-1">{dir === "rtl" ? ":فترة المخطط" : "Chart Interval:"}</span>
-              <button onClick={() => setIntervalRange("week")} className={`px-2 rounded ${interval === "week" ? "bg-blue-700 text-white" : "bg-white"}`}>{t.last7 || "Week"}</button>
-              <button onClick={() => setIntervalRange("month")} className={`px-2 rounded ${interval === "month" ? "bg-blue-700 text-white" : "bg-white"}`}>{t.month || "Month"}</button>
-              <button onClick={() => setIntervalRange("year")} className={`px-2 rounded ${interval === "year" ? "bg-blue-700 text-white" : "bg-white"}`}>Year</button>
-              <button onClick={() => setIntervalRange("custom")} className={`px-2 rounded ${interval === "custom" ? "bg-blue-700 text-white" : "bg-white"}`}>Custom</button>
+              <span className="font-semibold mr-1">Chart Interval:</span>
+              <button onClick={() => setIntervalRange("week")} className={`px-2 rounded ${interval === "week" ? "bg-yellow-500 text-black" : "bg-white"}`}>{t.last7 || "Week"}</button>
+              <button onClick={() => setIntervalRange("month")} className={`px-2 rounded ${interval === "month" ? "bg-yellow-500 text-black" : "bg-white"}`}>{t.month || "Month"}</button>
+              <button onClick={() => setIntervalRange("year")} className={`px-2 rounded ${interval === "year" ? "bg-yellow-500 text-black" : "bg-white"}`}>Year</button>
+              <button onClick={() => setIntervalRange("custom")} className={`px-2 rounded ${interval === "custom" ? "bg-yellow-500 text-black" : "bg-white"}`}>Custom</button>
               {interval === "custom" && <input type="number" min="2" max="365" value={customDays} onChange={e => setCustomDays(+e.target.value)} className="w-20 ml-2 p-1 rounded" />}
             </div>
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
               <div className="bg-white shadow rounded-xl p-8 flex flex-col items-center">
-                <h2 className="text-xl font-bold mb-3 text-gray-800">{t.regStats}</h2>
+                <h2 className="text-xl font-bold mb-3 text-black">{t.regStats}</h2>
                 <ResponsiveContainer width="100%" height={250}>
                   <PieChart>
                     <Pie data={pieData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={90}
@@ -531,7 +530,7 @@ const AdminDashboard = () => {
                 </ResponsiveContainer>
               </div>
               <div className="bg-white shadow rounded-xl p-8 flex flex-col items-center">
-                <h2 className="text-xl font-bold mb-3 text-gray-800">{t.regChartTitle}</h2>
+                <h2 className="text-xl font-bold mb-3 text-black">{t.regChartTitle}</h2>
                 <ResponsiveContainer width="100%" height={250}>
                   <LineChart data={regByDay}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#c7d4ef" />
@@ -548,13 +547,13 @@ const AdminDashboard = () => {
         {/* USERS */}
         {activeMenu === "users" && (
           <section>
-            <div className={`${dir === "rtl" ? "flex justify-start mb-4" : "flex justify-end mb-4"}`}>
-              <button className="bg-blue-600 text-white px-3 py-2 rounded shadow-lg flex items-center gap-2"
-                onClick={() => setShowUserForm(true)}>
-                <FaPlus /> {t.newUser}
-              </button>
+            <div className="flex justify-end mb-4">
+               <button className="bg-yellow-500 text-black px-3 py-2 rounded shadow-lg flex items-center gap-2"
+                 onClick={() => setShowUserForm(true)}>
+                 <FaPlus /> {t.newUser}
+               </button>
             </div>
-            <h2 className="text-2xl font-bold mb-5 text-blue-900">{t.users}</h2>
+            <h2 className="text-2xl font-bold mb-5 text-black">{t.users}</h2>
             <div className="overflow-x-auto">
               <table className="min-w-full bg-white rounded-lg shadow-xl">
                 <thead>
@@ -569,14 +568,14 @@ const AdminDashboard = () => {
                 </thead>
                 <tbody>
                   {users.map((u) => (
-                    <tr key={u.email} className="border-t hover:bg-blue-50">
+                     <tr key={u.email} className="border-t hover:bg-yellow-50">
                       <td className="px-4 py-2">{u.firstName}</td>
                       <td className="px-4 py-2">{u.lastName}</td>
                       <td className="px-4 py-2">{u.email}</td>
                       <td className="px-4 py-2">{u.signupDate || "—"}</td>
                       <td className="px-4 py-2">{u.signupTime || "—"}</td>
                       <td className="px-4 py-2">
-                        <button className="ml-2 text-red-600 hover:text-red-900"
+                        <button className="ml-2 text-black hover:text-yellow-500"
                           onClick={() => handleDeleteUser(u.email)} title={t.deleteUser}>
                           <FaTrash />
                         </button>
@@ -584,7 +583,7 @@ const AdminDashboard = () => {
                     </tr>
                   ))}
                   {users.length === 0 && (
-                    <tr><td colSpan={6} className="p-4 text-center text-gray-400">{t.noUsers}</td></tr>
+                    <tr><td colSpan={6} className="p-4 text-center text-black">{t.noUsers}</td></tr>
                   )}
                 </tbody>
               </table>
@@ -594,15 +593,15 @@ const AdminDashboard = () => {
         {/* REGISTRATIONS */}
         {activeMenu === "registrations" && (
           <section>
-            <h2 className="text-2xl font-bold mb-5 text-blue-900">{t.registrationAnalytics}</h2>
+            <h2 className="text-2xl font-bold mb-5 text-black">{t.registrationAnalytics}</h2>
             <div className="flex flex-wrap gap-6 mb-7">
-              <StatBlock label={t.today} value={regCounts.day} color="text-blue-500" />
-              <StatBlock label={t.last7} value={regCounts.week} color="text-green-600" />
-              <StatBlock label={t.month} value={regCounts.month} color="text-indigo-600" />
-              <StatBlock label={t.allTime} value={regCounts.all} color="text-gray-800" />
+              <StatBlock label={t.today} value={regCounts.day} color="text-yellow-500" />
+              <StatBlock label={t.last7} value={regCounts.week} color="text-yellow-500" />
+              <StatBlock label={t.month} value={regCounts.month} color="text-yellow-500" />
+              <StatBlock label={t.allTime} value={regCounts.all} color="text-black" />
             </div>
             <div className="bg-white shadow rounded-lg p-8">
-              <h3 className="mb-3 font-semibold text-blue-700">
+              <h3 className="mb-3 font-semibold text-black">
                 {t.registrationByDay.replace("{d}", (interval === 'custom' ? customDays : interval === "week" ? 7 : interval === "month" ? 30 : 365))}
               </h3>
               <ResponsiveContainer width="100%" height={240}>
@@ -620,13 +619,13 @@ const AdminDashboard = () => {
         {/* TICKETS */}
         {activeMenu === "tickets" && (
           <section>
-            <div className={`${dir === "rtl" ? "flex justify-start mb-4" : "flex justify-end mb-4"}`}>
-              <button className="bg-blue-600 text-white px-3 py-2 rounded shadow-lg flex items-center gap-2"
-                onClick={() => setShowTicketForm(true)}>
-                <FaPlus /> {t.newTicket}
-              </button>
+            <div className="flex justify-end mb-4">
+               <button className="bg-yellow-500 text-black px-3 py-2 rounded shadow-lg flex items-center gap-2"
+                 onClick={() => setShowTicketForm(true)}>
+                 <FaPlus /> {t.newTicket}
+               </button>
             </div>
-            <h2 className="text-2xl font-bold mb-5 text-blue-900">{t.supportTickets}</h2>
+            <h2 className="text-2xl font-bold mb-5 text-black">{t.supportTickets}</h2>
             <div className="overflow-x-auto">
               <table className="min-w-full bg-white rounded shadow-md text-sm">
                 <thead>
@@ -643,33 +642,33 @@ const AdminDashboard = () => {
                 </thead>
                 <tbody>
                   {tickets.map((tk) => (
-                    <tr key={tk.id} className={`${tk.status === "Open" ? "bg-blue-50" : "bg-gray-50"} border-t`}>
+                     <tr key={tk.id} className={`${tk.status === "Open" ? "bg-yellow-50" : "bg-gray-50"} border-t`}>
                       <td className="px-3 py-2">{tk.id}</td>
                       <td className="px-3 py-2">{tk.title}</td>
                       <td className="px-3 py-2">
-                        <span className={`badge ${tk.status === "Open" ? "bg-blue-500 text-white" : "bg-gray-400 text-white"}`}>
+                        <span className={`badge ${tk.status === "Open" ? "bg-yellow-500 text-black" : "bg-gray-400 text-white"}`}>
                           {tk.status}
                         </span>
                       </td>
                       <td className="px-3 py-2">
                         <span className="flex items-center space-x-2">
-                          <FaUserCircle className="text-blue-400 mr-1" /> {tk.assignedTo || "-"}
+                          <FaUserCircle className="text-yellow-500 mr-1" /> {tk.assignedTo || "-"}
                         </span>
                       </td>
                       <td className="px-3 py-2">
                         <span className="flex items-center space-x-2">
-                          <FaCalendarAlt className="text-pink-400 mr-1" /> {tk.dueDate || "-"}
+                          <FaCalendarAlt className="text-yellow-500 mr-1" /> {tk.dueDate || "-"}
                         </span>
                       </td>
                       <td className="px-3 py-2">{tk.submitter}</td>
                       <td className="px-3 py-2">{tk.created}</td>
                       <td className="px-3 py-2 flex gap-1">
-                        {tk.status === "Open" && <button className="bg-blue-500 text-white px-2 py-1 rounded mr-1" onClick={() => handleTicketAction(tk.id, "resolve")}>{t.resolve}</button>}
-                        <button className="bg-red-500 text-white px-2 py-1 rounded" onClick={() => handleTicketAction(tk.id, "delete")}>{t.delete}</button>
+                        {tk.status === "Open" && <button className="bg-yellow-500 text-black px-2 py-1 rounded mr-1" onClick={() => handleTicketAction(tk.id, "resolve")}>{t.resolve}</button>}
+                        <button className="bg-black text-white px-2 py-1 rounded" onClick={() => handleTicketAction(tk.id, "delete")}>{t.delete}</button>
                       </td>
                     </tr>
                   ))}
-                  {tickets.length === 0 && <tr><td colSpan={8} className="text-center text-gray-400 py-4">{t.noTickets}</td></tr>}
+                  {tickets.length === 0 && <tr><td colSpan={8} className="text-center text-black py-4">{t.noTickets}</td></tr>}
                 </tbody>
               </table>
             </div>
@@ -678,8 +677,8 @@ const AdminDashboard = () => {
         {/* SESSIONS */}
         {activeMenu === "sessions" && (
           <section>
-            <h2 className="text-2xl font-bold mb-5 text-blue-900">{t.activeSessions}</h2>
-            <div className="bg-gradient-to-r from-blue-100 to-indigo-200 rounded-2xl shadow-lg p-6 max-w-lg border-l-4 border-blue-500">
+            <h2 className="text-2xl font-bold mb-5 text-black">{t.activeSessions}</h2>
+            <div className="bg-yellow-200 rounded-2xl shadow-lg p-6 max-w-lg border-l-4 border-yellow-500">
               <table className="w-full text-left">
                 <thead>
                   <tr>
@@ -694,10 +693,10 @@ const AdminDashboard = () => {
                   {sessions.map((s, i) =>
                     <tr key={s.email}>
                       <td className="py-2">
-                        <FaCheckCircle className="text-green-500 mr-2" title="Online" />
+                        <FaCheckCircle className="text-yellow-500 mr-2" title="Online" />
                       </td>
                       <td className="py-2 flex items-center">
-                        <FaUserCircle className="text-gray-500 mr-1 text-xl" /> {s.name}
+                        <FaUserCircle className="text-black mr-1 text-xl" /> {s.name}
                       </td>
                       <td className="py-2">{s.email}</td>
                       <td className="py-2">{s.loginTime}</td>
@@ -712,7 +711,7 @@ const AdminDashboard = () => {
         {/* AUDIT */}
         {activeMenu === "audit" && (
           <section>
-            <h2 className="text-2xl font-bold mb-5 text-blue-900">{t.auditLog}</h2>
+            <h2 className="text-2xl font-bold mb-5 text-black">{t.auditLog}</h2>
             <div className="bg-white shadow-md rounded-lg p-5 max-w-2xl w-full">
               <table className="w-full text-left text-sm">
                 <thead>
@@ -729,20 +728,20 @@ const AdminDashboard = () => {
                       <tr>
                         <td className="p-2">{a.ts}</td>
                         <td className="p-2">
-                          <span className={`badge ${/deleted|delete/i.test(a.msg) ? "bg-red-200" : /register|new/i.test(a.msg) ? "bg-green-200" : "bg-blue-200"} text-gray-900`}>
+                           <span className={`badge ${/deleted|delete/i.test(a.msg) ? "bg-black" : /register|new/i.test(a.msg) ? "bg-yellow-200" : "bg-yellow-200"} text-black`}>
                             {a.msg.length > 32 ? a.msg.slice(0, 32) + "..." : a.msg}
                           </span>
                         </td>
                         <td className="p-2">{a.by}</td>
                         <td className="p-2">
-                          <button className="text-blue-600 font-bold" onClick={() => toggleAuditExpand(i)}>
+                          <button className="text-yellow-500 font-bold" onClick={() => toggleAuditExpand(i)}>
                             {expandAudit.includes(i) ? "-" : "+"}
                           </button>
                         </td>
                       </tr>
                       {expandAudit.includes(i) && (
                         <tr>
-                          <td colSpan={4} className="p-2 bg-blue-50 text-sm">
+                          <td colSpan={4} className="p-2 bg-yellow-50 text-sm">
                             <span className="font-semibold">{t.detail}:</span> {a.msg}
                           </td>
                         </tr>
@@ -751,7 +750,7 @@ const AdminDashboard = () => {
                   )}
                   {audit.length === 0 &&
                     <tr>
-                      <td colSpan={4} className="text-center text-gray-400 py-4">{t.noActions}</td>
+                      <td colSpan={4} className="text-center text-black py-4">{t.noActions}</td>
                     </tr>
                   }
                 </tbody>
@@ -770,8 +769,8 @@ const AdminDashboard = () => {
                 <input type="email" className="w-full border p-2 rounded" placeholder={t.email} value={newUser.email} onChange={e => setNewUser({ ...newUser, email: e.target.value })} />
                 <input type="password" className="w-full border p-2 rounded" placeholder={t.password} value={newUser.password} onChange={e => setNewUser({ ...newUser, password: e.target.value })} />
                 <div className="flex gap-3 justify-end mt-4">
-                  <button type="submit" className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 font-semibold">{t.register}</button>
-                  <button type="button" className="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 font-semibold" onClick={() => { setShowUserForm(false); setError(""); }}>{t.cancel}</button>
+                   <button type="submit" className="px-5 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600 font-semibold">{t.register}</button>
+                   <button type="button" className="px-5 py-2 bg-black text-white rounded hover:bg-gray-800 font-semibold" onClick={() => { setShowUserForm(false); setError(""); }}>{t.cancel}</button>
                 </div>
               </form>
             </div>
@@ -787,8 +786,8 @@ const AdminDashboard = () => {
                 <input type="text" className="w-full border p-2 rounded" placeholder={t.ticketAssigned} value={newTicket.assignedTo} onChange={e => setNewTicket({ ...newTicket, assignedTo: e.target.value })} />
                 <input type="date" className="w-full border p-2 rounded" placeholder={t.ticketDue} value={newTicket.dueDate} onChange={e => setNewTicket({ ...newTicket, dueDate: e.target.value })} />
                 <div className="flex gap-3 justify-end mt-4">
-                  <button type="submit" className="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 font-semibold">{t.submit}</button>
-                  <button type="button" className="px-5 py-2 bg-red-600 text-white rounded hover:bg-red-700 font-semibold" onClick={() => { setShowTicketForm(false); }}>{t.cancel}</button>
+                   <button type="submit" className="px-5 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600 font-semibold">{t.submit}</button>
+                   <button type="button" className="px-5 py-2 bg-black text-white rounded hover:bg-gray-800 font-semibold" onClick={() => { setShowTicketForm(false); }}>{t.cancel}</button>
                 </div>
               </form>
             </div>

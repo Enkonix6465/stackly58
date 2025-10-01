@@ -10,110 +10,159 @@ const clean = (s) =>
 
 const t = {
   // Section 1: Hero
-  hero: { en: "Accelerate Your Business with Scalable Technology", ar: "[translate:تمكين أعمالك بالتقنيات القابلة للتوسع]", he: "[translate:האץ את העסק שלך עם טכנולוגיה ניתנת להרחבה]" },
-  heroDesc: { en: "Delivering innovative solutions that streamline operations, strengthen security, and drive transformative growth. Let’s build the future of your business together.", ar: "[translate:نقدم حلولاً مبتكرة لتحسين العمليات، تعزيز الأمان، ودفع النمو التحويلي. لنصنع مستقبل أعمالك معاً.]", he: "[translate:אנו מספקים פתרונות חדשניים לייעול תהליכים, חיזוק אבטחה וצמיחה עסקית. בואו נבנה יחד את עתיד העסק שלכם.]" },
-  heroBtn: { en: "Reach Out Today", ar: "[translate:تواصل معنا اليوم]", he: "[translate:צור קשר עוד היום]" },
+  hero: { en: "Accelerate with Scalable Tech", ar: "تمكين أعمالك بالتقنيات القابلة للتوسع", he: "האץ את העסק שלך עם טכנולוגיה ניתנת להרחבה" },
+  heroDesc: { en: "Delivering innovative solutions that streamline operations and drive transformative growth.", ar: "نقدم حلولاً مبتكرة لتحسين العمليات، تعزيز الأمان، ودفع النمو التحويلي. لنصنع مستقبل أعمالك معاً.", he: "אנו מספקים פתרונות חדשניים לייעול תהליכים, חיזוק אבטחה וצמיחה עסקית. בואו נבנה יחד את עתיד העסק שלכם." },
+  heroBtn: { en: "Connect", ar: "تواصل معنا اليوم", he: "צור קשר עוד היום" },
+  // Section 2: Hero Consulting Section
+  heroConsulting: {
+    welcome: { en: "WELCOME TO BUSTAR AGENCY", ar: "مرحباً بكم في وكالة بستار", he: "ברוכים הבאים לסוכנות בוסטאר" },
+    title: { en: "Driving innovation through strategic consulting", ar: "قيادة الابتكار من خلال الاستشارات الاستراتيجية", he: "הנעת חדשנות דרך ייעוץ אסטרטגי" },
+    experienceLabel: { en: "Years Of Experience", ar: "سنوات من الخبرة", he: "שנות ניסיון" },
+    description: { en: "We believe that every business is unique and our approach is never one size fits all. We tailor our strategies to fit your goals, culture, and industry dynamics.", ar: "نؤمن بأن كل عمل فريد من نوعه ونهجنا ليس حلاً واحداً يناسب الجميع. نخصص استراتيجياتنا لتناسب أهدافك وثقافتك وديناميكيات الصناعة.", he: "אנו מאמינים שכל עסק הוא ייחודי והגישה שלנו לעולם לא מתאימה לכולם. אנו מתאימים את האסטרטגיות שלנו למטרות, התרבות והדינמיקה של התעשייה שלך." },
+    button: { en: "Explore More", ar: "استكشف المزيد", he: "גלה עוד" }
+  },
   // Section 2: Image Grid and Overlay/Right
   gridCardText: [
-    { en: "Innovative Collaboration", ar: "[translate:تعاون مبتكر]", he: "[translate:שיתוף פעולה חדשני]" },
-    { en: "Solutions Hub", ar: "[translate:مركز الحلول]", he: "[translate:מרכז פתרונות]" },
-    { en: "New Markets", ar: "[translate:أسواق جديدة]", he: "[translate:שווקים חדשים]" },
-    { en: "Strategic Planning", ar: "[translate:تخطيط استراتيجي]", he: "[translate:תכנון אסטרטגי]" },
-    { en: "Driving Business Excellence Forward.", ar: "[translate:دفع التميز في الأعمال للأمام.]", he: "[translate:דוחפים את מצוינות העסקים קדימה.]" }
+    { en: "Innovative Collaboration", ar: "تعاون مبتكر", he: "שיתוף פעולה חדשני" },
+    { en: "Solutions Hub", ar: "مركز الحلول", he: "מרכז פתרונות" },
+    { en: "New Markets", ar: "أسواق جديدة", he: "שווקים חדשים" },
+    { en: "Strategic Planning", ar: "تخطيط استراتيجي", he: "תכנון אסטרטגי" },
+    { en: "Driving Business Excellence Forward.", ar: "دفع التميز في الأعمال للأمام.", he: "דוחפים את מצוינות העסקים קדימה." }
   ],
+  // Section 3: Modern Consultancy Section
+  modernConsultancy: {
+    preHeadline: { en: "CONSULTANCY PLATFORM", ar: "منصة الاستشارات", he: "פלטפורמת ייעוץ" },
+    headline: { en: "Transform your business with our comprehensive consultancy platform", ar: "حول عملك مع منصة الاستشارات الشاملة الخاصة بنا", he: "שנה את העסק שלך עם פלטפורמת הייעוץ המקיפה שלנו" },
+    cards: [
+      {
+        number: "01",
+        title: { en: "Industry Solutions", ar: "حلول الصناعة", he: "פתרונות תעשייה" },
+        description: { en: "Specialized consultancy services tailored to your industry's unique challenges and opportunities.", ar: "خدمات استشارية متخصصة مصممة خصيصاً لتحديات وفرص صناعتك الفريدة.", he: "שירותי ייעוץ מתמחים המותאמים לאתגרים והזדמנויות הייחודיים של התעשייה שלך." },
+        tags: [
+          { en: "Healthcare", ar: "الرعاية الصحية", he: "בריאות" },
+          { en: "Financial Services", ar: "الخدمات المالية", he: "שירותים פיננסיים" },
+          { en: "Manufacturing", ar: "التصنيع", he: "ייצור" },
+          { en: "Technology", ar: "التكنولوجيا", he: "טכנולוגיה" }
+        ],
+        link: { en: "Explore Industry Solutions →", ar: "استكشف حلول الصناعة →", he: "גלה פתרונות תעשייה →" }
+      },
+      {
+        number: "02",
+        title: { en: "Platform Services", ar: "خدمات المنصة", he: "שירותי פלטפורמה" },
+        description: { en: "Comprehensive consultancy services delivered through our integrated platform for maximum efficiency and results.", ar: "خدمات استشارية شاملة يتم تقديمها من خلال منصتنا المتكاملة للحصول على أقصى كفاءة ونتائج.", he: "שירותי ייעוץ מקיפים הניתנים דרך הפלטפורמה המשולבת שלנו למקסימום יעילות ותוצאות." },
+        tags: [
+          { en: "Strategic Planning", ar: "التخطيط الاستراتيجي", he: "תכנון אסטרטגי" },
+          { en: "Digital Transformation", ar: "التحول الرقمي", he: "טרנספורמציה דיגיטלית" },
+          { en: "Process Optimization", ar: "تحسين العمليات", he: "אופטימיזציה של תהליכים" },
+          { en: "Change Management", ar: "إدارة التغيير", he: "ניהול שינוי" }
+        ],
+        link: { en: "Explore Platform Services →", ar: "استكشف خدمات المنصة →", he: "גלה שירותי פלטפורמה →" }
+      },
+      {
+        number: "03",
+        title: { en: "Platform Solutions", ar: "حلول المنصة", he: "פתרונות פלטפורמה" },
+        description: { en: "Customized consultancy solutions powered by our advanced platform technology for scalable business growth.", ar: "حلول استشارية مخصصة مدعومة بتقنية منصتنا المتقدمة للنمو التجاري القابل للتوسع.", he: "פתרונות ייעוץ מותאמים אישית המונעים על ידי טכנולוגיית הפלטפורמה המתקדמת שלנו לצמיחה עסקית ניתנת להרחבה." },
+        tags: [
+          { en: "Business Intelligence", ar: "ذكاء الأعمال", he: "בינה עסקית" },
+          { en: "Automation Tools", ar: "أدوات الأتمتة", he: "כלי אוטומציה" },
+          { en: "Data Analytics", ar: "تحليل البيانات", he: "ניתוח נתונים" },
+          { en: "Cloud Integration", ar: "التكامل السحابي", he: "אינטגרציה בענן" }
+        ],
+        link: { en: "Explore Platform Solutions →", ar: "استكشف حلول المنصة →", he: "גלה פתרונות פלטפורמה →" }
+      }
+    ]
+  },
   rightBlock: {
-    h1: { en: "Unique Business Solutions For Your Vision", ar: "[translate:حلول أعمال فريدة لرؤيتك]", he: "[translate:פתרונות עסקיים ייחודיים עבור חזונך]" },
-    p: { en: "Unlock new growth with strategic, AI-powered solutions crafted for today’s dynamic market. We empower organizations to adapt, thrive, and innovate with confidence.", ar: "[translate:افتح أبواب النمو مع حلول استراتيجية مدعومة بالذكاء الاصطناعي مصممة لسوق اليوم الديناميكي. نمكن المؤسسات من التكيف والازدهار والابتكار بثقة.]", he: "[translate:פתחו צמיחה חדשה עם פתרונות אסטרטגיים מונעי AI לשוק הדינמי של היום. אנו מעצימים ארגונים להסתגל, לפרוח ולחדש בביטחון.]" },
+    h1: { en: "Unique Business Solutions For Your Vision", ar: "حلول أعمال فريدة لرؤيتك", he: "פתרונות עסקיים ייחודיים עבור חזונך" },
+    p: { en: "Unlock new growth with strategic, AI-powered solutions crafted for today's dynamic market. We empower organizations to adapt, thrive, and innovate with confidence.", ar: "افتح أبواب النمو مع حلول استراتيجية مدعومة بالذكاء الاصطناعي مصممة لسوق اليوم الديناميكي. نمكن المؤسسات من التكيف والازدهار والابتكار بثقة.", he: "פתחו צמיחה חדשה עם פתרונות אסטרטגיים מונעי AI לשוק הדינמי של היום. אנו מעצימים ארגונים להסתגל, לפרוח ולחדש בביטחון." },
     sections: [
-      { h3: { en: "Market Expansion Consulting", ar: "[translate:استشارات التوسع في السوق]", he: "[translate:ייעוץ להתרחבות בשוק]" }, p: { en: "Identify new opportunities and design scalable strategies to boost business reach and revenue.", ar: "[translate:حدد فرص جديدة وصمم استراتيجيات قابلة للتوسع لتعزيز نطاق العمل والإيرادات.]", he: "[translate:זהו הזדמנויות חדשות ועצבו אסטרטגיות ניתנות להרחבה להגדלת השוק וההכנסות.]" } },
-      { h3: { en: "Process Automation", ar: "[translate:أتمتة العمليات]", he: "[translate:אוטומציה של תהליכים]" }, p: { en: "Implement intelligent workflows that free up resources and increase operational efficiency.", ar: "[translate:قم بتطبيق سير عمل ذكي لتحرير الموارد وزيادة الكفاءة التشغيلية.]", he: "[translate:יישום תהליכים חכמים לפינוי משאבים והגדלת יעילות תפעולית.]" } },
-      { h3: { en: "Customer Insight Platforms", ar: "[translate:منصات فهم العملاء]", he: "[translate:פלטפורמות לתובנות לקוח]" }, p: { en: "Harness advanced analytics to deepen understanding of markets and personalize customer experiences.", ar: "[translate:استخدم التحليل المتقدم لتعميق فهمك للأسواق وتخصيص تجارب العملاء.]", he: "[translate:השתמשו בניתוח מתקדם להעמקת הבנה של השווקים ולהתאמה אישית של חווית הלקוח.]" } }
+      { h3: { en: "Market Expansion Consulting", ar: "استشارات التوسع في السوق", he: "ייעוץ להתרחבות בשוק" }, p: { en: "Identify new opportunities and design scalable strategies to boost business reach and revenue.", ar: "حدد فرص جديدة وصمم استراتيجيات قابلة للتوسع لتعزيز نطاق العمل والإيرادات.", he: "זהו הזדמנויות חדשות ועצבו אסטרטגיות ניתנות להרחבה להגדלת השוק וההכנסות." } },
+      { h3: { en: "Process Automation", ar: "أتمتة العمليات", he: "אוטומציה של תהליכים" }, p: { en: "Implement intelligent workflows that free up resources and increase operational efficiency.", ar: "قم بتطبيق سير عمل ذكي لتحرير الموارد وزيادة الكفاءة التشغيلية.", he: "יישום תהליכים חכמים לפינוי משאבים והגדלת יעילות תפעולית." } },
+      { h3: { en: "Customer Insight Platforms", ar: "منصات فهم العملاء", he: "פלטפורמות לתובנות לקוח" }, p: { en: "Harness advanced analytics to deepen understanding of markets and personalize customer experiences.", ar: "استخدم التحليل المتقدم لتعميق فهمك للأسواق وتخصيص تجارب العملاء.", he: "השתמשו בניתוח מתקדם להעמקת הבנה של השווקים ולהתאמה אישית של חווית הלקוח." } }
     ]
   },
-  // Section 3: Unique Process
-  process: {
-    h2: { en: "Our Unique Process", ar: "[translate:عمليتنا الفريدة]", he: "[translate:התהליך הייחודי שלנו]" },
-    h1: { en: "From Vision to Reality", ar: "[translate:من الرؤية إلى الواقع]", he: "[translate:מחלום למציאות]" },
-    p: { en: "We follow a proven methodology that transforms complex challenges into actionable, successful strategies for growth.", ar: "[translate:نتبع منهجية مثبتة لتحويل التحديات إلى استراتيجيات ناجحة وقابلة للتنفيذ للنمو.]", he: "[translate:אנו פועלים בגישה שממירה אתגרים מורכבים לאסטרטגיות צמיחה מוצלחות.]" },
-    steps: [
-      { title: { en: "Discovery & Analysis", ar: "[translate:الاكتشاف والتحليل]", he: "[translate:גילוי וניתוח]" }, description: { en: "We start with a deep dive into your business, market, and competition. By asking the right questions, we gain a clear understanding of your goals and the obstacles in your way.", ar: "[translate:نبدأ بتحليل شامل لأعمالك والسوق والمنافسة لفهم أهدافك والعقبات.]", he: "[translate:אנחנו מתחילים עם חקירה מעמיקה של העסק, השוק והמתחרים להבנת המטרות והאתגרים.]" } },
-      { title: { en: "Strategy & Planning", ar: "[translate:استراتيجية وتخطيط]", he: "[translate:אסטרטגיה ותכנון]" }, description: { en: "Our team of experts develops a customized strategy tailored to your needs. This blueprint outlines the project scope, key milestones, and a clear path to success.", ar: "[translate:نطور استراتيجية مخصصة تلبي احتياجاتك مع خارطة طريق واضحة للنجاح.]", he: "[translate:מפתחים אסטרטגיה מותאמת אישית הכוללת היקף, אבני דרך ונתיב ברור להצלחה.]" } },
-      { title: { en: "Execution & Development", ar: "[translate:التنفيذ والتطوير]", he: "[translate:ביצוע ופיתוח]" }, description: { en: "With the plan in place, we get to work. We use agile methodologies to build and refine the solution, ensuring flexibility and efficiency throughout the development phase.", ar: "[translate:ننقل الخطة إلى العمل باستخدام منهجيات مرنة لضمان الكفاءة طوال مرحلة التطوير.]", he: "[translate:מביאים את התוכנית לפועל עם מתודולוגיות אג’יל לפיתוח גמיש ויעיל.]" } },
-      { title: { en: "Launch & Deployment", ar: "[translate:الإطلاق والتنفيذ]", he: "[translate:השקה והפצה]" }, description: { en: "The final solution is deployed seamlessly. We handle all technical aspects to ensure a smooth transition and a successful launch, making sure everything is ready to go.", ar: "[translate:ننفذ الحل النهائي بسلاسة مع ضمان انتقال ناجح وتشغيل مثالي.]", he: "[translate:משיקים את הפתרון בצורה חלקה ומבטיחים מעבר חלק להפעלה מוצלחת.]" } },
-      { title: { en: "Growth & Optimization", ar: "[translate:النمو والتحسين]", he: "[translate:צמיחה ואופטימיזציה]" }, description: { en: "Our partnership doesn't end at launch. We provide continuous support and data-driven optimization to ensure your solution performs at its peak, maximizing your long-term success.", ar: "[translate:نستمر في الدعم والتحسين المستمر لضمان الأداء الأمثل وتحقيق النجاح الطويل الأمد.]", he: "[translate:מספקים תמיכה רציפה ואופטימיזציה מבוססת נתונים להבטחת ביצועים מיטביים.]" } }
+  // Section 4: Why Choose Us
+  whyChooseUs: {
+    h2: { en: "Why Choose Us", ar: "لماذا تختارنا", he: "למה לבחור בנו" },
+    h1: { en: "Your Trusted Partner for Success", ar: "شريكك الموثوق للنجاح", he: "השותף המהימן שלך להצלחה" },
+    p: { en: "We combine expertise, innovation, and dedication to deliver exceptional results that drive your business forward.", ar: "نجمع بين الخبرة والابتكار والتفاني لتقديم نتائج استثنائية تدفع عملك إلى الأمام.", he: "אנו משלבים מומחיות, חדשנות ומסירות כדי לספק תוצאות יוצאות דופן שמקדמות את העסק שלך." },
+    features: [
+      { 
+        icon: "🎯", 
+        title: { en: "Strategic Expertise", ar: "الخبرة الاستراتيجية", he: "מומחיות אסטרטגית" }, 
+        desc: { en: "30+ years of proven experience in strategic consulting and business transformation.", ar: "أكثر من 30 عاماً من الخبرة المثبتة في الاستشارات الاستراتيجية وتحويل الأعمال.", he: "יותר מ-30 שנות ניסיון מוכח בייעוץ אסטרטגי ובטרנספורמציה עסקית." } 
+      },
+      { 
+        icon: "🚀", 
+        title: { en: "Innovation Focus", ar: "التركيز على الابتكار", he: "מיקוד בחדשנות" }, 
+        desc: { en: "Cutting-edge solutions powered by the latest technologies and methodologies.", ar: "حلول متطورة مدعومة بأحدث التقنيات والمنهجيات.", he: "פתרונות מתקדמים המונעים על ידי הטכנולוגיות והמתודולוגיות העדכניות ביותר." } 
+      },
+      { 
+        icon: "🤝", 
+        title: { en: "Client Partnership", ar: "شراكة العملاء", he: "שותפות לקוחות" }, 
+        desc: { en: "We work as an extension of your team, ensuring seamless collaboration and results.", ar: "نعمل كامتداد لفريقك، مما يضمن التعاون السلس والنتائج المثمرة.", he: "אנו עובדים כהרחבה של הצוות שלך, ומבטיחים שיתוף פעולה חלק ותוצאות." } 
+      }
     ]
   },
-  // Section 4: IT Services
-  itServices: { en: "Our IT Services", ar: "[translate:خدمات تكنولوجيا المعلومات لدينا]", he: "[translate:שירותי IT שלנו]" },
-  viewAll: { en: "View All Services", ar: "[translate:عرض جميع الخدمات]", he: "[translate:הצג את כל השירותים]" },
-  itServiceItems: [
-    { title: { en: "Digital Transformation", ar: "[translate:التحول الرقمي]", he: "[translate:טרנספורמציה דיגיטלית]" }, desc: { en: "Empowering your business with cutting-edge technologies to streamline operations and growth.", ar: "[translate:تمكين أعمالك بأحدث التقنيات لزيادة الكفاءة والنمو.]", he: "[translate:העצמת העסק שלך עם טכנולוגיות חדשניות לשיפור תהליכים וצמיחה.]" }, img: "images/bs8.jpg" },
-    { title: { en: "Strategy & Consulting", ar: "[translate:استراتيجية واستشارات]", he: "[translate:אסטרטגיה וייעוץ]" }, desc: { en: "Expert advisory to align your business goals with scalable and sustainable strategies for long-term success.", ar: "[translate:استشارات احترافية لمواءمة أهداف عملك مع استراتيجيات مستدامة.]", he: "[translate:ייעוץ מקצועי להתאמת יעדי העסק שלך עם אסטרטגיות ברות-קיימא וגדילה.]" }, img: "images/bs9.jpg" },
-    { title: { en: "Data Analytics & Insights", ar: "[translate:تحليلات البيانات والرؤى]", he: "[translate:אנליטיקת נתונים ותובנות]" }, desc: { en: "Unlock actionable insights by integrating advanced analytics that drive informed decision-making.", ar: "[translate:اكتشف رؤى قابلة للتنفيذ من خلال دمج تحليلات متقدمة تدعم اتخاذ قرارات ذكية.]", he: "[translate:קבל תובנות ישימות באמצעות ניתוחים מתקדמים שמקדמים קבלת החלטות חכמה.]" }, img: "images/bs10.jpg" },
-    { title: { en: "Process Automation", ar: "[translate:أتمتة العمليات]", he: "[translate:אוטומציה של תהליכים]" }, desc: { en: "Automate repetitive workflows to reduce errors, improve efficiency, and enhance productivity.", ar: "[translate:أتمتة العمليات الروتينية لتقليل الأخطاء وزيادة الكفاءة والإنتاجية.]", he: "[translate:אוטומציה של משימות חוזרות להפחתת טעויות והגברת היעילות.]" }, img: "images/bs11.jpg" },
-    { title: { en: "Customer Experience Management", ar: "[translate:إدارة تجربة العملاء]", he: "[translate:ניהול חווית לקוח]" }, desc: { en: "Design personalized customer journeys to increase engagement, loyalty, and satisfaction.", ar: "[translate:تصميم رحلات عملاء مخصصة لتعزيز التفاعل والولاء والرضا.]", he: "[translate:עיצוב מסעות לקוח אישיים להגדלת מעורבות ונאמנות.]" }, img: "images/bs12.jpg" },
-    { title: { en: "Cloud & Infrastructure Services", ar: "[translate:خدمات السحابة والبنية التحتية]", he: "[translate:שירותי ענן ותשתית]" }, desc: { en: "Scalable cloud solutions and reliable infrastructure management to support business continuity and agility.", ar: "[translate:حلول سحابية قابلة للتوسع وإدارة بنية تحتية لدعم الاستمرارية.]", he: "[translate:פתרונות ענן גמישים וניהול תשתיות אמינות לתמיכה בעסק.]" }, img: "images/bs13.jpg" }
-  ],
-  // Section 5: Events
-  eventsSection: { en: "Explore Our Services", ar: "[translate:استكشف خدماتنا]", he: "[translate:גלה את השירותים שלנו]" },
-  filters: {
-    serviceCategory: { en: "Select Service Category", ar: "[translate:اختر فئة الخدمة]", he: "[translate:בחר קטגוריית שירות]" },
-    industry: { en: "Select Industry / Business Type", ar: "[translate:اختر الصناعة / نوع العمل]", he: "[translate:בחר ענף / סוג עסק]" },
-    location: { en: "Select Location / Region", ar: "[translate:اختر الموقع / المنطقة]", he: "[translate:בחר מיקום / אזור]" }
+  // Section 5: Testimonials
+  testimonials: {
+    subtitle: { en: "Our testimonial", ar: "شهاداتنا", he: "המלצות שלנו" },
+    title: { en: "2356+ Customer Feedback's", ar: "2356+ تقييمات العملاء", he: "2356+ משובי לקוחות" },
+    items: [
+      {
+        title: { en: "Great Business Solution", ar: "حل أعمال رائع", he: "פתרון עסקי מעולה" },
+        text: { en: "Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu dictums augue volutpat felis etiam suspendisse.", ar: "دابوس نيسل أليكيت كونج تيلوس ناسيتور ليكتوس ساجبيان ماتيس أركو ديكتومس أوج فولوتبات فيليس إيتام سوسبينديس.", he: "דבוס ניסל אליקויט קונג טלוס נאסטור לקטוס סאגפיאן מאטיס ארקו דיקטומס אוג וולוטפט פליס אטיאם סוספנדיס." },
+        name: { en: "William Henry", ar: "ويليام هنري", he: "ויליאם הנרי" },
+        position: { en: "Finance Catalyst Agency", ar: "وكالة محفز التمويل", he: "סוכנות זרז פיננסי" },
+        rating: 5
+      },
+      {
+        title: { en: "Smart Enterprise Solution", ar: "حل مؤسسي ذكي", he: "פתרון ארגוני חכם" },
+        text: { en: "I can't recommend The Gourmet Haven enough. It's a place for special occasions, date nights, or whenever you're in the mood.", ar: "لا أستطيع أن أوصي بـ The Gourmet Haven بما فيه الكفاية. إنه مكان للمناسبات الخاصة، مواعيد العشاء، أو كلما كنت في المزاج المناسب.", he: "אני לא יכול להמליץ על The Gourmet Haven מספיק. זה מקום לאירועים מיוחדים, ערבי רומנטיקה, או מתי שאתה במצב רוח." },
+        name: { en: "Julian Wyat", ar: "جوليان وايت", he: "ג'וליאן וויאט" },
+        position: { en: "Marketer Manager", ar: "مدير التسويق", he: "מנהל שיווק" },
+        rating: 5
+      },
+      {
+        title: { en: "Advanced Business", ar: "أعمال متقدمة", he: "עסקים מתקדמים" },
+        text: { en: "Working with as our IT Sp game-changer. Their dee quick problem-solving sh", ar: "العمل معنا كمغير قواعد اللعبة في تكنولوجيا المعلومات. حلولهم السريعة للمشاكل", he: "עבודה איתנו כמשנה משחק בתחום ה-IT. הפתרונות המהירים שלהם לבעיות" },
+        name: { en: "Beckett Hayc", ar: "بيكيت هايك", he: "בקט הייק" },
+        position: { en: "IT Specialist Worker", ar: "متخصص تقنية المعلومات", he: "מומחה IT" },
+        rating: 5
+      }
+    ]
   },
-  noEvents: { en: "No matching services found. Try adjusting your filters.", ar: "[translate:لا توجد خدمات مطابقة. جرب تغيير الفلاتر.]", he: "[translate:לא נמצאו שירותים תואמים. נסה לשנות את המסננים.]" },
-  loadMore: { en: "Load More", ar: "[translate:تحميل المزيد]", he: "[translate:טען עוד]" },
-  eventItems: [
-    {
-      img: "images/bs14.jpg",
-      title: { en: "Digital Transformation Roadmap", ar: "[translate:خريطة طريق التحول الرقمي]", he: "[translate:מפת דרכים לטרנספורמציה דיגיטלית]" },
-      serviceType: "Consulting",
-      industry: { en: "Finance", ar: "[translate:المالية]", he: "[translate:פיננסים]" },
-      location: { en: "Global", ar: "[translate:العالمية]", he: "[translate:גלובלי]" },
-      description: { en: "Comprehensive strategies to modernize business processes, optimize workflows, and adopt digital-first solutions.", ar: "[translate:استراتيجيات شاملة لتحديث الأعمال، تحسين العمليات، وتبني الحلول الرقمية.]", he: "[translate:אסטרטגיות מקיפות למודרניזציה של תהליכים ואימוץ פתרונות דיגיטליים.]" },
-    },
-    { img: "images/bs15.jpg", title: { en: "Market Expansion Strategy Workshop", ar: "[translate:ورشة استراتيجية توسع السوق]", he: "[translate:סדנת אסטרטגיית הרחבת שוק]" }, serviceType: "Strategy & Growth", industry: { en: "Retail & E-commerce", ar: "[translate:التجزئة والتجارة الإلكترونية]", he: "[translate:קמעונאות ומסחר אלקטרוני]" }, location: { en: "USA", ar: "[translate:الولايات المتحدة]", he: "[translate:ארה\"ב]" }, description: { en: "Actionable insights on entering new markets, understanding customer behavior, and scaling operations effectively.", ar: "[translate:رؤى قابلة للتنفيذ لدخول أسواق جديدة وفهم سلوك العملاء.]", he: "[translate:תובנות יישומיות לכניסה לשווקים חדשים ולהבנת התנהגות לקוחות.]" } },
-    { img: "images/bs16.jpg", title: { en: "AI-Powered Business Intelligence Summit", ar: "[translate:قمة ذكاء الأعمال المدعوم بالذكاء الاصطناعي]", he: "[translate:כנס בינה עסקית מבוסס בינה מלאכותית]" }, serviceType: "Analytics & Insights", industry: { en: "Manufacturing", ar: "[translate:التصنيع]", he: "[translate:תעשייה]" }, location: { en: "Europe", ar: "[translate:أوروبا]", he: "[translate:אירופה]" }, description: { en: "Harness the power of AI-driven analytics to make smarter decisions, reduce costs, and increase business agility.", ar: "[translate:استغلال تحليلات الذكاء الاصطناعي لاتخاذ قرارات أذكى وتقليل التكاليف.]", he: "[translate:ניצול אנליטיקות מבוססות בינה מלאכותית להחלטות חכמות והפחתת עלויות.]" } },
-    { img: "images/bs17.jpg", title: { en: "Operational Excellence Bootcamp", ar: "[translate:معسكر التميز التشغيلي]", he: "[translate:בוטקמפ למצוינות תפעולית]" }, serviceType: "Process Optimization", industry: { en: "Healthcare", ar: "[translate:الرعاية الصحية]", he: "[translate:בריאות]" }, location: { en: "Asia-Pacific", ar: "[translate:آسيا والمحيط الهادئ]", he: "[translate:אסיה והאוקיינוס השקט]" }, description: { en: "Learn proven methods to streamline operations, eliminate inefficiencies, and boost performance across business units.", ar: "[translate:تعلم طرق مثبتة لتحسين العمليات والقضاء على عدم الكفاءة.]", he: "[translate:למד שיטות מוכחות לשיפור תפעול, הסרת חוסר יעילות והגברת ביצועים.]" } },
-    { img: "images/bs18.jpg", title: { en: "Customer Experience & Retention Workshop", ar: "[translate:ورشة تجربة واحتفاظ العملاء]", he: "[translate:סדנת חווית לקוח ושימור]" }, serviceType: "Customer Solutions", industry: { en: "Hospitality", ar: "[translate:الضيافة]", he: "[translate:אירוח]" }, location: { en: "Middle East", ar: "[translate:الشرق الأوسط]", he: "[translate:המזרח התיכון]" }, description: { en: "Design memorable customer journeys that drive loyalty, repeat business, and sustainable growth.", ar: "[translate:تصميم رحلات عملاء تترك انطباعات وتعزز الولاء والنمو المستدام.]", he: "[translate:עיצוב מסעות לקוח בלתי נשכחים להגדלת נאמנות וצמיחה.]" } },
-    { img: "images/bs19.jpg", title: { en: "Risk & Compliance Management Forum", ar: "[translate:منتدى إدارة المخاطر والامتثال]", he: "[translate:פורום ניהול סיכונים וציות]" }, serviceType: "Governance & Compliance", industry: { en: "Finance", ar: "[translate:المالية]", he: "[translate:פיננסים]" }, location: { en: "Europe", ar: "[translate:أوروبا]", he: "[translate:אירופה]" }, description: { en: "Equip leadership teams with frameworks to navigate regulations, manage risks, and maintain business integrity.", ar: "[translate:تجهيز فرق القيادة بأطر عمل لإدارة اللوائح وتنظيم المخاطر.]", he: "[translate:הסמכת הנהלות במסגרת עבודה למסלולי רגולציה וניהול סיכונים.]" } }
-  ],
   // Section 6: CTA
-  ctaTitle: { en: "Ready to Transform Your Business?", ar: "[translate:هل أنت مستعد لتحويل عملك؟]", he: "[translate:מוכן לשדרג את העסק שלך?]" },
-  ctaDesc: { en: "Get started today with a free consultation and discover how we can help you achieve your goals.", ar: "[translate:ابدأ اليوم مع استشارة مجانية واكتشف كيف يمكننا مساعدتك في تحقيق أهدافك.]", he: "[translate:התחל היום עם ייעוץ ללא עלות וגלה כיצד אנו יכולים לעזור לך להשיג את מטרותיך.]" },
-  ctaStart: { en: "Start Your Journey", ar: "[translate:ابدأ رحلتك]", he: "[translate:התחל את המסע שלך]" },
-  ctaLearn: { en: "Learn More About Us", ar: "[translate:تعرف علينا أكثر]", he: "[translate:למידע נוסף]" }
+  ctaTitle: { en: "Transform Your Business", ar: "حول عملك", he: "שנה את העסק שלך" },
+  ctaDesc: { en: "Join thousands of businesses that have accelerated their growth with our comprehensive consultancy platform.", ar: "انضم إلى آلاف الشركات التي سرعت نموها مع منصة الاستشارات الشاملة الخاصة بنا.", he: "הצטרפו לאלפי עסקים שהאיצו את הצמיחה שלהם עם פלטפורמת הייעוץ המקיפה שלנו." },
+  ctaOffer: { en: "Start your transformation journey with our expert consultancy platform", ar: "ابدأ رحلة التحول مع منصة الاستشارات المتخصصة الخاصة بنا", he: "התחילו את מסע השינוי עם פלטפורמת הייעוץ המומחית שלנו" },
+  ctaDiscount: { en: "30%", ar: "30%", he: "30%" },
+  ctaDiscountText: { en: "off first consultation", ar: "خصم على الاستشارة الأولى", he: "הנחה על הייעוץ הראשון" },
+  ctaButton: { en: "Get Started", ar: "ابدأ الآن", he: "התחל עכשיו" }
 };
 
 const Home2 = () => {
   const { language } = useLanguage();
-  const [selectedServiceCategory, setSelectedServiceCategory] = useState('');
-  const [selectedIndustry, setSelectedIndustry] = useState('');
-  const [selectedLocation, setSelectedLocation] = useState('');
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const testimonialImages = [
+    'images/T1H2.jpg',
+    'images/T2H2.jpg',
+    'images/T3H2.jpg'
+  ];
 
   useEffect(() => {
-    document.documentElement.dir = language === "ar" || language === "he" ? "rtl" : "ltr";
     document.title = clean(t.hero[language]);
   }, [language]);
 
-  // Events filters
-  const filteredEvents = t.eventItems.filter(evt => {
-    const matchesServiceCategory = selectedServiceCategory ? evt.serviceType === selectedServiceCategory : false;
-    const matchesIndustry = selectedIndustry ? evt.industry[language] === selectedIndustry : false;
-    const matchesLocation = selectedLocation ? evt.location[language] === selectedLocation : false;
-    if (!selectedServiceCategory && !selectedIndustry && !selectedLocation) return true;
-    return matchesServiceCategory || matchesIndustry || matchesLocation;
-  });
-  const visibleEvents = filteredEvents.slice(0, visibleCount);
+  // Auto-advance testimonials
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % t.testimonials.items.length);
+    }, 5000); // Change every 5 seconds
 
-  const handleLoadMore = () => {
-    if (visibleCount >= filteredEvents.length) {
-      alert(clean(t.noEvents[language]));
-      return;
-    }
-    setVisibleCount(prev => Math.min(prev + 3, filteredEvents.length));
-  };
+    return () => clearInterval(interval);
+  }, []);
+
 
   return (
     <div className="home2-page">
@@ -134,192 +183,588 @@ const Home2 = () => {
         </div>
       </section>
 
-      {/* Section 2: Image Grid and Right Content */}
-      <section className="flex items-center justify-center min-h-screen p-4 sm:p-8" style={{ backgroundColor: "var(--bg-color)" }}>
-        <div className="bg-[var(--card-bg)] max-w-7xl mx-auto rounded-xl shadow-lg flex flex-col lg:flex-row overflow-hidden w-full">
-          <div className="relative w-full lg:w-1/2 p-4 sm:p-8 md:p-10 flex items-center justify-center bg-[var(--sidebar-bg)]">
-            <div className="relative w-full h-80 sm:h-[350px] md:h-[400px] lg:h-[500px] grid grid-cols-2 grid-rows-2 gap-3 sm:gap-4 rounded-xl overflow-hidden shadow-md">
-              {t.gridCardText.slice(0, 4).map((card, i) => (
-                <div className={`relative animate-float ${i === 1 ? "animation-delay-2000" : i === 2 ? "animation-delay-4000" : i === 3 ? "animation-delay-6000" : ""}`} key={i}>
-                  <img src={`images/bs${4 + i}.jpg`} alt={clean(card[language])} className="w-full h-full object-cover rounded-md shadow" />
-                  <span className={`absolute ${i % 2 === 0 ? "left-2" : "right-2"} ${i < 2 ? "top-2" : "bottom-2"} text-xs sm:text-sm font-medium text-white drop-shadow`}>
-                    {clean(card[language])}
-                  </span>
+      {/* Section 2: Hero Consulting Section - Two Column Layout */}
+      <section className="hero-consulting-section">
+        <div className="hero-consulting-container">
+          {/* Left Column - Text Content */}
+          <motion.div 
+            className="hero-consulting-left"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="hero-consulting-content">
+              <motion.div 
+                className="hero-consulting-header"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
+                {clean(t.heroConsulting.welcome[language])}
+              </motion.div>
+              <motion.h1 
+                className="hero-consulting-title"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
+                {clean(t.heroConsulting.title[language])}
+              </motion.h1>
+              <motion.div 
+                className="hero-consulting-experience"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div className="experience-left-section">
+                  <motion.div 
+                    className="experience-counter"
+                    initial={{ scale: 0, rotate: -180 }}
+                    whileInView={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.8, delay: 1, type: "spring", stiffness: 200 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className="experience-number">30</span>
+                    <span className="experience-plus">+</span>
+                  </motion.div>
+                  <motion.div 
+                    className="experience-label"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.2 }}
+                    viewport={{ once: true }}
+                  >
+                    {clean(t.heroConsulting.experienceLabel[language])}
+                  </motion.div>
                 </div>
-              ))}
-              <div className="absolute left-1/2 top-1/2 z-30 flex justify-center items-center pointer-events-none" style={{ transform: "translate(-50%, -50%)", width: "100%" }}>
-                <div className="bg-[var(--primary-color)] font-bold rounded-xl shadow-xl text-center drop-shadow-xl pointer-events-auto" style={{ boxShadow: "var(--shadow-hover)", color: "white", width: "max-content", maxWidth: "90vw", minWidth: "210px", padding: "1rem 1.5rem", fontSize: "1.15rem" }}>
-                  {clean(t.gridCardText[4][language])}
-                </div>
-              </div>
+                <div className="experience-separator"></div>
+                <motion.div 
+                  className="hero-consulting-description"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 1.4 }}
+                  viewport={{ once: true }}
+                >
+                  <p>
+                    {clean(t.heroConsulting.description[language])}
+                  </p>
+                </motion.div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1.6 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Link to="/about" className="hero-consulting-button">
+                  {clean(t.heroConsulting.button[language])}
+                  <ArrowUpRight className="hero-consulting-arrow" />
+                </Link>
+              </motion.div>
             </div>
-          </div>
-          <div className="w-full lg:w-1/2 flex items-stretch">
-            <div className="flex-1 p-4 sm:p-10 md:p-16 flex flex-col justify-center">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6" style={{ color: "var(--heading-color)" }}>
-                {clean(t.rightBlock.h1[language])}
-              </h1>
-              <p className="text-[var(--text-muted)] mb-8 leading-relaxed">
-                {clean(t.rightBlock.p[language])}
-              </p>
-              <div className="space-y-5">
-                {t.rightBlock.sections.map((sec, idx) => (
-                  <div key={idx}>
-                    <h3 className="text-lg font-semibold mb-1" style={{ color: "var(--primary-color)" }}>
-                      {clean(sec.h3[language])}
-                    </h3>
-                    <p className="text-[var(--text-color)]">{clean(sec.p[language])}</p>
-                  </div>
+          </motion.div>
+          
+          {/* Right Column - Professional Image */}
+          <motion.div 
+            className="hero-consulting-right"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <motion.div 
+              className="hero-consulting-image-container"
+              initial={{ scale: 0.8, rotate: -5 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 100 }}
+              viewport={{ once: true }}
+              whileHover={{ 
+                scale: 1.05, 
+                rotate: 2,
+                transition: { duration: 0.4 }
+              }}
+            >
+              <motion.img 
+                src="images/bs20.jpg" 
+                alt="Professional consulting team" 
+                className="hero-consulting-image"
+                initial={{ scale: 1.2, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.7 }}
+                viewport={{ once: true }}
+              />
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Section 3: Modern Consultancy Section */}
+      <section className="consultancy-section">
+        <div className="consultancy-background">
+          <div className="consultancy-overlay">
+            <div className="consultancy-container">
+              <motion.div 
+                className="consultancy-header"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <motion.div 
+                  className="consultancy-pre-headline"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  viewport={{ once: true }}
+                >
+                  {clean(t.modernConsultancy.preHeadline[language])}
+                </motion.div>
+                <motion.h1 
+                  className="consultancy-headline"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  {clean(t.modernConsultancy.headline[language])}
+                </motion.h1>
+              </motion.div>
+              
+              <div className="consultancy-cards-container">
+                {t.modernConsultancy.cards.map((card, index) => (
+                  <motion.div 
+                    key={index}
+                    className={`consultancy-card ${index === 0 ? 'card-industries' : index === 1 ? 'card-services' : 'card-solutions'}`}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.8 + (index * 0.2) }}
+                    viewport={{ once: true }}
+                    whileHover={{ 
+                      scale: 1.05, 
+                      y: -10,
+                      transition: { duration: 0.3 }
+                    }}
+                  >
+                    <motion.div 
+                      className="card-number"
+                      initial={{ scale: 0, rotate: -180 }}
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      transition={{ duration: 0.8, delay: 1 + (index * 0.2), type: "spring", stiffness: 200 }}
+                      viewport={{ once: true }}
+                    >
+                      {card.number}
+                    </motion.div>
+                    <div className="card-divider"></div>
+                    <motion.h3 
+                      className="card-title"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 1.2 + (index * 0.2) }}
+                      viewport={{ once: true }}
+                    >
+                      {clean(card.title[language])}
+                    </motion.h3>
+                    <motion.p 
+                      className="card-description"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 1.4 + (index * 0.2) }}
+                      viewport={{ once: true }}
+                    >
+                      {clean(card.description[language])}
+                    </motion.p>
+                    <motion.div 
+                      className="card-tags"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 1.6 + (index * 0.2) }}
+                      viewport={{ once: true }}
+                    >
+                      {card.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex} className={`tag ${index === 1 ? 'tag-red' : ''}`}>
+                          {clean(tag[language])}
+                        </span>
+                      ))}
+                    </motion.div>
+                    <motion.a 
+                      href="#" 
+                      className="card-link"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 1.8 + (index * 0.2) }}
+                      viewport={{ once: true }}
+                      whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+                    >
+                      {clean(card.link[language])}
+                    </motion.a>
+                  </motion.div>
                 ))}
+
               </div>
             </div>
           </div>
         </div>
-        <style>{`
-          @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-12px); } 100% { transform: translateY(0); } }
-          .animate-float { animation: float 5s ease-in-out infinite; }
-          .animation-delay-2000 { animation-delay: 2s; }
-          .animation-delay-4000 { animation-delay: 4s; }
-          .animation-delay-6000 { animation-delay: 6s; }
-        `}</style>
       </section>
 
-      {/* Section 3: Unique Process */}
-      <div className="lg:grid lg:grid-cols-2 min-h-screen bg-[var(--sidebar-bg)]">
-        <div className="hidden lg:flex flex-col justify-center sticky top-0 bg-[var(--sidebar-bg)] pl-24 pr-16 py-24 h-screen overflow-hidden">
-          <h2 className="text-blue-500 uppercase font-semibold mb-4 tracking-wide">{clean(t.process.h2[language])}</h2>
-          <h1 className="text-5xl font-extrabold mb-6 text-[var(--text-color)] leading-tight">{clean(t.process.h1[language])}</h1>
-          <p className="text-xl text-[var(--text-muted)] max-w-lg">{clean(t.process.p[language])}</p>
-        </div>
-        <div className="py-10 px-6 sm:px-12 max-w-3xl mx-auto lg:h-screen lg:overflow-y-auto no-scrollbar" style={{ scrollSnapType: "y mandatory", scrollPaddingTop: "2rem" }}>
-          <div className="lg:hidden mb-8">
-            <h2 className="text-blue-500 uppercase font-semibold mb-2 tracking-wide">{clean(t.process.h2[language])}</h2>
-            <h1 className="text-4xl font-extrabold mb-4 text-[var(--text-color)] leading-tight">{clean(t.process.h1[language])}</h1>
-            <p className="text-lg text-[var(--text-muted)] max-w-md">{clean(t.process.p[language])}</p>
-          </div>
-          {t.process.steps.map((step, idx) => (
-            <section key={idx} className="step-card normal-bg bg-[var(--card-bg)] rounded-2xl shadow-xl px-8 py-8 mb-10 flex space-x-6 transition-all" style={{ scrollSnapAlign: "start", scrollSnapStop: "always" }}>
-              <div className="flex-shrink-0 flex justify-center items-center rounded-full text-white font-bold" style={{ backgroundColor: "var(--primary-color)", width: "3.5rem", height: "3.5rem", fontSize: "1.6rem" }}>
-                {idx + 1}
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2 text-[var(--heading-color)]">{clean(step.title[language])}</h3>
-                <p className="text-base text-[var(--text-muted)] leading-relaxed">{clean(step.description[language])}</p>
-              </div>
-            </section>
-          ))}
-          <style>{`
-            .no-scrollbar::-webkit-scrollbar { display: none; }
-            .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-            .highlight-bg { border: 2px solid var(--primary-color); box-shadow: 0 8px 16px rgba(0,0,0,0.25); }
-            .normal-bg { border: 2px solid transparent; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
-          `}</style>
-        </div>
-      </div>
 
-      {/* Section 4: IT Services */}
-      <section className="py-16 px-6 min-h-screen" style={{ backgroundColor: "var(--bg-color)", color: "var(--text-color)" }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold" style={{ color: "var(--heading-color)" }}>{clean(t.itServices[language])}</h2>
-            <Link to="/services" className="text-sm px-6 py-2 rounded-full font-medium transition-colors duration-200" style={{ backgroundColor: "var(--input-bg)", color: "var(--text-color)", border: "1px solid var(--border-color)", boxShadow: "var(--shadow-light)" }}>
-              {clean(t.viewAll[language])}
-            </Link>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {t.itServiceItems.map((service, i) => (
-              <div key={i} className="relative rounded-3xl overflow-hidden shadow-lg group transition" style={{ boxShadow: "var(--shadow)", backgroundColor: "var(--card-bg)" }}>
-                <img src={service.img} alt={clean(service.title[language])} className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" />
-                <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.5)" }} aria-hidden="true" />
-                <div className="absolute bottom-6 left-6 right-6 z-10">
-                  <h3 className="text-xl font-semibold mb-2" style={{ color: "white" }}>{clean(service.title[language])}</h3>
-                  <p className="text-sm" style={{ color: "white" }}>{clean(service.desc[language])}</p>
-                </div>
-                <div className="absolute top-4 right-4 z-10">
-                  <Link to="/services" aria-label={`Explore ${clean(service.title[language])}`} className="bg-black p-2 rounded-full flex items-center justify-center hover:bg-black focus:bg-black transition" style={{ boxShadow: '0 2px 6px rgba(0,0,0,0.25)' }}>
-                    <ArrowUpRight className="h-5 w-5" style={{ color: "white" }} />
-                  </Link>
-                </div>
-              </div>
+      {/* Section 4: Why Choose Us */}
+      <motion.section 
+        className="why-choose-us-section"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="why-choose-us-container">
+          {/* Left Column - Content */}
+          <motion.div 
+            className="why-choose-us-left"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="why-choose-us-content">
+              <motion.div 
+                className="why-choose-us-header"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
+                {clean(t.whyChooseUs.h2[language])}
+              </motion.div>
+              <motion.h1 
+                className="why-choose-us-title"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
+                {clean(t.whyChooseUs.h1[language])}
+              </motion.h1>
+              <motion.p 
+                className="why-choose-us-description"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: true }}
+              >
+                {clean(t.whyChooseUs.p[language])}
+              </motion.p>
+              
+              <motion.div 
+                className="why-choose-us-features"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                viewport={{ once: true }}
+              >
+                {t.whyChooseUs.features.map((feature, index) => (
+                  <motion.div 
+                    key={index} 
+                    className="feature-item"
+                    initial={{ opacity: 0, x: -50, y: 30 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.6, delay: 1.2 + (index * 0.2) }}
+                    viewport={{ once: true }}
+                    whileHover={{ 
+                      scale: 1.02, 
+                      x: 10,
+                      transition: { duration: 0.3 }
+                    }}
+                  >
+                    <motion.div 
+                      className="feature-icon"
+                      initial={{ scale: 0, rotate: -180 }}
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      transition={{ duration: 0.8, delay: 1.4 + (index * 0.2), type: "spring", stiffness: 200 }}
+                      viewport={{ once: true }}
+                      whileHover={{ 
+                        scale: 1.15, 
+                        rotate: 10,
+                        transition: { duration: 0.3 }
+                      }}
+                    >
+                      {feature.icon}
+                    </motion.div>
+                    <div className="feature-content">
+                      <motion.h3 
+                        className="feature-title"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1.6 + (index * 0.2) }}
+                        viewport={{ once: true }}
+                      >
+                        {clean(feature.title[language])}
+                      </motion.h3>
+                      <motion.p 
+                        className="feature-description"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1.8 + (index * 0.2) }}
+                        viewport={{ once: true }}
+                      >
+                        {clean(feature.desc[language])}
+                      </motion.p>
+                    </div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+          </motion.div>
+          
+          {/* Right Column - Curved Image */}
+          <motion.div 
+            className="why-choose-us-right"
+            initial={{ opacity: 0, x: 100, y: 50 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <motion.div 
+              className="why-choose-us-image-container"
+              initial={{ scale: 0.8, rotate: -5 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              transition={{ duration: 0.8, delay: 0.5, type: "spring", stiffness: 100 }}
+              viewport={{ once: true }}
+              whileHover={{ 
+                scale: 1.05, 
+                rotate: 2,
+                transition: { duration: 0.4 }
+              }}
+            >
+              <motion.img 
+                src="images/bs21.jpg" 
+                alt="Why Choose Us" 
+                className="why-choose-us-image"
+                initial={{ scale: 1.2, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1, delay: 0.7 }}
+                viewport={{ once: true }}
+              />
+            </motion.div>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Section 5: Testimonials */}
+      <motion.section 
+        className="testimonials-section"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="testimonials-container">
+          <motion.div 
+            className="testimonials-header"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <motion.div 
+              className="testimonials-subtitle"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              {clean(t.testimonials.subtitle[language])}
+            </motion.div>
+            <motion.h2 
+              className="testimonials-title"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              {clean(t.testimonials.title[language])}
+            </motion.h2>
+          </motion.div>
+          
+          <motion.div 
+            className="testimonials-carousel"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="testimonials-track" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
+              {t.testimonials.items.map((testimonial, index) => (
+                <motion.div 
+                  key={index}
+                  className="testimonial-card"
+                  initial={{ opacity: 0, scale: 0.8, y: 50 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 1.0 + (index * 0.2) }}
+                  viewport={{ once: true }}
+                  whileHover={{ 
+                    scale: 1.02, 
+                    y: -5,
+                    transition: { duration: 0.3 }
+                  }}
+                >
+                  <motion.h3 
+                    className="testimonial-card-title"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.2 + (index * 0.2) }}
+                    viewport={{ once: true }}
+                  >
+                    {clean(testimonial.title[language])}
+                  </motion.h3>
+                  <motion.p 
+                    className="testimonial-text"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.4 + (index * 0.2) }}
+                    viewport={{ once: true }}
+                  >
+                    "{clean(testimonial.text[language])}"
+                  </motion.p>
+                  
+                  <motion.div 
+                    className="testimonial-customer"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1.6 + (index * 0.2) }}
+                    viewport={{ once: true }}
+                  >
+                    <motion.div 
+                      className="customer-avatar"
+                      initial={{ scale: 0, rotate: -180 }}
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      transition={{ duration: 0.6, delay: 1.8 + (index * 0.2), type: "spring", stiffness: 200 }}
+                      viewport={{ once: true }}
+                      whileHover={{ 
+                        scale: 1.1, 
+                        rotate: 5,
+                        transition: { duration: 0.3 }
+                      }}
+                    >
+                      <img 
+                        src={testimonialImages[index % testimonialImages.length]} 
+                        alt={clean(testimonial.name[language])}
+                        className="avatar-image"
+                      />
+                    </motion.div>
+                    <div className="customer-info">
+                      <motion.h4 
+                        className="customer-name"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 2.0 + (index * 0.2) }}
+                        viewport={{ once: true }}
+                      >
+                        {clean(testimonial.name[language])}
+                      </motion.h4>
+                      <motion.p 
+                        className="customer-position"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 2.2 + (index * 0.2) }}
+                        viewport={{ once: true }}
+                      >
+                        {clean(testimonial.position[language])}
+                      </motion.p>
+                    </div>
+                  </motion.div>
+                  
+                  <motion.div 
+                    className="testimonial-rating"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 2.4 + (index * 0.2) }}
+                    viewport={{ once: true }}
+                  >
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <motion.span 
+                        key={i} 
+                        className="star"
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.3, delay: 2.6 + (index * 0.2) + (i * 0.1) }}
+                        viewport={{ once: true }}
+                        whileHover={{ 
+                          scale: 1.2, 
+                          transition: { duration: 0.2 }
+                        }}
+                      >
+                        ★
+                      </motion.span>
+                    ))}
+                  </motion.div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            className="testimonials-pagination"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            viewport={{ once: true }}
+          >
+            {t.testimonials.items.map((_, index) => (
+              <motion.button
+                key={index}
+                className={`pagination-dot ${index === currentTestimonial ? 'active' : ''}`}
+                onClick={() => setCurrentTestimonial(index)}
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: 1.4 + (index * 0.1) }}
+                viewport={{ once: true }}
+                whileHover={{ 
+                  scale: 1.2, 
+                  transition: { duration: 0.2 }
+                }}
+                whileTap={{ scale: 0.9 }}
+              />
             ))}
-          </div>
+          </motion.div>
         </div>
-      </section>
-
-      {/* Section 5: Event Filters + Cards */}
-      <section className="upcoming-events-section" style={{ width: '100%', background: 'var(--primary-color)', padding: '36px 0', color: 'var(--text-primary)' }}>
-        <div className="upcoming-events-container" style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 20px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: '36px', flexWrap: 'wrap' }}>
-          <div className="upcoming-events-title" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '8px', whiteSpace: 'nowrap' }}>
-            <span className="events-main-title" style={{ fontSize: '2.2rem', fontWeight: 700, color: '#fff', letterSpacing: '0.5px' }}>{clean(t.eventsSection[language])}</span>
-          </div>
-          <div className="filter-card" style={{ position: 'relative', minWidth: 240, background: '#1e293b', borderRadius: 16, border: 'none', boxShadow: '0 4px 16px rgba(0,0,0,0.18)', padding: 12 }}>
-            <select className="filter-select" aria-label={clean(t.filters.serviceCategory[language])} value={selectedServiceCategory} onChange={e => setSelectedServiceCategory(e.target.value)} style={{ width: '100%', background: 'transparent', border: 'none', color: '#fff', fontWeight: 600, fontSize: '1.15rem', textAlign: 'center', cursor: 'pointer', paddingRight: '32px' }}>
-              <option value="">{clean(t.filters.serviceCategory[language])}</option>
-              <option value="Consulting">Consulting</option>
-              <option value="Strategy & Growth">Strategy & Growth</option>
-              <option value="Analytics & Insights">Analytics & Insights</option>
-              <option value="Process Optimization">Process Optimization</option>
-              <option value="Customer Solutions">Customer Solutions</option>
-              <option value="Governance & Compliance">Governance & Compliance</option>
-            </select>
-            <span style={{ position: 'absolute', right: 18, top: '50%', transform: 'translateY(-50%)', fontSize: '1.5rem', color: '#fff', pointerEvents: 'none' }}>▼</span>
-          </div>
-          <div className="filter-card" style={{ position: 'relative', minWidth: 240, background: '#1e293b', borderRadius: 16, border: 'none', boxShadow: '0 4px 16px rgba(0,0,0,0.18)', padding: 12 }}>
-            <select className="filter-select" aria-label={clean(t.filters.industry[language])} value={selectedIndustry} onChange={e => setSelectedIndustry(e.target.value)} style={{ width: '100%', background: 'transparent', border: 'none', color: '#fff', fontWeight: 600, fontSize: '1.15rem', textAlign: 'center', cursor: 'pointer', paddingRight: '32px' }}>
-              <option value="">{clean(t.filters.industry[language])}</option>
-              {t.eventItems.map((evt, i) => <option value={evt.industry[language]} key={i}>{clean(evt.industry[language])}</option>)}
-            </select>
-            <span style={{ position: 'absolute', right: 18, top: '50%', transform: 'translateY(-50%)', fontSize: '1.5rem', color: '#fff', pointerEvents: 'none' }}>▼</span>
-          </div>
-          <div className="filter-card" style={{ position: 'relative', minWidth: 240, background: '#1e293b', borderRadius: 16, border: 'none', boxShadow: '0 4px 16px rgba(0,0,0,0.18)', padding: 12 }}>
-            <select className="filter-select" aria-label={clean(t.filters.location[language])} value={selectedLocation} onChange={e => setSelectedLocation(e.target.value)} style={{ width: '100%', background: 'transparent', border: 'none', color: '#fff', fontWeight: 600, fontSize: '1.15rem', textAlign: 'center', cursor: 'pointer', paddingRight: '32px' }}>
-              <option value="">{clean(t.filters.location[language])}</option>
-              {t.eventItems.map((evt, i) => <option value={evt.location[language]} key={i}>{clean(evt.location[language])}</option>)}
-            </select>
-            <span style={{ position: 'absolute', right: 18, top: '50%', transform: 'translateY(-50%)', fontSize: '1.5rem', color: '#fff', pointerEvents: 'none' }}>▼</span>
-          </div>
-        </div>
-      </section>
-      <section className="event-section">
-        <div className="event-grid">
-          {visibleEvents.length > 0 ? (
-            visibleEvents.map((event, idx) => (
-              <div className="event-card" key={idx}>
-                <img src={event.img} alt={clean(event.title[language])} className="event-img" />
-                <div className="event-content">
-                  <h3 className="event-title">{clean(event.title[language])}</h3>
-                  <p className="event-description">{clean(event.description[language])}</p>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="no-events">
-              <img src="images/no-results.jpg" alt="No Results" className="no-results-img" />
-              <p>{clean(t.noEvents[language])}</p>
-            </div>
-          )}
-        </div>
-        <div style={{ textAlign: "center", marginTop: "24px" }}>
-          <button onClick={handleLoadMore} className="load-more-btn">
-            {clean(t.loadMore[language])}
-          </button>
-        </div>
-      </section>
+      </motion.section>
 
       {/* Section 6: CTA */}
       <section className="cta-section">
         <div className="cta-overlay">
-          <div className="container">
-            <motion.div className="cta-content text-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-              <h2>{clean(t.ctaTitle[language])}</h2>
-              <p>{clean(t.ctaDesc[language])}</p>
-              <div className="cta-buttons">
-                <Link to="/contact" className="btn btn-primary btn-large">
-                  {clean(t.ctaStart[language])} <FaArrowRight />
-                </Link>
-                <Link to="/about" className="btn btn-outline btn-large">
-                  {clean(t.ctaLearn[language])}
-                </Link>
+          <div className="cta-container">
+            <motion.div 
+              className="cta-content"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <div className="cta-left">
+                <h2 className="cta-title">{clean(t.ctaTitle[language])}</h2>
+                <p className="cta-description">{clean(t.ctaDesc[language])}</p>
+              </div>
+              
+              <div className="cta-right">
+                <div className="cta-box">
+                  <div className="cta-offer-text">
+                    <p>{clean(t.ctaOffer[language])}</p>
+                  </div>
+                  <div className="cta-offer-section">
+                    <div className="cta-discount">
+                      <span className="discount-percentage">{clean(t.ctaDiscount[language])}</span>
+                      <span className="discount-text">{clean(t.ctaDiscountText[language])}</span>
+                    </div>
+                    <Link to="/contact" className="cta-button">
+                      {clean(t.ctaButton[language])}
+                    </Link>
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -330,6 +775,996 @@ const Home2 = () => {
       <style jsx>{`
         .home2-page {
           padding-top: 80px;
+        }
+
+        /* Testimonials Section Styles */
+        .testimonials-section {
+          background: linear-gradient(135deg, #ffd700 0%, #000000 100%);
+          position: relative;
+          overflow: hidden;
+          padding: 80px 0;
+        }
+
+        .testimonials-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: 
+            radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+            radial-gradient(circle at 40% 60%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
+          pointer-events: none;
+        }
+
+        .testimonials-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .testimonials-header {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .testimonials-subtitle {
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 20px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .testimonials-title {
+          font-size: 3.5rem;
+          font-weight: 900;
+          color: #ffffff;
+          line-height: 1.2;
+          margin: 0;
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .testimonials-carousel {
+          position: relative;
+          overflow: hidden;
+          margin-bottom: 40px;
+        }
+
+        .testimonials-track {
+          display: flex;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .testimonial-card {
+          min-width: 100%;
+          background: var(--card-bg);
+          border-radius: 16px;
+          padding: 40px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          margin: 0 10px;
+          position: relative;
+          border: 1px solid var(--border-color);
+          transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .testimonial-card-title {
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: var(--heading-color);
+          margin: 0 0 20px 0;
+          line-height: 1.3;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .testimonial-text {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: var(--text-color);
+          margin: 0 0 30px 0;
+          font-style: italic;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .testimonial-customer {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 20px;
+        }
+
+        .customer-avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .customer-avatar::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+        .avatar-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: relative;
+          z-index: 2;
+        }
+
+        .customer-info {
+          flex: 1;
+        }
+
+        .customer-name {
+          font-size: 1.125rem;
+          font-weight: 700;
+          color: var(--heading-color);
+          margin: 0 0 4px 0;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .customer-position {
+          font-size: 0.875rem;
+          color: var(--text-muted);
+          margin: 0;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .testimonial-rating {
+          display: flex;
+          gap: 4px;
+        }
+
+        .star {
+          color: #ffd700;
+          font-size: 1.25rem;
+        }
+
+        .testimonials-pagination {
+          display: flex;
+          justify-content: center;
+          gap: 12px;
+        }
+
+        .pagination-dot {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          border: 2px solid #ffffff;
+          background: transparent;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .pagination-dot.active {
+          background: #ffffff;
+        }
+
+        .pagination-dot:hover {
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive Design for Testimonials */
+        @media (max-width: 1024px) {
+          .testimonials-title {
+            font-size: 2.5rem;
+          }
+
+          .testimonial-card {
+            padding: 30px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .testimonials-section {
+            padding: 50px 0;
+          }
+
+          .testimonials-container {
+            padding: 0 15px;
+          }
+
+          .testimonials-title {
+            font-size: 2rem;
+          }
+
+          .testimonials-header {
+            margin-bottom: 40px;
+          }
+
+          .testimonial-card {
+            padding: 24px;
+            margin: 0 5px;
+          }
+
+          .testimonial-card-title {
+            font-size: 1.25rem;
+          }
+
+          .testimonial-text {
+            font-size: 0.9rem;
+          }
+
+          .customer-avatar {
+            width: 50px;
+            height: 50px;
+          }
+
+          .customer-name {
+            font-size: 1rem;
+          }
+
+          .customer-position {
+            font-size: 0.8rem;
+          }
+        }
+
+        /* Why Choose Us Section Styles */
+        .why-choose-us-section {
+          min-height: 100vh;
+          background-color: var(--bg-color);
+          display: flex;
+          align-items: center;
+          padding: 80px 0;
+          transition: background-color 0.3s ease;
+        }
+
+        .why-choose-us-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 80px;
+          align-items: center;
+        }
+
+        .why-choose-us-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .why-choose-us-content {
+          max-width: 600px;
+          width: 100%;
+        }
+
+        .why-choose-us-header {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #ffd700;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 20px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .why-choose-us-title {
+          font-size: 3rem;
+          font-weight: 900;
+          color: var(--heading-color);
+          line-height: 1.2;
+          margin-bottom: 24px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .why-choose-us-description {
+          font-size: 1.125rem;
+          line-height: 1.7;
+          color: var(--text-color);
+          margin-bottom: 40px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .why-choose-us-features {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+        }
+
+        .feature-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+        }
+
+        .feature-icon {
+          width: 60px;
+          height: 60px;
+          background: linear-gradient(135deg, #ffd700, #ff6b6b);
+          border-radius: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+          flex-shrink: 0;
+          box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+
+        .feature-content {
+          flex: 1;
+        }
+
+        .feature-title {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: var(--heading-color);
+          margin-bottom: 8px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .feature-description {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: var(--text-color);
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .why-choose-us-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .why-choose-us-image-container {
+          width: 100%;
+          max-width: 500px;
+          height: 600px;
+          border-radius: 50px 20px 50px 20px;
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          position: relative;
+        }
+
+        .why-choose-us-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+
+        .why-choose-us-image-container:hover .why-choose-us-image {
+          transform: scale(1.05);
+        }
+
+        /* Responsive Design for Why Choose Us */
+        @media (max-width: 1024px) {
+          .why-choose-us-container {
+            grid-template-columns: 1fr;
+            gap: 60px;
+            text-align: center;
+          }
+
+          .why-choose-us-title {
+            font-size: 2.5rem;
+          }
+
+          .why-choose-us-features {
+            align-items: center;
+          }
+
+          .feature-item {
+            max-width: 500px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .why-choose-us-section {
+            padding: 60px 0;
+          }
+
+          .why-choose-us-container {
+            padding: 0 15px;
+            gap: 40px;
+          }
+
+          .why-choose-us-title {
+            font-size: 2rem;
+          }
+
+          .why-choose-us-description {
+            font-size: 1rem;
+          }
+
+          .why-choose-us-image-container {
+            max-width: 100%;
+            height: 400px;
+            border-radius: 30px 10px 30px 10px;
+          }
+
+          .feature-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 16px;
+          }
+
+          .feature-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.25rem;
+          }
+        }
+
+        /* Modern Consultancy Section Styles */
+        .consultancy-section {
+          position: relative;
+          width: 100%;
+          min-height: 100vh;
+          overflow: hidden;
+        }
+
+        .consultancy-background {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('/images/CONSULTANCY PLATFORM.jpg');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+        }
+
+        .consultancy-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+        }
+
+        .consultancy-container {
+          max-width: 1200px;
+          width: 100%;
+          padding: 80px 20px;
+          text-align: center;
+          position: relative;
+          z-index: 2;
+        }
+
+        .consultancy-header {
+          margin-bottom: 80px;
+        }
+
+        .consultancy-pre-headline {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #ffffff;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 30px;
+          opacity: 1;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .consultancy-headline {
+          font-size: 3.5rem;
+          font-weight: 900;
+          color: #ffffff;
+          line-height: 1.2;
+          margin: 0;
+          text-align: center;
+          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .consultancy-cards-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 40px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .consultancy-card {
+          background: var(--card-bg);
+          border-radius: 16px;
+          padding: 40px;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+          border: 1px solid var(--border-color);
+          display: flex;
+          flex-direction: column;
+        }
+
+        .consultancy-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-industries {
+          background: var(--card-bg);
+        }
+
+        .card-services {
+          background: rgba(255, 215, 0, 0.95);
+        }
+
+        .card-solutions {
+          background: var(--card-bg);
+        }
+
+        .card-number {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: var(--heading-color);
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 8px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .card-divider {
+          width: 40px;
+          height: 2px;
+          background: var(--heading-color);
+          margin-bottom: 20px;
+          opacity: 0.8;
+          transition: background-color 0.3s ease;
+        }
+
+        .card-title {
+          font-size: 2rem;
+          font-weight: 800;
+          color: var(--heading-color);
+          margin: 0 0 20px 0;
+          line-height: 1.2;
+          text-shadow: none;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .card-description {
+          font-size: 1rem;
+          color: var(--text-color);
+          line-height: 1.6;
+          margin: 0 0 30px 0;
+          opacity: 1;
+          text-shadow: none;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .card-tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-bottom: 30px;
+        }
+
+        .tag {
+          background: rgba(255, 215, 0, 0.2);
+          color: var(--heading-color);
+          padding: 6px 12px;
+          border-radius: 20px;
+          font-size: 0.875rem;
+          font-weight: 600;
+          border: 1px solid rgba(255, 215, 0, 0.4);
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .tag-red {
+          background: rgba(0, 0, 0, 0.15);
+          color: var(--heading-color);
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          font-weight: 600;
+          transition: color 0.3s ease;
+        }
+
+        .card-link {
+          color: var(--heading-color);
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 1rem;
+          display: inline-block;
+          transition: opacity 0.3s ease, color 0.3s ease;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          margin-top: auto;
+          align-self: flex-start;
+        }
+
+        .card-link:hover {
+          opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+          .consultancy-cards-container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 600px;
+          }
+
+          .consultancy-headline {
+            font-size: 2.5rem;
+          }
+
+          .consultancy-container {
+            padding: 60px 20px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .consultancy-headline {
+            font-size: 2rem;
+          }
+
+          .consultancy-container {
+            padding: 40px 15px;
+          }
+
+          .consultancy-card {
+            padding: 30px;
+          }
+
+          .card-title {
+            font-size: 1.5rem;
+          }
+
+          .consultancy-header {
+            margin-bottom: 60px;
+          }
+        }
+
+
+        /* Hero Consulting Section Styles - Exact Design Characteristics */
+        .hero-consulting-section {
+          min-height: 80vh; /* Reduced from 100vh */
+          background-color: var(--bg-color); /* Clean background for corporate feel */
+          display: flex;
+          align-items: center;
+          padding: 40px 0; /* Reduced from 80px */
+          transition: background-color 0.3s ease;
+        }
+
+        .hero-consulting-container {
+          max-width: 1200px; /* Back to two-column width */
+          margin: 0 auto;
+          padding: 0 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr; /* Two-column layout */
+          gap: 60px; /* Back to larger gap for two columns */
+          align-items: center;
+        }
+
+        .hero-consulting-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-consulting-content {
+          max-width: 500px;
+          width: 100%;
+        }
+
+        /* Small label - Thin, uppercase, more visible color */
+        .hero-consulting-header {
+          font-size: 0.75rem;
+          font-weight: 300; /* Thin weight */
+          color: var(--text-muted); /* Theme-aware color for better visibility */
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 20px;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        /* Heading - Bold, large, dark gray */
+        .hero-consulting-title {
+          font-size: 3rem;
+          font-weight: 900; /* Bold */
+          color: var(--heading-color); /* Theme-aware color for headings */
+          line-height: 1.1;
+          margin-bottom: 30px; /* Reduced from 40px */
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .hero-consulting-experience {
+          display: flex;
+          align-items: flex-start;
+          gap: 0;
+          margin-bottom: 30px; /* Reduced from 40px */
+        }
+
+        .experience-left-section {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-right: 20px;
+        }
+
+        .experience-counter {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          margin-bottom: 10px;
+        }
+
+        /* Number - Extra-large, impactful, dark gray */
+        .experience-number {
+          font-size: 10rem; /* Even larger for maximum impact */
+          font-weight: 900; /* Bold for impact */
+          color: var(--heading-color); /* Theme-aware color */
+          line-height: 1;
+          margin: 0;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .experience-plus {
+          font-size: 5rem; /* Larger plus symbol to match */
+          font-weight: 900;
+          color: var(--heading-color); /* Theme-aware color */
+          line-height: 1;
+          margin: 0;
+          margin-left: 12px; /* Slightly larger gap */
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        .experience-separator {
+          width: 2px;
+          height: 180px; /* Increased height for much larger 30 */
+          background-color: var(--border-color);
+          margin: 0 20px;
+          flex-shrink: 0;
+          transition: background-color 0.3s ease;
+        }
+
+        .hero-consulting-description {
+          flex: 1;
+          margin: 0;
+        }
+
+        .experience-label {
+          font-size: 1rem;
+          font-weight: 500;
+          color: var(--text-muted); /* Theme-aware muted color */
+          margin: 0; /* No margin since it's positioned below counter */
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        /* Body text - Medium, gray for readability */
+        .hero-consulting-description p {
+          font-size: 1rem; /* Medium size */
+          line-height: 1.6;
+          color: var(--text-color); /* Theme-aware color for readability */
+          margin: 0; /* No bottom margin since button is outside */
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+        /* CTA Button - Accent beige */
+        .hero-consulting-button {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 16px 32px; /* Larger padding for bigger button */
+          background-color: transparent;
+          border: 2px solid #ffd700; /* Accent gold */
+          border-radius: 8px;
+          color: #ffd700; /* Accent gold */
+          font-size: 1.1rem; /* Slightly larger font */
+          font-weight: 600;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          margin-top: 20px; /* Spacing from experience section */
+          width: fit-content; /* Button width fits content */
+          align-self: flex-start; /* Align to left */
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        .hero-consulting-button:hover {
+          background-color: #ffd700; /* Accent gold background on hover */
+          color: white;
+          transform: translateY(-2px);
+        }
+
+        .hero-consulting-arrow {
+          width: 16px;
+          height: 16px;
+        }
+
+        .hero-consulting-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-consulting-image-container {
+          width: 100%;
+          max-width: 600px; /* Back to larger size for two-column layout */
+          height: 500px; /* Fixed height for better proportions */
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-consulting-image {
+          width: 100%;
+          height: 100%; /* Fill the container height */
+          display: block;
+          object-fit: cover; /* Ensure proper cropping */
+        }
+
+        /* Responsive Design - Two Column Layout */
+        @media (max-width: 1024px) {
+          .hero-consulting-container {
+            grid-template-columns: 1fr; /* Single column on tablet */
+            gap: 40px;
+            text-align: center;
+          }
+
+          .hero-consulting-title {
+            font-size: 2.5rem; /* Maintain bold, large */
+            color: var(--heading-color); /* Theme-aware color */
+          }
+
+          .hero-consulting-experience {
+            justify-content: center;
+            align-items: center;
+          }
+
+          .experience-left-section {
+            margin-right: 0;
+            align-items: center;
+          }
+
+          .experience-counter {
+            margin-bottom: 10px;
+            flex-direction: row; /* Keep horizontal layout */
+            align-items: baseline;
+          }
+
+          .experience-number {
+            font-size: 8rem; /* Still extra-large */
+            color: var(--heading-color); /* Theme-aware color */
+          }
+
+          .experience-plus {
+            font-size: 4rem;
+            color: var(--heading-color); /* Theme-aware color */
+            margin-left: 12px; /* Maintain gap */
+          }
+
+          .experience-separator {
+            height: 120px; /* Adjusted for tablet */
+          }
+
+          .hero-consulting-description p {
+            color: var(--text-color); /* Theme-aware color for readability */
+          }
+        }
+
+        @media (max-width: 768px) {
+        .hero-consulting-section {
+          padding: 30px 0; /* Reduced from 60px */
+          background-color: var(--bg-color); /* Theme-aware background */
+        }
+
+          .hero-consulting-container {
+            padding: 0 15px;
+            gap: 30px;
+          }
+
+          .hero-consulting-header {
+            font-size: 0.7rem; /* Keep thin, uppercase */
+            color: var(--text-muted); /* Theme-aware muted color */
+          }
+
+          .hero-consulting-title {
+            font-size: 2rem; /* Maintain bold, large */
+            color: var(--heading-color); /* Theme-aware color */
+            margin-bottom: 30px;
+          }
+
+          .hero-consulting-experience {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+          }
+
+          .experience-left-section {
+            margin-right: 0;
+            align-items: flex-start;
+          }
+
+          .experience-counter {
+            margin-bottom: 10px;
+            flex-direction: row; /* Keep horizontal layout */
+            align-items: baseline;
+          }
+
+          .experience-number {
+            font-size: 6rem; /* Still extra-large */
+            color: var(--heading-color); /* Theme-aware color */
+          }
+
+          .experience-plus {
+            font-size: 3rem;
+            color: var(--heading-color); /* Theme-aware color */
+            margin-left: 12px; /* Maintain gap */
+          }
+
+          .experience-separator {
+            width: 100%;
+            height: 2px;
+            margin: 10px 0;
+          }
+
+          .experience-label {
+            margin-bottom: 25px;
+            color: var(--text-muted); /* Theme-aware muted color */
+          }
+
+          .hero-consulting-description p {
+            margin: 0; /* No margin on mobile */
+          }
+
+          .hero-consulting-button {
+            margin-top: 15px; /* Smaller top margin on mobile */
+            padding: 14px 28px; /* Slightly smaller on mobile */
+            font-size: 1rem;
+            width: fit-content; /* Maintain button width */
+            align-self: flex-start; /* Keep left alignment */
+          }
+
+          .hero-consulting-image-container {
+            max-width: 100%;
+            height: 350px; /* Smaller height on mobile */
+          }
+
+          .hero-consulting-description p {
+            font-size: 0.95rem; /* Medium size */
+            color: var(--text-color); /* Theme-aware color for readability */
+          }
+
+          .hero-consulting-button {
+            border-color: #dc2626; /* Keep accent red */
+            color: #dc2626; /* Keep accent red */
+          }
         }
 
          .hero-section {
@@ -395,6 +1830,7 @@ const Home2 = () => {
   margin: 0;
   opacity: 0;
   animation: fadeUp 1s ease-out forwards 1s;
+  white-space: nowrap;
 }
 
 .hero-button {
@@ -403,7 +1839,7 @@ const Home2 = () => {
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  background-color: #224DB7;
+  background-color: #ffd700;
   border-radius: 10px;
   text-decoration: none;
   border: none;
@@ -413,8 +1849,8 @@ const Home2 = () => {
 }
 
 .hero-button:hover {
-  background-color: #000;
-  transform: scale(1.05);
+  background-color: #ff6b6b;
+  transform: scale(1.1);
 }
 
 /* Responsive adjustments */
@@ -926,37 +2362,199 @@ body.dark {
 
           .cta-section {
   position: relative;
-  background: url('/images/bs69.jpg') center/cover no-repeat fixed; /* fixed background */
-  padding: 0 0;
+  background: url('/images/CTAH2.jpg') center/cover no-repeat fixed;
+  padding: 60px 0;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .cta-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .cta-content {
-  max-width: 700px;
-  margin: auto;
-  color:#fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  color: #fff;
 }
 
-.cta-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color:#fff;
+.cta-left {
+  max-width: 600px;
 }
 
-.cta-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
+        .cta-title {
+          font-size: 2.5rem;
+          font-weight: 900;
+          line-height: 1.1;
+          margin: 0 0 30px 0;
+          color: #ffffff;
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
 
-.cta-buttons {
+        .cta-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          margin: 0;
+          color: #ffffff;
+          opacity: 0.9;
+          font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+.cta-right {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  align-items: center;
+}
+
+        .cta-box {
+          background: #ffd700;
+          border-radius: 16px;
+          padding: 24px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          width: 100%;
+          transition: box-shadow 0.3s ease;
+        }
+
+.cta-offer-text {
+  margin-bottom: 20px;
+}
+
+        .cta-offer-text p {
+          font-size: 1rem;
+          line-height: 1.5;
+          color: #000000;
+          margin: 0;
+          font-weight: 500;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+.cta-offer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.cta-discount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+        .discount-percentage {
+          font-size: 3rem;
+          font-weight: 900;
+          color: #000000;
+          line-height: 1;
+          margin: 0;
+          font-family: 'Segoe UI', Arial, sans-serif;
+          transition: color 0.3s ease;
+        }
+
+.discount-text {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 500;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.cta-button {
+  background: #000000;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.cta-button:hover {
+  background: #333333;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design for CTA */
+@media (max-width: 1024px) {
+  .cta-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-box {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 40px 0;
+  }
+
+  .cta-container {
+    padding: 0 15px;
+  }
+
+  .cta-content {
+    gap: 40px;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .cta-offer-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cta-discount {
+    align-items: center;
+  }
+
+  .discount-percentage {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .btn {

@@ -9,7 +9,7 @@ const translations = {
   en: {
     heroTitle: "Our Services",
     heroParagraph:
-      "We deliver comprehensive business solutions spanning strategic consulting, technology implementation, and ongoing support to drive innovation and operational excellence.",
+      "We deliver comprehensive business solutions spanning strategic consulting.",
     heroButton: "Reach Out Today",
 
     servicesList: [
@@ -41,7 +41,7 @@ const translations = {
           "Change Management Strategies",
         ],
         isNew: true,
-        color: "#1e90ff",
+        color: "#ffd700",
         image: "images/bs44.jpg",
         icon: FiCode,
       },
@@ -55,7 +55,7 @@ const translations = {
           "Scalable Infrastructure Planning",
         ],
         isNew: true,
-        color: "#008000",
+        color: "#ffd700",
         image: "images/bs33.jpg",
         icon: FiLayout,
       },
@@ -69,7 +69,7 @@ const translations = {
           "Regulatory Compliance Solutions",
         ],
         isNew: true,
-        color: "#800080",
+        color: "#ffd700",
         image: "images/bs34.jpg",
         icon: FiTrendingUp,
       },
@@ -83,7 +83,7 @@ const translations = {
           "Custom BI Dashboards",
         ],
         isNew: true,
-        color: "#ff8c00",
+        color: "#ffd700",
         image: "images/bs35.jpg",
         icon: FiCode,
       },
@@ -97,7 +97,7 @@ const translations = {
           "CRM Optimization",
         ],
         isNew: true,
-        color: "#20b2aa",
+        color: "#ffd700",
         image: "images/bs36.jpg",
         icon: FiLayout,
       },
@@ -111,7 +111,7 @@ const translations = {
           "Proactive IT Maintenance",
         ],
         isNew: true,
-        color: "#ff4500",
+        color: "#ffd700",
         image: "images/bs37.jpg",
         icon: FiTrendingUp,
       },
@@ -181,11 +181,18 @@ const translations = {
       },
     },
 
-    ctaTitle: "Ready to Transform Your Business?",
+    ctaTitle: "Transform Your Business Journey",
     ctaParagraph:
-      "Get started today with a free consultation and discover how we can help you achieve your goals.",
-    ctaStartButton: "Start Your Journey",
-    ctaLearnMoreButton: "Learn More About Us",
+      "Our team of business experts brings the best strategic advice straight to your inbox. Just select your area of interest and receive weekly insights.",
+    ctaStartButton: "Subscribe for free",
+    ctaLearnMoreButton: "See how it works",
+    ctaStats: "+10,000 businesses improving their strategy",
+    ctaServices: [
+      "Strategic Business Consulting",
+      "Digital Transformation",
+      "Market Analysis & Research",
+      "Financial Advisory Services"
+    ],
   },
 
   ar: {
@@ -223,7 +230,7 @@ const translations = {
           "استراتيجيات إدارة التغيير",
         ],
         isNew: true,
-        color: "#1e90ff",
+        color: "#ffd700",
         image: "images/bs44.jpg",
         icon: FiCode,
       },
@@ -237,7 +244,7 @@ const translations = {
           "تخطيط البنى التحتية القابلة للتوسع",
         ],
         isNew: true,
-        color: "#008000",
+        color: "#ffd700",
         image: "images/bs33.jpg",
         icon: FiLayout,
       },
@@ -251,7 +258,7 @@ const translations = {
           "حلول الامتثال التنظيمي",
         ],
         isNew: true,
-        color: "#800080",
+        color: "#ffd700",
         image: "images/bs34.jpg",
         icon: FiTrendingUp,
       },
@@ -265,7 +272,7 @@ const translations = {
           "لوحات معلومات ذكاء الأعمال المخصصة",
         ],
         isNew: true,
-        color: "#ff8c00",
+        color: "#ffd700",
         image: "images/bs35.jpg",
         icon: FiCode,
       },
@@ -279,7 +286,7 @@ const translations = {
           "تحسين إدارة علاقات العملاء",
         ],
         isNew: true,
-        color: "#20b2aa",
+        color: "#ffd700",
         image: "images/bs36.jpg",
         icon: FiLayout,
       },
@@ -293,7 +300,7 @@ const translations = {
           "الصيانة الاستباقية لتكنولوجيا المعلومات",
         ],
         isNew: true,
-        color: "#ff4500",
+        color: "#ffd700",
         image: "images/bs37.jpg",
         icon: FiTrendingUp,
       },
@@ -363,11 +370,18 @@ const translations = {
       },
     },
 
-    ctaTitle: "هل أنت جاهز لتحويل عملك؟",
+    ctaTitle: "حول رحلة عملك",
     ctaParagraph:
-      "ابدأ اليوم باستشارة مجانية واكتشف كيف يمكننا مساعدتك في تحقيق أهدافك.",
-    ctaStartButton: "ابدأ رحلتك",
-    ctaLearnMoreButton: "تعرف أكثر علينا",
+      "فريق خبراء الأعمال لدينا يقدم أفضل النصائح الاستراتيجية مباشرة إلى صندوق الوارد الخاص بك. فقط اختر مجال اهتمامك واحصل على رؤى أسبوعية.",
+    ctaStartButton: "اشترك مجاناً",
+    ctaLearnMoreButton: "شاهد كيف يعمل",
+    ctaStats: "+10,000 شركة تحسن استراتيجيتها",
+    ctaServices: [
+      "الاستشارات التجارية الاستراتيجية",
+      "التحول الرقمي",
+      "تحليل السوق والبحث",
+      "خدمات الاستشارات المالية"
+    ],
   },
 
   he: {
@@ -405,7 +419,7 @@ const translations = {
           "אסטרטגיות ניהול שינוי",
         ],
         isNew: true,
-        color: "#1e90ff",
+        color: "#ffd700",
         image: "images/bs44.jpg",
         icon: FiCode,
       },
@@ -419,7 +433,7 @@ const translations = {
           "תכנון תשתיות מתקדמות וניתנות להרחבה",
         ],
         isNew: true,
-        color: "#008000",
+        color: "#ffd700",
         image: "images/bs33.jpg",
         icon: FiLayout,
       },
@@ -433,7 +447,7 @@ const translations = {
           "פתרונות תאימות רגולטורית",
         ],
         isNew: true,
-        color: "#800080",
+        color: "#ffd700",
         image: "images/bs34.jpg",
         icon: FiTrendingUp,
       },
@@ -447,7 +461,7 @@ const translations = {
           "לוחות BI מותאמים אישית",
         ],
         isNew: true,
-        color: "#ff8c00",
+        color: "#ffd700",
         image: "images/bs35.jpg",
         icon: FiCode,
       },
@@ -461,7 +475,7 @@ const translations = {
           "אופטימיזציית CRM",
         ],
         isNew: true,
-        color: "#20b2aa",
+        color: "#ffd700",
         image: "images/bs36.jpg",
         icon: FiLayout,
       },
@@ -475,7 +489,7 @@ const translations = {
           "תחזוקת IT פרואקטיבית",
         ],
         isNew: true,
-        color: "#ff4500",
+        color: "#ffd700",
         image: "images/bs37.jpg",
         icon: FiTrendingUp,
       },
@@ -545,11 +559,18 @@ const translations = {
       },
     },
 
-    ctaTitle: "מוכן לשנות את העסק שלך?",
+    ctaTitle: "שנה את מסע העסק שלך",
     ctaParagraph:
-      "התחל היום בייעוץ חינם וגלו כיצד אנו יכולים לעזור לך להשיג את היעדים שלך.",
-    ctaStartButton: "התחל את המסע שלך",
-    ctaLearnMoreButton: "למידע נוסף עלינו",
+      "צוות מומחי העסקים שלנו מביא את הייעוץ האסטרטגי הטוב ביותר ישירות לתיבת הדואר שלך. פשוט בחר את תחום העניין שלך וקבל תובנות שבועיות.",
+    ctaStartButton: "הירשם בחינם",
+    ctaLearnMoreButton: "ראה איך זה עובד",
+    ctaStats: "+10,000 עסקים משפרים את האסטרטגיה שלהם",
+    ctaServices: [
+      "ייעוץ עסקי אסטרטגי",
+      "טרנספורמציה דיגיטלית",
+      "ניתוח שוק ומחקר",
+      "שירותי ייעוץ פיננסי"
+    ],
   },
 };
 
@@ -557,10 +578,6 @@ const Services = () => {
   const { language } = useLanguage();
   const t = translations[language] || translations.en;
 
-  // Document direction for Arabic and Hebrew
-  useEffect(() => {
-    document.documentElement.dir = language === 'ar' || language === 'he' ? 'rtl' : 'ltr';
-  }, [language]);
 
   const [isYearly, setIsYearly] = useState(false);
   const handleToggleChange = () => setIsYearly((prev) => !prev);
@@ -728,7 +745,7 @@ const Services = () => {
         </video>
 
         <div className="hero-overlay">
-          <div className="hero-content" dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}>
+          <div className="hero-content">
             <h1 className="hero-title">{t.heroTitle}</h1>
             <p className="hero-paragraph">{t.heroParagraph}</p>
 
@@ -767,7 +784,6 @@ const Services = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center text-left"
-            dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}
           >
             <h2 className="text-[1.8rem] font-bold text-[var(--heading-color)] mb-5 leading-[1.1] font-[Segoe UI,Tahoma,Geneva,Verdana,sans-serif] transition-colors duration-300">
               {t.drivingGrowthTitle}
@@ -793,7 +809,7 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="section it-grid-section" dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}>
+      <section className="section it-grid-section">
         <div className="container">
           <motion.div
             className="it-section-header align-center"
@@ -849,58 +865,107 @@ const Services = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section className="portfolio-section" dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}>
-        <div className="portfolio-header text-center">
+      <section className="portfolio-section">
+        <motion.div 
+          className="portfolio-header text-center"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h2>{t.portfolioTitle}</h2>
           <p>{t.portfolioDescription}</p>
-        </div>
+        </motion.div>
 
         {/* Portfolio Filters */}
-        <div className="portfolio-filters">
-          {portfolioCategories.map((cat) => (
-            <button
+        <motion.div 
+          className="portfolio-filters"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          {portfolioCategories.map((cat, index) => (
+            <motion.button
               key={cat}
               className={portfolioFilter === cat ? 'active' : ''}
               onClick={() => setPortfolioFilter(cat)}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               {cat}
-            </button>
+            </motion.button>
           ))}
-        </div>
+        </motion.div>
 
         {/* Portfolio Grid */}
-        <div className="portfolio-grid">
-          {filteredItems.map((item) => (
-            <div key={item.id} className="portfolio-card">
+        <motion.div 
+          className="portfolio-grid"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          {filteredItems.map((item, index) => (
+            <motion.div 
+              key={item.id} 
+              className="portfolio-card"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10, scale: 1.02 }}
+            >
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
               <p>{item.category}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </section>
 
       {/* Case Studies Section */}
       <section
         className="gradient-bg py-20 mt-16 md:mt-4"
-        style={{ backgroundColor: 'var(--bg-color)' }}
-        dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}
+        style={{ backgroundColor: 'black' }}
       >
         <div className="container mx-auto px-4 text-center" style={{ color: 'var(--text-color)' }}>
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4" style={{ color: 'var(--primary-color)' }}>
+          <motion.h2 
+            className="text-4xl md:text-5xl font-extrabold leading-tight mb-4" 
+            style={{ color: '#ffd700' }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             {t.caseStudiesTitle}
-          </h2>
-          <p className="text-lg md:text-xl font-light mb-12 max-w-3xl mx-auto" style={{ color: 'var(--text-muted)' }}>
+          </motion.h2>
+          <motion.p 
+            className="text-lg md:text-xl font-light mb-12 max-w-3xl mx-auto" 
+            style={{ color: 'white' }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             {t.caseStudiesParagraph}
-          </p>
+          </motion.p>
 
-          <div
+          <motion.div
             id="case-studies-grid"
             className={`grid gap-8 ${visibleCount === 3 ? 'three-items-layout' : 'default-layout'}`}
             style={{ color: 'var(--text-color)' }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
           >
             {caseStudiesData.slice(0, visibleCount).map((study, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="bg-white text-gray-800 rounded-2xl shadow-xl p-8 cursor-pointer transform transition duration-300 hover:scale-105"
                 style={{
@@ -908,6 +973,12 @@ const Services = () => {
                   color: 'var(--text-color)',
                   boxShadow: 'var(--shadow)',
                 }}
+                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -10, scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => setModalData(study)}
                 tabIndex={0}
                 onKeyDown={(e) => {
@@ -916,27 +987,33 @@ const Services = () => {
                 role="button"
                 aria-label={`View details of ${study.title}`}
               >
-                <h3 className="text-2xl font-bold mb-2" style={{ color: 'var(--primary-color)' }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffd700' }}>
                   {study.title}
                 </h3>
                 <p className="text-gray-500 mb-4" style={{ color: 'var(--text-muted)' }}>
                   {study.description.length > 100 ? study.description.substring(0, 100) + '...' : study.description}
                 </p>
-                <span className="text-primary font-semibold" style={{ color: 'var(--primary-color)' }}>
+                <span className="text-primary font-semibold" style={{ color: '#ffd700' }}>
                   {t.caseStudiesViewDetails}
                 </span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {visibleCount < caseStudiesData.length && (
-            <button
+            <motion.button
               onClick={loadMore}
-              className="mt-12 bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300"
-              style={{ backgroundColor: 'var(--primary-color)', boxShadow: 'var(--shadow)' }}
+              className="mt-12 bg-[#ffd700] text-[#333] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#e6c200] transition duration-300"
+              style={{ backgroundColor: '#ffd700', boxShadow: 'var(--shadow)' }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
             >
               {language === 'ar' ? 'عرض المزيد من دراسات الحالة' : language === 'he' ? 'טען עוד מקרים' : 'Load More Case Studies'}
-            </button>
+            </motion.button>
           )}
         </div>
 
@@ -974,7 +1051,7 @@ const Services = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
-              <h3 id="modal-title" className="text-3xl font-bold mb-4" style={{ color: 'var(--primary-color)' }}>
+              <h3 id="modal-title" className="text-3xl font-bold mb-4" style={{ color: '#ffd700' }}>
                 {modalData.title}
               </h3>
               <p id="modal-description" className="text-lg text-gray-700" style={{ color: 'var(--text-muted)' }}>
@@ -986,15 +1063,35 @@ const Services = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="bg-[var(--bg-color)] text-[var(--text-color)] py-12" dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}>
+      <section id="pricing" className="bg-[var(--bg-color)] text-[var(--text-color)] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-[var(--heading-color)]">
+          <motion.h2 
+            className="text-4xl md:text-5xl font-extrabold mb-4 text-[var(--heading-color)]"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             {t.pricingTitle}
-          </h2>
-          <p className="text-lg mb-12 max-w-2xl mx-auto text-[var(--text-muted)]">{t.pricingParagraph}</p>
+          </motion.h2>
+          <motion.p 
+            className="text-lg mb-12 max-w-2xl mx-auto text-[var(--text-muted)]"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            {t.pricingParagraph}
+          </motion.p>
 
           {/* Pricing Toggle */}
-          <div className="flex justify-center mb-12">
+          <motion.div 
+            className="flex justify-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <div className="relative w-48 h-12">
               <span
                 className="absolute top-1 left-1 h-10 w-22 rounded-full bg-[var(--card-bg)] shadow-md transition-transform duration-300"
@@ -1028,40 +1125,66 @@ const Services = () => {
               </button>
               <div className="absolute inset-0 bg-[var(--sidebar-bg)] rounded-full pointer-events-none"></div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Pricing Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 sm:px-6 lg:px-0">
+          <motion.div 
+            className="grid grid-cols-1 md:grid-cols-3 gap-10 px-4 sm:px-6 lg:px-0"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
             {/* Starter Plan */}
-            <div className="bg-[var(--card-bg)] p-8 rounded-2xl shadow-lg border border-transparent hover:border-[var(--primary-color)] transition-all duration-300 transform hover:scale-105">
+            <motion.div 
+              className="bg-[var(--card-bg)] p-8 rounded-2xl shadow-lg border border-transparent hover:border-[#ffd700] transition-all duration-300 transform hover:scale-105"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10, scale: 1.05 }}
+            >
               <h3 className="text-2xl font-semibold mb-3 text-[var(--heading-color)]">{t.pricingPlans.starter.title}</h3>
               <p className="text-[var(--text-muted)] mb-8">{t.pricingPlans.starter.description}</p>
               <div className="mb-8 flex items-baseline justify-center space-x-1">
-                <span className="text-5xl font-extrabold text-[var(--primary-color)]">{isYearly ? yearlyPrices[0] : monthlyPrices[0]}</span>
+                <span className="text-5xl font-extrabold text-[#ffd700]">{isYearly ? yearlyPrices[0] : monthlyPrices[0]}</span>
                 <span className="text-lg text-[var(--text-muted)]">/{isYearly ? 'yr' : 'mo'}</span>
               </div>
               <ul className="text-[var(--text-color)] mb-8 space-y-4 text-left">
                 {t.pricingPlans.starter.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center">
-                    <FaCheck className="h-5 w-5 mr-3 text-[var(--primary-color)]" />
+                    <FaCheck className="h-5 w-5 mr-3 text-[#ffd700]" />
                     {feature}
                   </li>
                 ))}
               </ul>
               <a
                 href="/contact"
-                className="block w-full py-3 bg-[var(--primary-color)] text-white font-semibold rounded-lg hover:bg-[var(--secondary-color)] transition-colors duration-200"
+                className="block w-full py-3 bg-[#ffd700] text-white font-semibold rounded-lg hover:bg-[#e6c200] transition-colors duration-200"
               >
                 {t.pricingPlans.starter.buttonText}
               </a>
-            </div>
+            </motion.div>
 
             {/* Growth Plan */}
-            <div className="bg-[var(--primary-color)] text-[var(--card-bg)] p-8 rounded-2xl shadow-xl border-4 border-[var(--secondary-color)] relative transition-transform duration-300 transform scale-105">
+            <motion.div 
+              className="bg-[#ffd700] text-[var(--card-bg)] p-8 rounded-2xl shadow-xl border-4 border-[#e6c200] relative transition-transform duration-300 transform scale-105"
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1.05 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10, scale: 1.1 }}
+            >
               {t.pricingPlans.growth.popularBadge && (
-                <span className="absolute top-4 right-4 bg-[var(--warning-color)] text-[var(--danger-color)] text-xs font-bold px-3 py-1 rounded-full uppercase shadow-sm">
+                <motion.span 
+                  className="absolute top-4 right-4 bg-[#ffd700] text-[#333] text-xs font-bold px-3 py-1 rounded-full uppercase shadow-sm"
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: 1.2 }}
+                  viewport={{ once: true }}
+                >
                   {t.pricingPlans.growth.popularBadge}
-                </span>
+                </motion.span>
               )}
               <h3 className="text-2xl font-semibold mb-3">{t.pricingPlans.growth.title}</h3>
               <p className="mb-8 text-[var(--card-bg)] opacity-90">{t.pricingPlans.growth.description}</p>
@@ -1079,60 +1202,97 @@ const Services = () => {
               </ul>
               <a
                 href="/contact"
-                className="block w-full py-3 bg-[var(--card-bg)] text-[var(--primary-color)] font-semibold rounded-lg hover:bg-[var(--sidebar-bg)] transition-colors duration-200"
+                className="block w-full py-3 bg-[var(--card-bg)] text-[#ffd700] font-semibold rounded-lg hover:bg-[var(--sidebar-bg)] transition-colors duration-200"
               >
                 {t.pricingPlans.growth.buttonText}
               </a>
-            </div>
+            </motion.div>
 
             {/* Enterprise Plan */}
-            <div className="bg-[var(--card-bg)] p-8 rounded-2xl shadow-lg border border-transparent hover:border-[var(--primary-color)] transition-all duration-300 transform hover:scale-105">
+            <motion.div 
+              className="bg-[var(--card-bg)] p-8 rounded-2xl shadow-lg border border-transparent hover:border-[#ffd700] transition-all duration-300 transform hover:scale-105"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10, scale: 1.05 }}
+            >
               <h3 className="text-2xl font-semibold mb-3 text-[var(--heading-color)]">{t.pricingPlans.enterprise.title}</h3>
               <p className="text-[var(--text-muted)] mb-8">{t.pricingPlans.enterprise.description}</p>
               <div className="mb-8 flex items-baseline justify-center space-x-1">
-                <span className="text-5xl font-extrabold text-[var(--primary-color)]">Custom</span>
+                <span className="text-5xl font-extrabold text-[#ffd700]">Custom</span>
               </div>
               <ul className="text-[var(--text-color)] mb-8 space-y-4 text-left">
                 {t.pricingPlans.enterprise.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center">
-                    <FaCheck className="h-5 w-5 mr-3 text-[var(--primary-color)]" />
+                    <FaCheck className="h-5 w-5 mr-3 text-[#ffd700]" />
                     {feature}
                   </li>
                 ))}
               </ul>
               <a
                 href="/contact"
-                className="block w-full py-3 bg-[var(--primary-color)] text-white font-semibold rounded-lg hover:bg-[var(--secondary-color)] transition-colors duration-200"
+                className="block w-full py-3 bg-[#ffd700] text-white font-semibold rounded-lg hover:bg-[#e6c200] transition-colors duration-200"
               >
                 {t.pricingPlans.enterprise.buttonText}
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section" dir={language === 'ar' || language === 'he' ? 'rtl' : 'ltr'}>
-        <div className="cta-overlay">
-          <div className="container">
-            <motion.div
-              className="cta-content text-center"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2>{t.ctaTitle}</h2>
-              <p>{t.ctaParagraph}</p>
-              <div className="cta-buttons">
-                <Link to="/contact" className="btn btn-primary btn-large">
-                  {t.ctaStartButton} <FaArrowRight />
-                </Link>
-                <Link to="/about" className="btn btn-outline btn-large">
-                  {t.ctaLearnMoreButton}
-                </Link>
+      <section className="cta-section">
+        <div className="cta-background">
+          <div className="cta-overlay">
+            <div className="container">
+              <div className="cta-layout">
+                {/* Left Side - Main Content */}
+                <div className="cta-left-content">
+                  <motion.div 
+                    className="cta-text-content"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="cta-stats">
+                      <span className="cta-stats-icon">👥</span>
+                      <span>{t.ctaStats}</span>
+                    </div>
+                    <h2 className="cta-main-title">
+                      {t.ctaTitle}
+                    </h2>
+                    <p className="cta-description">
+                      {t.ctaParagraph}
+                    </p>
+                    <div className="cta-buttons">
+                      <Link to="/contact" className="btn btn-primary btn-large">
+                        {t.ctaStartButton} <FaArrowRight />
+                      </Link>
+                      <Link to="/about" className="btn btn-outline btn-large">
+                        {t.ctaLearnMoreButton}
+                      </Link>
+                    </div>
+                  </motion.div>
+                </div>
+
+                {/* Right Side - Services List */}
+                <div className="cta-right-content">
+                  <motion.div 
+                    className="cta-services-list"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  >
+                    {t.ctaServices.map((service, index) => (
+                      <div key={index} className="service-item">{service}</div>
+                    ))}
+                  </motion.div>
+                </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -1213,8 +1373,8 @@ const Services = () => {
   padding: 14px 36px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
-  background-color: #224DB7;
+  color: #333;
+  background-color: #ffd700;
   border-radius: 10px;
   text-decoration: none;
   border: none;
@@ -1224,7 +1384,7 @@ const Services = () => {
 }
 
 .hero-button:hover {
-  background-color: #000;
+  background-color: #e6c200;
   transform: scale(1.05);
 }
 
@@ -1330,7 +1490,7 @@ const Services = () => {
   pointer-events: none;
   z-index: 0;
   background: radial-gradient(circle at center,
-    var(--primary-color) 2px,
+    #ffd700 2px,
     transparent 3px);
   background-size: 40px 40px;
   animation: moveDots 30s linear infinite;
@@ -1340,7 +1500,7 @@ const Services = () => {
 @media (prefers-color-scheme: dark) {
   .portfolio-section::before {
     background: radial-gradient(circle at center,
-      var(--accent-color) 3px,
+      #ffd700 3px,
       transparent 4px);
     opacity: 0.2; /* Slightly higher in dark mode */
   }
@@ -1396,9 +1556,9 @@ const Services = () => {
 }
 .portfolio-filters button:hover,
 .portfolio-filters button.active {
-  background: var(--primary-color);
+  background: #ffd700;
   color: white;
-  border-color: var(--primary-color);
+  border-color: #ffd700;
 }
 
 /* Portfolio Grid with responsive columns */
@@ -1431,7 +1591,7 @@ const Services = () => {
   box-shadow: var(--shadow);
   border: 3px solid transparent;
   background-image: linear-gradient(var(--bg-color), var(--bg-color)),
-                    linear-gradient(135deg, var(--primary-color), var(--accent-color));
+                    linear-gradient(135deg, #ffd700, #e6c200);
   background-origin: padding-box, border-box;
   background-clip: padding-box, border-box;
   overflow: hidden;
@@ -1444,7 +1604,7 @@ const Services = () => {
 .portfolio-card:hover {
   box-shadow: var(--shadow-hover);
   border-image-slice: 1;
-  border-image-source: linear-gradient(315deg, var(--primary-color), var(--accent-color));
+  border-image-source: linear-gradient(315deg, #ffd700, #e6c200);
   border-radius: 22px;
 }
 
@@ -1557,7 +1717,7 @@ const Services = () => {
 {/* IT services */}
 
     .it-grid-section {
-  background: var(--bg-color);
+  background: var(--what-i-offer-bg);
   padding: 0 0;
 }
 
@@ -1633,15 +1793,15 @@ const Services = () => {
   position: absolute;
   top: 18px;
   right: 18px;
-  background: rgba(255,21,21,0.09);
-  color: #e60023;
-  border: 1.5px solid #e60023;
+  background: rgba(255,215,0,0.1);
+  color: #333;
+  border: 1.5px solid #ffd700;
   font-weight: 700;
   font-size: 1.07rem;
   padding: 7px 20px 6px 20px;
   border-radius: 1.7em;
   z-index: 2;
-  box-shadow: 0 6px 26px 0 rgba(255,0,30,0.07);
+  box-shadow: 0 6px 26px 0 rgba(255,215,0,0.2);
   letter-spacing: 1px;
 }
 
@@ -1673,7 +1833,7 @@ const Services = () => {
   color: var(--text-color);
 }
 .it-check {
-  color: var(--accent-color);
+  color: #ffd700;
   font-size: 0.87rem;
 }
 .it-link {
@@ -1711,14 +1871,113 @@ const Services = () => {
 
         .cta-section {
   position: relative;
-  background: url('/images/bs69.jpg') center/cover no-repeat fixed; /* fixed background */
-  padding: 0 0;
-  color: white;
+  background: url('/images/CTASer.jpg') center/cover no-repeat fixed;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.cta-background {
+  position: relative;
+  background: url('/images/CTASer.jpg') center/cover no-repeat fixed;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/images/CTASer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .cta-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-  padding: 100px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-left-content {
+  padding-right: 40px;
+}
+
+.cta-text-content {
+  max-width: 600px;
+}
+
+.cta-stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.cta-stats-icon {
+  font-size: 1.1rem;
+}
+
+.cta-main-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-services-list {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  min-width: 280px;
+}
+
+.service-item {
+  padding: 12px 0;
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-item::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: bold;
 }
 
 .cta-content {
@@ -1738,6 +1997,31 @@ const Services = () => {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .cta-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .cta-left-content {
+    padding-right: 0;
+  }
+  
+  .cta-main-title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+  
+  .cta-services-list {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
 .cta-buttons {
   display: flex;
   justify-content: center;
@@ -1753,12 +2037,12 @@ const Services = () => {
 }
 
 .btn-primary {
-  background: #ff6600;
-  color: white;
+  background: #ffd700;
+  color: #333;
 }
 
 .btn-primary:hover {
-  background: #e65c00;
+  background: #e6c200;
 }
 
 .btn-outline {
@@ -1781,12 +2065,12 @@ const Services = () => {
 }
 
 .btn-primary {
-  background: #224DB7;
-  color: white;
+  background: #ffd700;
+  color: #333;
 }
 
 .btn-primary:hover {
-  background: #224DB7;
+  background: #e6c200;
 }
 
 .btn-outline {

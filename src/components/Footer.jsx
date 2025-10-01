@@ -126,7 +126,6 @@ const Footer = () => {
     >
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
-        dir={language === "ar" || language === "he" ? "rtl" : "ltr"}
       >
         <div className="grid grid-cols-1 min-[768px]:grid-cols-4 gap-16 justify-between">
           {/* Company Info */}
@@ -145,33 +144,33 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors duration-200"
+                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[#0077b5] transition-colors duration-200"
               >
-                <FaLinkedin className="w-5 h-5 text-[var(--primary-color)] hover:text-white transition-colors duration-200" />
+                <FaLinkedin className="w-5 h-5 text-[#0077b5] hover:text-white transition-colors duration-200" />
               </a>
               <a
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors duration-200"
+                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[#1da1f2] transition-colors duration-200"
               >
-                <FaTwitter className="w-5 h-5 text-[var(--primary-color)] hover:text-white transition-colors duration-200" />
+                <FaTwitter className="w-5 h-5 text-[#1da1f2] hover:text-white transition-colors duration-200" />
               </a>
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors duration-200"
+                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[#1877f2] transition-colors duration-200"
               >
-                <FaFacebook className="w-5 h-5 text-[var(--primary-color)] hover:text-white transition-colors duration-200" />
+                <FaFacebook className="w-5 h-5 text-[#1877f2] hover:text-white transition-colors duration-200" />
               </a>
               <a
                 href="https://pinterest.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--primary-color)] transition-colors duration-200"
+                className="w-10 h-10 rounded-full bg-[var(--sidebar-bg)] border border-[var(--border-color)] flex items-center justify-center hover:bg-[#e60023] transition-colors duration-200"
               >
-                <FaPinterest className="w-5 h-5 text-[var(--primary-color)] hover:text-white transition-colors duration-200" />
+                <FaPinterest className="w-5 h-5 text-[#e60023] hover:text-white transition-colors duration-200" />
               </a>
             </div>
           </div>
@@ -245,7 +244,6 @@ const Footer = () => {
       <div className="border-t" style={{ borderColor: "var(--border-color)" }}>
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6"
-          dir={language === "ar" || language === "he" ? "rtl" : "ltr"}
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-[var(--muted)] text-sm">

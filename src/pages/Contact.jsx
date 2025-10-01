@@ -24,8 +24,8 @@ const AnimatedMail = () => <span className="detail-icon mail-anim"><FaEnvelope /
 const translations = {
   en: {
     documentTitle: "Connect with Our Team",
-    heroTitle: "Connect with Our Team",
-    heroDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing vipu elit. Ut spelataras tellus luctus neullamcorper mattis, pibus leo dotu.",
+    heroTitle: "Expert Consultancy Solutions",
+    heroDescription: "Transform your business with our strategic consulting services.",
     contactTitle: "Get in Touch",
     formPlaceholders: {
       name: "Your Name",
@@ -66,19 +66,16 @@ const translations = {
       { name: "Knowledge Base", link: "#" },
       { name: "Support Center", link: "#" }
     ],
-    liveChatTitle: "Live Chat",
-    liveChatDescription: "Need assistance? Chat with our team for quick help.",
-    liveChatButton: "Start Chat",
-    liveChatAlert: "Chat feature coming soon!",
     ctaTitle: "Ready to Transform Your Business?",
-    ctaDescription: "Get started today with a free consultation and discover how we can help you achieve your goals.",
-    ctaStartButton: "Start Your Journey",
-    ctaLearnButton: "Learn More About Us"
+    ctaDescription: "Get started today with a free consultation and discover how our expert consultancy can help you achieve your goals.",
+    ctaStartButton: "Get Free Consultation",
+    ctaLearnButton: "View Our Services",
+    heroButton: "Get Started Today"
   },
   ar: {
     documentTitle: "تواصل مع فريقنا",
-    heroTitle: "تواصل مع فريقنا",
-    heroDescription: "لوريم إيبسوم هو نص شكلي يستخدم في صناعة الطباعة والتنضيد.",
+    heroTitle: "حلول استشارية متخصصة",
+    heroDescription: "حول عملك بخدماتنا الاستشارية الاستراتيجية.",
     contactTitle: "ابقى على اتصال",
     formPlaceholders: {
       name: "اسمك",
@@ -119,19 +116,16 @@ const translations = {
       { name: "قاعدة المعرفة", link: "#" },
       { name: "مركز الدعم", link: "#" }
     ],
-    liveChatTitle: "الدردشة المباشرة",
-    liveChatDescription: "هل تحتاج إلى مساعدة؟ تحدث مع فريقنا للحصول على دعم سريع.",
-    liveChatButton: "ابدأ الدردشة",
-    liveChatAlert: "ميزة الدردشة قادمة قريباً!",
     ctaTitle: "هل أنت مستعد لتحويل عملك؟",
-    ctaDescription: "ابدأ اليوم باستشارة مجانية واكتشف كيف يمكننا مساعدتك في تحقيق أهدافك.",
-    ctaStartButton: "ابدأ رحلتك",
-    ctaLearnButton: "تعرف علينا أكثر"
+    ctaDescription: "ابدأ اليوم باستشارة مجانية واكتشف كيف يمكن لاستشاراتنا المتخصصة مساعدتك في تحقيق أهدافك.",
+    ctaStartButton: "احصل على استشارة مجانية",
+    ctaLearnButton: "عرض خدماتنا",
+    heroButton: "ابدأ اليوم"
   },
   he: {
     documentTitle: "צור קשר עם הצוות שלנו",
-    heroTitle: "צור קשר עם הצוות שלנו",
-    heroDescription: "לורם איפסום הוא טקסט דמה המשמש בענף ההדפסה וההוצאה לאור.",
+    heroTitle: "פתרונות ייעוץ מקצועיים",
+    heroDescription: "שנה את העסק שלך עם שירותי הייעוץ האסטרטגיים שלנו.",
     contactTitle: "הישאר בקשר",
     formPlaceholders: {
       name: "שמך",
@@ -172,19 +166,16 @@ const translations = {
       { name: "מרכז ידע", link: "#" },
       { name: "מרכז תמיכה", link: "#" }
     ],
-    liveChatTitle: "צ'אט חי",
-    liveChatDescription: "זקוק לעזרה? דבר עם הצוות שלנו לקבלת תמיכה מהירה.",
-    liveChatButton: "התחל שיחה",
-    liveChatAlert: "פיצ'ר הצ'אט יגיע בקרוב!",
     ctaTitle: "מוכן לשנות את העסק שלך?",
-    ctaDescription: "התחל היום עם ייעוץ חינם וגלה כיצד אנו יכולים לעזור לך להשיג את יעדיך.",
-    ctaStartButton: "התחל את המסע",
-    ctaLearnButton: "למידע נוסף עלינו"
+    ctaDescription: "התחל היום עם ייעוץ חינם וגלה כיצד הייעוץ המקצועי שלנו יכול לעזור לך להשיג את יעדיך.",
+    ctaStartButton: "קבל ייעוץ חינם",
+    ctaLearnButton: "צפה בשירותים שלנו",
+    heroButton: "התחל היום"
   },
   fr: {
     documentTitle: "Contactez notre équipe",
-    heroTitle: "Contactez notre équipe",
-    heroDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    heroTitle: "Solutions de conseil expertes",
+    heroDescription: "Transformez votre entreprise avec nos services de conseil stratégique.",
     contactTitle: "Contactez-nous",
     formPlaceholders: {
       name: "Votre nom",
@@ -225,14 +216,11 @@ const translations = {
       { name: "Base de connaissances", link: "#" },
       { name: "Centre de support", link: "#" }
     ],
-    liveChatTitle: "Chat en direct",
-    liveChatDescription: "Besoin d'aide ? Discutez avec notre équipe pour une assistance rapide.",
-    liveChatButton: "Démarrer le chat",
-    liveChatAlert: "La fonction de chat arrive bientôt !",
     ctaTitle: "Prêt à transformer votre entreprise ?",
-    ctaDescription: "Commencez dès aujourd'hui avec une consultation gratuite et découvrez comment nous pouvons vous aider à atteindre vos objectifs.",
-    ctaStartButton: "Commencer votre parcours",
-    ctaLearnButton: "En savoir plus sur nous"
+    ctaDescription: "Commencez dès aujourd'hui avec une consultation gratuite et découvrez comment notre conseil expert peut vous aider à atteindre vos objectifs.",
+    ctaStartButton: "Obtenir une consultation gratuite",
+    ctaLearnButton: "Voir nos services",
+    heroButton: "Commencer aujourd'hui"
   }
 };
 
@@ -275,6 +263,9 @@ export default function ContactPage() {
           <div className="hero-content">
             <h1 className="hero-title">{t.heroTitle}</h1>
             <p className="hero-paragraph">{t.heroDescription}</p>
+            <button className="hero-button" onClick={() => document.querySelector('.contact-main-section').scrollIntoView({ behavior: 'smooth' })}>
+              {t.heroButton}
+            </button>
           </div>
         </div>
       </section>
@@ -349,14 +340,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Live Chat Section */}
-      <section className="live-chat-section container">
-        <h3>{t.liveChatTitle}</h3>
-        <div className="chat-box">
-          <p>{t.liveChatDescription}</p>
-          <button className="btn btn-chat" onClick={() => alert(t.liveChatAlert)}>{t.liveChatButton}</button>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="faq-section container">
@@ -386,15 +369,19 @@ export default function ContactPage() {
 
       {/* CTA Section */}
       <section className="cta-section">
-        <div className="cta-overlay">
-          <div className="container">
-            <motion.div className="cta-content text-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity:1, y:0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
-              <h2>{t.ctaTitle}</h2>
-              <p>{t.ctaDescription}</p>
-              <div className="cta-buttons">
-                <Link to="/contact" className="btn btn-primary btn-large">{t.ctaStartButton} <FaArrowRight /></Link>
-                <Link to="/about" className="btn btn-outline btn-large">{t.ctaLearnButton}</Link>
-              </div>
+        <div className="cta-wrapper">
+          <div className="cta-content-left">
+            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity:1, x:0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+              <h2 className="cta-title">{t.ctaTitle}</h2>
+              <p className="cta-description">{t.ctaDescription}</p>
+            </motion.div>
+          </div>
+          <div className="cta-content-right">
+            <motion.div className="cta-actions" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity:1, x:0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }}>
+              <Link to="/contact" className="cta-btn-primary">
+                <span>{t.ctaStartButton}</span>
+                <FaArrowRight />
+              </Link>
             </motion.div>
           </div>
         </div>
@@ -410,8 +397,8 @@ export default function ContactPage() {
           --heading-color: #222;
           --text-color: #222;
           --text-muted: #555;
-          --primary-color: #007bff;
-          --primary-hover: #0056b3;
+          --primary-color: #ffd700;
+          --primary-hover: #e6c200;
         }
         [data-theme="dark"] {
           --background-main: #181a1f;
@@ -421,8 +408,8 @@ export default function ContactPage() {
           --heading-color: #f0f0f5;
           --text-color: #e5e7eb;
           --text-muted: #a3a6ae;
-          --primary-color: #4da1ff;
-          --primary-hover: #0056b3;
+          --primary-color: #ffd700;
+          --primary-hover: #e6c200;
         }
 
         body {
@@ -512,8 +499,8 @@ export default function ContactPage() {
   padding: 14px 36px;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
-  background-color: #224DB7;
+  color: #333;
+  background-color: #ffd700;
   border-radius: 10px;
   text-decoration: none;
   border: none;
@@ -523,7 +510,7 @@ export default function ContactPage() {
 }
 
 .hero-button:hover {
-  background-color: #000;
+  background-color: #e6c200;
   transform: scale(1.05);
 }
 
@@ -564,7 +551,7 @@ export default function ContactPage() {
         }
 
         .gradient-text {
-          background: linear-gradient(45deg, #ffd700, #ff6b6b);
+          background: linear-gradient(45deg, #ffd700, #e6c200);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -683,13 +670,13 @@ export default function ContactPage() {
           font-size: 1.125rem;
           font-weight: 700;
           background-color: var(--primary-color);
-          color: #fff;
+          color: #333;
           border: none;
           border-radius: 48px;
           padding: 16px;
           width: 100%;
           cursor: pointer;
-          box-shadow: 0 6px 18px rgba(0, 123, 255, 0.4);
+          box-shadow: 0 6px 18px rgba(255, 215, 0, 0.4);
           transition: background-color 0.3s ease;
           margin-top: auto;
         }
@@ -730,13 +717,13 @@ export default function ContactPage() {
   width: 46px;
   height: 46px;
   background-color: var(--primary-color);
-  color: white;
+  color: #333;
   border-radius: 18px;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 12px rgba(0,123,255,0.6);
+  box-shadow: 0 0 12px rgba(255,215,0,0.6);
 }
 
 .contact-social {
@@ -767,7 +754,7 @@ export default function ContactPage() {
 
 .contact-social a:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: #333;
 }
 
 /* Tablet Responsive */
@@ -877,41 +864,6 @@ export default function ContactPage() {
           color: var(--primary-hover);
         }
 
-        /* Live Chat */
-        .chat-box {
-          background-color: var(--input-bg);
-          padding: 20px;
-          border-radius: 20px;
-          box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-          margin-top: 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 20px;
-        }
-        .chat-box p {
-          font-size: 1.125rem;
-          color: var(--text-color);
-          flex: 1 1 60%;
-          margin: 0;
-        }
-        .btn-chat {
-          padding: 14px 36px;
-          background-color: var(--primary-color);
-          color: white;
-          border: none;
-          font-size: 1.125rem;
-          font-weight: 700;
-          border-radius: 30px;
-          cursor: pointer;
-          flex: 1 1 35%;
-          max-width: 200px;
-          transition: background-color 0.3s ease;
-        }
-        .btn-chat:hover {
-          background-color: var(--primary-hover);
-        }
 
         /* Map */
         .map-section iframe {
@@ -924,39 +876,118 @@ export default function ContactPage() {
 
         /* CTA */
         .cta-section {
-  position: relative;
-  background: url('/images/bs69.jpg') center/cover no-repeat fixed; /* fixed background */
-  padding: 0 0;
-  color: white;
-}
+          background: url('/images/CTACONtact.jpg') center/cover no-repeat;
+          padding: 100px 0;
+          position: relative;
+          overflow: hidden;
+        }
 
-.cta-overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-  padding: 100px 0;
-}
+        .cta-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.7);
+          z-index: 1;
+        }
 
-.cta-content {
-  max-width: 700px;
-  margin: auto;
-  color:#fff;
-}
+        .cta-wrapper {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 80px;
+          align-items: center;
+          position: relative;
+          z-index: 3;
+        }
 
-.cta-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color:#fff;
-}
+        .cta-content-left {
+          color: white;
+        }
 
-.cta-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
+        .cta-title {
+          font-size: 3rem;
+          font-weight: 800;
+          color: white;
+          margin-bottom: 24px;
+          line-height: 1.1;
+        }
 
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
+        .cta-description {
+          font-size: 1.2rem;
+          color: #ccc;
+          line-height: 1.6;
+          margin-bottom: 0;
+        }
+
+        .cta-content-right {
+          display: flex;
+          justify-content: center;
+        }
+
+        .cta-actions {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: center;
+        }
+
+        .cta-btn-primary {
+          background: #ffd700;
+          color: #333;
+          padding: 20px 40px;
+          border-radius: 12px;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 1.2rem;
+          transition: all 0.3s ease;
+          box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+          border: none;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          min-width: 280px;
+          justify-content: center;
+        }
+
+        .cta-btn-primary:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
+          background: #e6c200;
+        }
+
+        .cta-btn-primary svg {
+          transition: transform 0.3s ease;
+        }
+
+        .cta-btn-primary:hover svg {
+          transform: translateX(5px);
+        }
+
+        .cta-btn-secondary {
+          background: transparent;
+          color: white;
+          padding: 16px 32px;
+          border-radius: 12px;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1.1rem;
+          border: 2px solid white;
+          transition: all 0.3s ease;
+          min-width: 280px;
+          text-align: center;
+        }
+
+        .cta-btn-secondary:hover {
+          background: white;
+          color: #333;
+          transform: translateY(-2px);
+        }
+
 
 .btn {
   padding: 12px 25px;
@@ -1007,12 +1038,12 @@ export default function ContactPage() {
 }
 
 .btn-primary {
-  background: #224DB7;
-  color: white;
+  background: #ffd700;
+  color: #333;
 }
 
 .btn-primary:hover {
-  background: #224DB7;
+  background: #e6c200;
 }
 
 .btn-outline {
@@ -1052,11 +1083,30 @@ export default function ContactPage() {
           font-size: 1.9rem;
           margin-bottom: 15px;
         }
-          .cta-content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color:#fff;
-}
+        /* Mobile Responsive for CTA */
+        @media (max-width: 768px) {
+          .cta-section {
+            padding: 80px 0;
+          }
+          
+          .cta-wrapper {
+            grid-template-columns: 1fr;
+            gap: 60px;
+            text-align: center;
+          }
+          
+          .cta-title {
+            font-size: 2.2rem;
+          }
+          
+          .cta-description {
+            font-size: 1.1rem;
+          }
+          
+          .cta-btn-primary {
+            min-width: 250px;
+          }
+        }
 
           .stats-grid {
             grid-template-columns: repeat(2, 1fr);

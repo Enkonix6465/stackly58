@@ -325,7 +325,7 @@ const Service1 = () => {
   };
 
   return (
-    <div className="service-page" dir={language === "ar" || language === "he" ? "rtl" : "ltr"}>
+    <div className="service-page">
       <div className="home-page">
         {/* Hero Section */}
         <section className="hero-section">
@@ -444,40 +444,40 @@ const Service1 = () => {
             <p className="text-center text-lg text-[var(--text-muted)] max-w-3xl mx-auto mb-12">{t.costEstimatorDescription}</p>
             <div className="max-w-4xl mx-auto p-8 rounded-xl bg-gradient-to-br from-indigo-50 to-blue-100 dark:from-[#2d2e3b] dark:to-[#313646] shadow-xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="group bg-[var(--card-bg)] dark:bg-[#252931] p-6 rounded-xl shadow-lg">
-                  <label htmlFor="vcpu-slider" className="block text-xl font-semibold mb-2" style={{ color: "#fff" }}>
+                <div className="group bg-[var(--card-bg)] dark:bg-[#252931] p-6 rounded-xl shadow-lg border-2 border-yellow-400">
+                  <label htmlFor="vcpu-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                     {t.sliderLabels.vcpu}
                   </label>
                   <div className="flex items-center space-x-4">
                     <input type="range" id="vcpu-slider" min={1} max={500} value={vcpu} onChange={(e) => setVcpu(Number(e.target.value))} className="w-full h-2 bg-[var(--input-bg)] rounded-lg appearance-none cursor-pointer" style={{ boxShadow: "var(--shadow)", transition: "all 0.2s ease-in-out" }} />
-                    <span className="w-16 text-center text-xl font-bold" style={{ color: "#fff" }}>{vcpu}</span>
+                    <span className="w-16 text-center text-xl font-bold text-gray-800 dark:text-white">{vcpu}</span>
                   </div>
                 </div>
-                <div className="group bg-[var(--card-bg)] dark:bg-[#252931] p-6 rounded-xl shadow-lg">
-                  <label htmlFor="ram-slider" className="block text-xl font-semibold mb-2" style={{ color: "#fff" }}>
+                <div className="group bg-[var(--card-bg)] dark:bg-[#252931] p-6 rounded-xl shadow-lg border-2 border-yellow-400">
+                  <label htmlFor="ram-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                     {t.sliderLabels.ram}
                   </label>
                   <div className="flex items-center space-x-4">
                     <input type="range" id="ram-slider" min={10} max={2000} value={ram} onChange={(e) => setRam(Number(e.target.value))} className="w-full h-2 bg-[var(--input-bg)] rounded-lg appearance-none cursor-pointer" style={{ boxShadow: "var(--shadow)", transition: "all 0.2s ease-in-out" }} />
-                    <span className="w-16 text-center text-xl font-bold" style={{ color: "#fff" }}>{ram}</span>
+                    <span className="w-16 text-center text-xl font-bold text-gray-800 dark:text-white">{ram}</span>
                   </div>
                 </div>
-                <div className="group bg-[var(--card-bg)] dark:bg-[#252931] p-6 rounded-xl shadow-lg">
-                  <label htmlFor="storage-slider" className="block text-xl font-semibold mb-2" style={{ color: "#fff" }}>
+                <div className="group bg-[var(--card-bg)] dark:bg-[#252931] p-6 rounded-xl shadow-lg border-2 border-yellow-400">
+                  <label htmlFor="storage-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                     {t.sliderLabels.storage}
                   </label>
                   <div className="flex items-center space-x-4">
                     <input type="range" id="storage-slider" min={50} max={10000} value={storage} onChange={(e) => setStorage(Number(e.target.value))} className="w-full h-2 bg-[var(--input-bg)] rounded-lg appearance-none cursor-pointer" style={{ boxShadow: "var(--shadow)", transition: "all 0.2s ease-in-out" }} />
-                    <span className="w-16 text-center text-xl font-bold" style={{ color: "#fff" }}>{storage}</span>
+                    <span className="w-16 text-center text-xl font-bold text-gray-800 dark:text-white">{storage}</span>
                   </div>
                 </div>
               </div>
               <div className="text-center mt-12">
-                <p className="text-lg" style={{ color: "#fff" }}>
+                <p className="text-3xl font-light mb-2 text-gray-800 dark:text-white">
                   {t.totalCostLabel}
                 </p>
-                <p className="text-indigo-400 text-6xl font-extrabold">${totalCost.toFixed(2)}</p>
-                <button onClick={handleGetQuote} className="mt-8 px-8 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow">
+                <p className="text-5xl md:text-6xl font-extrabold tracking-tight text-gray-800 dark:text-white">${totalCost.toFixed(2)}</p>
+                <button onClick={handleGetQuote} className="mt-8 px-8 py-3 rounded-full bg-[#ffd700] hover:bg-[#e6c200] text-black font-bold shadow">
                   {t.contactButton}
                 </button>
               </div>
@@ -583,8 +583,8 @@ const Service1 = () => {
     padding: 14px 36px;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #fff;
-    background-color: #224DB7;
+    color: #000;
+    background-color: #ffd700;
     border-radius: 10px;
     text-decoration: none;
     border: none;
@@ -594,7 +594,7 @@ const Service1 = () => {
   }
 
   .hero-button:hover {
-    background-color: #000;
+    background-color: #e6c200;
     transform: scale(1.05);
   }
 
@@ -965,7 +965,7 @@ const Service1 = () => {
 
         .cta-section {
   position: relative;
-  background: url('/images/bs69.jpg') center/cover no-repeat fixed; /* fixed background */
+  background: url('/images/CTAServices.jpg') center/cover no-repeat fixed; /* fixed background */
   padding: 0 0;
   color: white;
 }
@@ -1035,12 +1035,12 @@ const Service1 = () => {
   }
 
   .btn-primary {
-    background: #224DB7;
-    color: white;
+    background: #ffd700;
+    color: #000;
   }
 
   .btn-primary:hover {
-    background: #224DB7;
+    background: #e6c200;
   }
 
   .btn-outline {

@@ -8,17 +8,23 @@ const logo = 'images/logo.png';
 const Header = () => {
   const navigate = useNavigate();
   const { language, setLanguage } = useLanguage();
+  
+  // Debug log
+  console.log('Header - Current language:', language);
 
   // States
   const [isAvatarDropdownOpen, setIsAvatarDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isHomeDropdownOpen, setIsHomeDropdownOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
   const [theme, setTheme] = useState('light');
   const [initials, setInitials] = useState('?');
 
   const homeDropdownTimeout = useRef();
   const servicesDropdownTimeout = useRef();
+  const desktopLanguageDropdownRef = useRef(null);
+  const mobileLanguageDropdownRef = useRef(null);
 
   // Translations
   const translations = {
@@ -32,6 +38,12 @@ const Header = () => {
       blog: 'Blog',
       contact: 'Contact',
       logout: 'Logout',
+      service1: 'Digital Transformation Consulting',
+      service2: 'Enterprise IT Modernization',
+      service3: 'Cybersecurity & Risk Management',
+      service4: 'Data-Driven Business Intelligence',
+      service5: 'Customer Experience Solutions',
+      service6: 'Managed IT & Support Services',
     },
     ar: {
       home: 'الرئيسية',
@@ -43,6 +55,12 @@ const Header = () => {
       blog: 'المدونة',
       contact: 'اتصل',
       logout: 'تسجيل الخروج',
+      service1: 'استشارات التحول الرقمي',
+      service2: 'تحديث تقنية المعلومات المؤسسية',
+      service3: 'الأمن السيبراني وإدارة المخاطر',
+      service4: 'ذكاء الأعمال القائم على البيانات',
+      service5: 'حلول تجربة العملاء',
+      service6: 'خدمات تقنية المعلومات المدارة والدعم',
     },
     he: {
       home: 'בית',
@@ -54,16 +72,21 @@ const Header = () => {
       blog: 'בלוג',
       contact: 'צור קשר',
       logout: 'התנתק',
+      service1: 'ייעוץ טרנספורמציה דיגיטלית',
+      service2: 'מודרניזציה של IT ארגוני',
+      service3: 'אבטחת סייבר וניהול סיכונים',
+      service4: 'בינה עסקית מבוססת נתונים',
+      service5: 'פתרונות חוויית לקוחות',
+      service6: 'שירותי IT מנוהלים ותמיכה',
     },
   };
   const t = translations[language];
 
-  // Load Theme & Apply RTL on mount and language change
+  // Load Theme on mount
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme') || 'light';
     setTheme(storedTheme);
-    document.documentElement.dir = language === 'ar' || language === 'he' ? 'rtl' : 'ltr';
-  }, [language]);
+  }, []);
 
   // Update theme in DOM
   useEffect(() => {
@@ -92,11 +115,32 @@ const Header = () => {
     };
   }, []);
 
+  // Close language dropdown on outside click or ESC
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const clickedInsideDesktop = desktopLanguageDropdownRef.current && desktopLanguageDropdownRef.current.contains(event.target);
+      const clickedInsideMobile = mobileLanguageDropdownRef.current && mobileLanguageDropdownRef.current.contains(event.target);
+      if (!clickedInsideDesktop && !clickedInsideMobile) setIsLanguageDropdownOpen(false);
+    };
+    const handleEsc = (event) => {
+      if (event.key === 'Escape') setIsLanguageDropdownOpen(false);
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleEsc);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEsc);
+    };
+  }, []);
+
   // Language change handler
   const handleLanguageChange = (lang) => {
-    setLanguage(lang);
-    localStorage.setItem('language', lang);
-    document.documentElement.dir = lang === 'ar' || lang === 'he' ? 'rtl' : 'ltr';
+    // Validate language before setting
+    const validLanguages = ['en', 'ar', 'he'];
+    if (validLanguages.includes(lang)) {
+      setLanguage(lang);
+      localStorage.setItem('language', lang);
+    }
   };
 
   // Toggles
@@ -177,22 +221,22 @@ const Header = () => {
                     {t.allServices}
                   </Link>
                   <Link to="/service1" className="block px-4 py-2 hover:bg-[var(--hover-bg)]" onClick={() => setIsServicesDropdownOpen(false)}>
-                    Digital Transformation Consulting
+                    {t.service1}
                   </Link>
                   <Link to="/service2" className="block px-4 py-2 hover:bg-[var(--hover-bg)]" onClick={() => setIsServicesDropdownOpen(false)}>
-                    Enterprise IT Modernization
+                    {t.service2}
                   </Link>
                   <Link to="/service3" className="block px-4 py-2 hover:bg-[var(--hover-bg)]" onClick={() => setIsServicesDropdownOpen(false)}>
-                    Cybersecurity & Risk Management
+                    {t.service3}
                   </Link>
                   <Link to="/service4" className="block px-4 py-2 hover:bg-[var(--hover-bg)]" onClick={() => setIsServicesDropdownOpen(false)}>
-                    Data-Driven Business Intelligence
+                    {t.service4}
                   </Link>
                   <Link to="/service5" className="block px-4 py-2 hover:bg-[var(--hover-bg)]" onClick={() => setIsServicesDropdownOpen(false)}>
-                    Customer Experience Solutions
+                    {t.service5}
                   </Link>
                   <Link to="/service6" className="block px-4 py-2 hover:bg-[var(--hover-bg)]" onClick={() => setIsServicesDropdownOpen(false)}>
-                    Managed IT & Support Services
+                    {t.service6}
                   </Link>
                 </div>
               )}
@@ -206,16 +250,37 @@ const Header = () => {
               {t.contact}
             </Link>
 
-            {/* Language Selector */}
-            <select
-              value={language}
-              onChange={e => handleLanguageChange(e.target.value)}
-              className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded px-2 py-1 text-[var(--text-color)]"
-            >
-              <option value="en">English</option>
-              <option value="ar">العربية</option>
-              <option value="he">עברית</option>
-            </select>
+            {/* Language Selector - custom dropdown */}
+            <div className="relative" ref={desktopLanguageDropdownRef}>
+              <button
+                onClick={() => setIsLanguageDropdownOpen((prev) => !prev)}
+                className="w-10 h-10 rounded-full border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--hover-bg)] transition-colors duration-200"
+                aria-label="Select Language"
+              >
+                <svg className="w-5 h-5 text-[var(--text-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0s3 3.5 3 9-3 9-3 9m0-18s-3 3.5-3 9 3 9 3 9M3 12h18"/>
+                </svg>
+              </button>
+              {isLanguageDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-56 rounded-lg shadow-lg border bg-[var(--sidebar-bg)] border-[var(--border-color)] py-2 z-50">
+                  <button onClick={() => { handleLanguageChange('en'); setIsLanguageDropdownOpen(false); }} className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-[var(--hover-bg)] ${language === 'en' ? 'bg-[var(--hover-bg)]' : ''}`}>
+                    <span className="w-8 text-left font-semibold">US</span>
+                    <span className="flex-1 text-left">English</span>
+                    {language === 'en' && (<span className="text-[var(--primary-color)]">✓</span>)}
+                  </button>
+                  <button onClick={() => { handleLanguageChange('ar'); setIsLanguageDropdownOpen(false); }} className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-[var(--hover-bg)] ${language === 'ar' ? 'bg-[var(--hover-bg)]' : ''}`}>
+                    <span className="w-8 text-left font-semibold">SA</span>
+                    <span className="flex-1 text-left">العربية</span>
+                    {language === 'ar' && (<span className="text-[var(--primary-color)]">✓</span>)}
+                  </button>
+                  <button onClick={() => { handleLanguageChange('he'); setIsLanguageDropdownOpen(false); }} className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-[var(--hover-bg)] ${language === 'he' ? 'bg-[var(--hover-bg)]' : ''}`}>
+                    <span className="w-8 text-left font-semibold">IL</span>
+                    <span className="flex-1 text-left">עברית</span>
+                    {language === 'he' && (<span className="text-[var(--primary-color)]">✓</span>)}
+                  </button>
+                </div>
+              )}
+            </div>
 
             {/* Avatar */}
             <div className="relative">
@@ -242,56 +307,85 @@ const Header = () => {
 
             {/* Theme Toggle */}
             <button
-              className="w-10 h-10 rounded-full border flex items-center justify-center hover:bg-[var(--hover-bg)]"
-              onClick={toggleTheme}
-              aria-label="Toggle Theme"
-            >
-              {theme === "light" ? "☀️" : "🌙"}
-            </button>
-          </div>
-
-          {/* Mobile and Tablet Responsive Icons */}
-          <div className="flex items-center gap-2 min-[480px]:hidden">
-            {/* Language Selector */}
-            <select
-              value={language}
-              onChange={e => handleLanguageChange(e.target.value)}
-              className="w-14 h-10 rounded-full border border-[var(--border-color)] text-center text-[var(--text-color)] bg-[var(--card-bg)]"
-              style={{ minWidth: "48px", fontWeight: 500 }}
-            >
-              <option value="en">EN</option>
-              <option value="ar">AR</option>
-              <option value="he">HE</option>
-            </select>
-
-            {/* Theme Toggle */}
-            <button
-              className="w-10 h-10 rounded-full border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--hover-bg)]"
+              className="w-10 h-10 rounded-full border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--hover-bg)] transition-colors duration-200"
               onClick={toggleTheme}
               aria-label="Toggle Theme"
             >
               {theme === "light" ? (
                 <svg
-                  className="w-6 h-6 text-[var(--text-color)]"
-                  fill="none"
-                  stroke="currentColor"
+                  className="w-5 h-5 text-yellow-500"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 3v1m0 16v1m8.66-8.66h-1M4.34 12H3m15.07 4.93l-.71-.71M6.34 6.34l-.71-.71m12.02 12.02l-.71-.71M6.34 17.66l-.71-.71"
-                  />
+                  <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
                 </svg>
               ) : (
                 <svg
-                  className="w-6 h-6 text-[var(--text-color)]"
-                  fill="none"
-                  stroke="currentColor"
+                  className="w-5 h-5 text-blue-400"
+                  fill="currentColor"
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-9-9" />
+                  <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clipRule="evenodd" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* Mobile and Tablet Responsive Icons */}
+          <div className="flex items-center gap-2 min-[480px]:hidden">
+            {/* Language Selector - mobile */}
+            <div className="relative" ref={mobileLanguageDropdownRef}>
+              <button
+                onClick={() => setIsLanguageDropdownOpen((prev) => !prev)}
+                className="w-10 h-10 rounded-full border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--hover-bg)]"
+                aria-label="Select Language"
+              >
+                <svg className="w-5 h-5 text-[var(--text-color)]" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M12 3a9 9 0 100 18 9 9 0 000-18zm0 0s3 3.5 3 9-3 9-3 9m0-18s-3 3.5-3 9 3 9 3 9M3 12h18"/>
+                </svg>
+              </button>
+              {isLanguageDropdownOpen && (
+                <div className="absolute right-0 mt-2 w-56 rounded-lg shadow-lg border bg-[var(--sidebar-bg)] border-[var(--border-color)] py-2 z-50">
+                  <button onClick={() => { handleLanguageChange('en'); setIsLanguageDropdownOpen(false); }} className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-[var(--hover-bg)] ${language === 'en' ? 'bg-[var(--hover-bg)]' : ''}`}>
+                    <span className="w-8 text-left font-semibold">US</span>
+                    <span className="flex-1 text-left">English</span>
+                    {language === 'en' && (<span className="text-[var(--primary-color)]">✓</span>)}
+                  </button>
+                  <button onClick={() => { handleLanguageChange('ar'); setIsLanguageDropdownOpen(false); }} className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-[var(--hover-bg)] ${language === 'ar' ? 'bg-[var(--hover-bg)]' : ''}`}>
+                    <span className="w-8 text-left font-semibold">SA</span>
+                    <span className="flex-1 text-left">العربية</span>
+                    {language === 'ar' && (<span className="text-[var(--primary-color)]">✓</span>)}
+                  </button>
+                  <button onClick={() => { handleLanguageChange('he'); setIsLanguageDropdownOpen(false); }} className={`w-full flex items-center gap-3 px-4 py-2 hover:bg-[var(--hover-bg)] ${language === 'he' ? 'bg-[var(--hover-bg)]' : ''}`}>
+                    <span className="w-8 text-left font-semibold">IL</span>
+                    <span className="flex-1 text-left">עברית</span>
+                    {language === 'he' && (<span className="text-[var(--primary-color)]">✓</span>)}
+                  </button>
+                </div>
+              )}
+            </div>
+
+            {/* Theme Toggle */}
+            <button
+              className="w-10 h-10 rounded-full border border-[var(--border-color)] flex items-center justify-center hover:bg-[var(--hover-bg)] transition-colors duration-200"
+              onClick={toggleTheme}
+              aria-label="Toggle Theme"
+            >
+              {theme === "light" ? (
+                <svg
+                  className="w-5 h-5 text-yellow-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                </svg>
+              ) : (
+                <svg
+                  className="w-5 h-5 text-blue-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clipRule="evenodd" />
                 </svg>
               )}
             </button>
@@ -380,22 +474,22 @@ const Header = () => {
                     {t.allServices}
                   </Link>
                   <Link to="/service1" className="block px-4 py-2 text-[var(--text-color)] hover:bg-[var(--hover-bg)] rounded-md" onClick={() => { setIsServicesDropdownOpen(false); setIsMobileMenuOpen(false); }}>
-                   Cloud Infrastructure
+                    {t.service1}
                   </Link>
                   <Link to="/service2" className="block px-4 py-2 text-[var(--text-color)] hover:bg-[var(--hover-bg)] rounded-md" onClick={() => { setIsServicesDropdownOpen(false); setIsMobileMenuOpen(false); }}>
-                    Cybersecurity Solutions
+                    {t.service2}
                   </Link>
                   <Link to="/service3" className="block px-4 py-2 text-[var(--text-color)] hover:bg-[var(--hover-bg)] rounded-md" onClick={() => { setIsServicesDropdownOpen(false); setIsMobileMenuOpen(false); }}>
-                    AI & Automation
+                    {t.service3}
                   </Link>
                   <Link to="/service4" className="block px-4 py-2 text-[var(--text-color)] hover:bg-[var(--hover-bg)] rounded-md" onClick={() => { setIsServicesDropdownOpen(false); setIsMobileMenuOpen(false); }}>
-                   Business Intelligence
+                    {t.service4}
                   </Link>
                   <Link to="/service5" className="block px-4 py-2 text-[var(--text-color)] hover:bg-[var(--hover-bg)] rounded-md" onClick={() => { setIsServicesDropdownOpen(false); setIsMobileMenuOpen(false); }}>
-                    DevOps & CI/CD Services
+                    {t.service5}
                   </Link>
                   <Link to="/service6" className="block px-4 py-2 text-[var(--text-color)] hover:bg-[var(--hover-bg)] rounded-md" onClick={() => { setIsServicesDropdownOpen(false); setIsMobileMenuOpen(false); }}>
-                    IT Consulting & Support
+                    {t.service6}
                   </Link>
                 </div>
               )}

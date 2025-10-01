@@ -34,15 +34,6 @@ function AppContent() {
   const location = useLocation();
   const { language } = useLanguage();
 
-  // Update HTML direction based on selected language
-  useEffect(() => {
-    if (language === "ar" || language === "he") {
-      document.documentElement.setAttribute("dir", "rtl");
-    } else {
-      document.documentElement.setAttribute("dir", "ltr");
-    }
-  }, [language]);
-
   const hideLayout = ["/", "/login", "/signup", "/forgot-password", "/admin-dashboard"].includes(location.pathname);
 
   return (
@@ -85,7 +76,35 @@ function AppContent() {
 }
 
 function App() {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(() => {
+    // Force reset to English for now - remove this line after testing
+    localStorage.setItem('language', 'en');
+    
+    // Load language from localStorage on app start, default to English
+    const storedLanguage = localStorage.getItem('language');
+    console.log('App.jsx - Initial language check:', { storedLanguage });
+    
+    // If no language is stored or if it's not a valid language, default to English
+    if (!storedLanguage || !['en', 'ar', 'he'].includes(storedLanguage)) {
+      localStorage.setItem('language', 'en');
+      console.log('App.jsx - Setting language to English');
+      return 'en';
+    }
+    console.log('App.jsx - Using stored language:', storedLanguage);
+    return storedLanguage;
+  });
+
+  // Update localStorage when language changes
+  useEffect(() => {
+    localStorage.setItem('language', language);
+    console.log('App.jsx - Language changed to:', language);
+  }, [language]);
+
+  // Force reset language on app start (temporary fix)
+  useEffect(() => {
+    console.log('App.jsx - Force resetting language to English');
+    setLanguage('en');
+  }, []);
 
   return (
     <Router>

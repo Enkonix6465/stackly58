@@ -1,7 +1,7 @@
   :root {
     /* Light Theme Colors */
-    --primary-color: #007bff;
-    --secondary-color: #6f42c1;
+    --primary-color: #ffd700;
+    --secondary-color: #ffd700;
     --accent-color: #28a745;
     --warning-color: #ffc107;
     --danger-color: #dc3545;
@@ -22,6 +22,10 @@
     --border-color: #e9ecef;
     --border-light: #f8f9fa;
     
+    /* Light Theme Hover Colors */
+    --hover-color: #ffd700;
+    --hover-bg: rgba(255, 215, 0, 0.1);
+    
     /* Light Theme Shadows */
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.15);
@@ -40,8 +44,8 @@
 
   [data-theme="dark"] {
     /* Dark Theme Colors */
-    --primary-color: #0d6efd;
-    --secondary-color: #6f42c1;
+    --primary-color: #ffd700;
+    --secondary-color: #ffd700;
     --accent-color: #198754;
     --warning-color: #ffc107;
     --danger-color: #dc3545;
@@ -61,6 +65,10 @@
     /* Dark Theme Borders */
     --border-color: #404040;
     --border-light: #2d2d2d;
+    
+    /* Dark Theme Hover Colors */
+    --hover-color: #ffd700;
+    --hover-bg: rgba(255, 215, 0, 0.1);
     
     /* Dark Theme Shadows */
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -243,5 +251,104 @@
 
   [data-theme="dark"] .animated-bg {
     background: linear-gradient(120deg, #181818 0%, #2d2d50 50%, #191970 100%);
+  }
+
+  /* Home1 Section Specific Variables */
+  :root {
+    /* Hero Section */
+    --hero-overlay-bg: rgba(0, 0, 0, 0.4);
+    --hero-text-color: #ffffff;
+    --hero-title-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    
+    /* Stats Section */
+    --stats-bg: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    --stats-card-bg: #ffffff;
+    --stats-card-border: #e9ecef;
+    --stats-text-color: #333333;
+    --stats-number-color: #ffd700;
+    --stats-label-color: #6c757d;
+    
+    /* Third Section */
+    --third-section-bg: linear-gradient(135deg, #ffd700 0%, #000000 100%);
+    --third-section-text: #ffffff;
+    --third-section-stats-bg: rgba(255, 255, 255, 0.1);
+    --third-section-stats-border: rgba(255, 255, 255, 0.2);
+    
+    /* Services Section */
+    --services-bg: #ffffff;
+    --services-card-bg: #ffffff;
+    --services-card-border: #e9ecef;
+    --services-text-color: #333333;
+    --services-title-color: #212529;
+    --services-icon-bg: #f8f9fa;
+    --services-icon-color: #ffd700;
+    
+    /* What I Offer Section */
+    --what-i-offer-bg: #f8f9fa;
+    
+    /* Testimonials Section */
+    --testimonials-bg: var(--bg-color);
+    --testimonials-card-bg: var(--card-bg);
+    --testimonials-card-border: var(--border-color);
+    --testimonials-text-color: var(--text-color);
+    --testimonials-title-color: var(--heading-color);
+    --testimonials-quote-color: var(--primary-color);
+    
+    /* CTA Section */
+    --cta-bg: linear-gradient(135deg, #007bff 0%, #6f42c1 100%);
+    --cta-overlay-bg: rgba(0, 0, 0, 0.3);
+    --cta-text-color: #ffffff;
+    --cta-button-bg: #ffffff;
+    --cta-button-text: #007bff;
+    --cta-button-hover-bg: #f8f9fa;
+  }
+
+  [data-theme="dark"] {
+    /* Hero Section Dark */
+    --hero-overlay-bg: rgba(0, 0, 0, 0.6);
+    --hero-text-color: #ffffff;
+    --hero-title-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    
+    /* Stats Section Dark */
+    --stats-bg: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+    --stats-card-bg: #2d2d2d;
+    --stats-card-border: #404040;
+    --stats-text-color: #e0e0e0;
+    --stats-number-color: #ffd700;
+    --stats-label-color: #a0a0a0;
+    
+    /* Third Section Dark */
+    --third-section-bg: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    --third-section-text: #ffffff;
+    --third-section-stats-bg: rgba(255, 255, 255, 0.05);
+    --third-section-stats-border: rgba(255, 255, 255, 0.1);
+    
+    /* Services Section Dark */
+    --services-bg: #1e1e1e;
+    --services-card-bg: #2d2d2d;
+    --services-card-border: #404040;
+    --services-text-color: #e0e0e0;
+    --services-title-color: #ffffff;
+    --services-icon-bg: #404040;
+    --services-icon-color: #ffd700;
+    
+    /* What I Offer Section Dark */
+    --what-i-offer-bg: #2d2d2d;
+    
+    /* Testimonials Section Dark */
+    --testimonials-bg: var(--bg-color);
+    --testimonials-card-bg: var(--card-bg);
+    --testimonials-card-border: var(--border-color);
+    --testimonials-text-color: var(--text-color);
+    --testimonials-title-color: var(--heading-color);
+    --testimonials-quote-color: var(--primary-color);
+    
+    /* CTA Section Dark */
+    --cta-bg: linear-gradient(135deg, #0d6efd 0%, #6f42c1 100%);
+    --cta-overlay-bg: rgba(0, 0, 0, 0.4);
+    --cta-text-color: #ffffff;
+    --cta-button-bg: #ffffff;
+    --cta-button-text: #0d6efd;
+    --cta-button-hover-bg: #f8f9fa;
   }
 
