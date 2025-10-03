@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import {
   FaCode,
   FaLaptopCode,
@@ -11,296 +11,285 @@ import {
   FaCheck,
   FaEye,
   FaArrowRight,
-} from "react-icons/fa";
-import { useLanguage } from "../context.jsx/LanguageContext"; // Adjust path as needed
+} from 'react-icons/fa';
+import { useLanguage } from '../context.jsx/LanguageContext';
 
 const translations = {
   en: {
-    documentTitle: "Data-Driven Business Intelligence - ForStackly Business Solutions",
-    heroTitle: "Customer Experience Solutions",
+    documentTitle: 'Customer Experience Solutions - ForStackly Business Solutions',
+    heroTitle: 'Customer Experience Solutions',
     heroParagraph:
-      "Deliver seamless, personalized customer experiences powered by data-driven insights, advanced analytics, and continuous optimization to foster loyalty and business growth.",
-    heroButton: "Contact Us",
+      'Deliver seamless, personalized customer experiences powered by data-driven insights, advanced analytics, and continuous optimization to foster loyalty and business growth.',
+    heroButton: 'Contact Us',
 
-    benefitsTitle: "Why Choose Our Data-Driven Business Intelligence Solutions?",
+    benefitsTitle: 'Why Choose Our Customer Experience Solutions?',
     benefitsCards: [
       {
-        title: "Scalable Analytics Architecture",
-        brief: "Seamlessly scale your analytics pipelines to accommodate growing data volumes.",
-        detail: "Flexible infrastructure designed to evolve with your business needs.",
-        gradientFrom: "from-indigo-500",
-        gradientTo: "to-blue-600",
+        title: 'Advanced Customer Analytics',
+        brief: 'Deep insights into customer behavior and preferences.',
+        detail: 'Leverage sophisticated analytics to understand customer journeys and optimize experiences.',
+        gradientFrom: 'from-indigo-500',
+        gradientTo: 'to-blue-600',
         icon: FaCode,
       },
       {
-        title: "Robust Data Security",
-        brief: "Protect your sensitive data with advanced encryption, access controls, and compliance monitoring.",
-        detail: "Maintain trust and meet regulatory standards.",
-        gradientFrom: "from-green-500",
-        gradientTo: "to-teal-600",
+        title: 'Personalization Engine',
+        brief: 'Tailor experiences to individual customer needs and preferences.',
+        detail: 'AI-powered recommendations and dynamic content delivery for maximum engagement.',
+        gradientFrom: 'from-green-500',
+        gradientTo: 'to-teal-600',
         icon: FaLaptopCode,
       },
       {
-        title: "Optimized Performance",
-        brief: "Deliver fast, reliable analytics for timely and confident decision making.",
-        detail: "Dynamic resource allocation during peak processing.",
-        gradientFrom: "from-red-500",
-        gradientTo: "to-pink-600",
+        title: 'Real-time Interaction Management',
+        brief: 'Instant response capabilities across all customer touchpoints.',
+        detail: 'Seamless omnichannel support with intelligent routing and context preservation.',
+        gradientFrom: 'from-red-500',
+        gradientTo: 'to-pink-600',
         icon: FaMobileAlt,
       },
       {
-        title: "Proactive Monitoring",
-        brief: "Continuously observe your data pipelines and analytic processes.",
-        detail: "Early detection and rapid resolution of anomalies.",
-        gradientFrom: "from-purple-500",
-        gradientTo: "to-indigo-600",
+        title: 'Omnichannel Integration',
+        brief: 'Unified customer experience across all channels and platforms.',
+        detail: 'Consistent messaging and service quality regardless of customer\'s chosen interaction method.',
+        gradientFrom: 'from-purple-500',
+        gradientTo: 'to-indigo-600',
         icon: FaEye,
       },
       {
-        title: "Seamless Integration",
-        brief: "Connect with numerous data sources and analytics platforms effortlessly.",
-        detail: "Flexible and adaptable to diverse business requirements.",
-        gradientFrom: "from-yellow-400",
-        gradientTo: "to-orange-500",
+        title: 'Predictive Customer Intelligence',
+        brief: 'Anticipate customer needs before they arise.',
+        detail: 'Machine learning algorithms that predict behavior patterns and recommend proactive solutions.',
+        gradientFrom: 'from-yellow-400',
+        gradientTo: 'to-orange-500',
         icon: FaServer,
       },
-      {
-        title: "24/7 Analytics Support",
-        brief: "Dedicated expert support to keep your analytics running seamlessly.",
-        detail: "Ensures consistent, reliable insights around the clock.",
-        gradientFrom: "from-cyan-500",
-        gradientTo: "to-sky-600",
+        {
+        title: 'Customer Journey Optimization',
+        brief: 'Continuous improvement of customer touchpoints and processes.',
+        detail: 'Data-driven insights to refine every stage of the customer lifecycle.',
+        gradientFrom: 'from-cyan-500',
+        gradientTo: 'to-sky-600',
         icon: FaDatabase,
       },
     ],
 
-    benefitsSectionTitle: "Why Choose Our Business Intelligence Services?",
+    benefitsSectionTitle: 'Transform Your Customer Experience',
     benefitsSectionDescription:
-      "We provide next-generation BI platforms that unlock, secure, and visualize the value hiding in your data for accelerated business success.",
+      'We deliver comprehensive customer experience solutions that drive loyalty, increase satisfaction, and accelerate business growth through intelligent automation and personalized engagement.',
     benefitsList: [
-      "Reveal growth opportunities with deep, data-driven insights",
-      "Respond to trends and challenges using real-time intelligence",
-      "Streamline operations and optimize performance with predictive analytics",
-      "Protect sensitive information with world-class data governance",
-      "Give every team member the tools for confident data exploration",
-      "Achieve business agility and lasting strategic advantage",
+      'Unlock customer preferences with advanced behavioral analytics',
+      'Boost engagement through intelligent personalization strategies',
+      'Streamline support workflows with AI-powered automation',
+      'Protect customer data with enterprise-grade security protocols',
+      'Enable seamless cross-platform experiences and interactions',
+      'Achieve measurable improvements in customer satisfaction and retention',
     ],
 
-    galleryTitle: "BI Project Portfolio",
-    gallerySubtitle: "See how we’ve helped businesses grow with innovative BI and analytics solutions.",
+    galleryTitle: 'Customer Experience Portfolio',
+    gallerySubtitle: 'See how we\'ve helped businesses enhance customer satisfaction and exceed expectations.',
 
-    costEstimatorTitle: "Estimate Your Analytics Investment",
+    costEstimatorTitle: 'Estimate Your Customer Experience Investment',
     costEstimatorDescription:
-      "Use our interactive tool to obtain a clear and immediate estimate for your business intelligence analytics needs.",
+      'Use our interactive tool to get a clear and immediate estimate for your customer experience solutions.',
     sliderLabels: {
-      vcpu: "Model Complexity (%)",
-      ram: "Processing Memory (GB)",
-      storage: "Data Storage Capacity (GB)",
+      vcpu: 'Touchpoint Complexity (%)',
+      ram: 'Personalization Memory (GB)',
+      storage: 'Customer Data Capacity (GB)',
     },
-    totalCostLabel: "Estimated Monthly BI Analytics Cost",
-    contactButton: "Contact Us for a Custom Quote",
+    totalCostLabel: 'Estimated Monthly Customer Experience Cost',
+    contactButton: 'Contact Us for a Custom Quote',
 
-    ctaTitle: "Ready to Accelerate Your Business Intelligence?",
-    ctaParagraph:
-      "Contact us today to power your growth with next-generation analytics and actionable intelligence.",
-    ctaStartButton: "Start Your Data Journey",
-    ctaLearnMoreButton: "Learn More About Us",
+    ctaTitle: 'Ready to Transform Your Customer Experience?',
+    ctaParagraph: 'Contact us today to start your customer experience journey and achieve greater loyalty.',
+    ctaStartButton: 'Begin Optimization',
+    ctaLearnMoreButton: 'Learn More About Us',
   },
 
   ar: {
-    documentTitle: "[translate:ج.Business Intelligence المدعوم بالبيانات - حلول الأعمال فورستاكلي]",
-    heroTitle: "[translate:حلول تجربة العملاء]",
+    documentTitle: 'حلول تجربة العملاء - حلول الأعمال فورستاكلي',
+    heroTitle: 'حلول تجربة العملاء',
     heroParagraph:
-      "[translate:قدّم تجارب عملاء سلسة وشخصية مدعومة برؤى معتمدة على البيانات، تحليلات متقدمة، وتحسين مستمر لتعزيز الولاء ونمو الأعمال.]",
-    heroButton: "[translate:اتصل بنا]",
+      'قدّم تجارب عملاء سلسة وشخصية مدعومة برؤى معتمدة على البيانات، تحليلات متقدمة، وتحسين مستمر لتعزيز الولاء ونمو الأعمال.',
+    heroButton: 'اتصل بنا',
 
-    benefitsTitle: "[translate:لماذا تختار حلول الذكاء التجاري المدعوم بالبيانات؟]",
+    benefitsTitle: 'لماذا تختار حلول تجربة العملاء لدينا؟',
     benefitsCards: [
       {
-        title: "[translate:بنية تحليلات قابلة للتوسع]",
-        brief: "[translate:قم بتوسيع خطوط التحليلات بسلاسة لاستيعاب كميات بيانات متزايدة.]",
-        detail: "[translate:بنية تحتية مرنة مصممة للتطور مع احتياجات عملك.]",
-        gradientFrom: "from-indigo-500",
-        gradientTo: "to-blue-600",
+        title: 'تحليلات العملاء المتقدمة',
+        brief: 'رؤى عميقة حول سلوك العملاء وتفضيلاتهم.',
+        detail: 'استفد من التحليلات المتطورة لفهم رحلات العملاء وتحسين التجارب.',
+        gradientFrom: 'from-indigo-500',
+        gradientTo: 'to-blue-600',
         icon: FaCode,
       },
       {
-        title: "[translate:أمان بيانات قوي]",
-        brief: "[translate:حماية بياناتك الحساسة باستخدام التشفير المتقدم، ضوابط الوصول، ورصد الامتثال.]",
-        detail: "[translate:الحفاظ على الثقة والامتثال للمعايير التنظيمية.]",
-        gradientFrom: "from-green-500",
-        gradientTo: "to-teal-600",
+        title: 'محرك التخصيص',
+        brief: 'تخصيص التجارب وفقًا لاحتياجات وتفضيلات العملاء الفردية.',
+        detail: 'التوصيات المدعومة بالذكاء الاصطناعي وتسليم المحتوى الديناميكي لأقصى تفاعل.',
+        gradientFrom: 'from-green-500',
+        gradientTo: 'to-teal-600',
         icon: FaLaptopCode,
       },
       {
-        title: "[translate:أداء محسن]",
-        brief: "[translate:تقديم تحليلات سريعة وموثوقة لاتخاذ القرارات بثقة وفي الوقت المناسب.]",
-        detail: "[translate:تخصيص الموارد الديناميكي خلال فترات الذروة.]",
-        gradientFrom: "from-red-500",
-        gradientTo: "to-pink-600",
+        title: 'إدارة التفاعل الفوري',
+        brief: 'قدرات الاستجابة الفورية عبر جميع نقاط الاتصال مع العملاء.',
+        detail: 'دعم متعدد القنوات سلس مع التوجيه الذكي والحفاظ على السياق.',
+        gradientFrom: 'from-red-500',
+        gradientTo: 'to-pink-600',
         icon: FaMobileAlt,
       },
       {
-        title: "[translate:مراقبة استباقية]",
-        brief: "[translate:مراقبة مستمرة لأنابيب البيانات والعمليات التحليلية.]",
-        detail: "[translate:الكشف المبكر وحل الانحرافات بسرعة.]",
-        gradientFrom: "from-purple-500",
-        gradientTo: "to-indigo-600",
+        title: 'التكامل متعدد القنوات',
+        brief: 'تجربة عميل سلسة عبر جميع القنوات والمنصات.',
+        detail: 'رسائل ونوعية خدمة متسقة بغض النظر عن طريقة التفاعل المختارة للعميل.',
+        gradientFrom: 'from-purple-500',
+        gradientTo: 'to-indigo-600',
         icon: FaEye,
       },
       {
-        title: "[translate:تكامل سلس]",
-        brief: "[translate:الاتصال بسهولة بمصادر بيانات ومنصات تحليل متعددة.]",
-        detail: "[translate:مرونة وقابلية التكيف مع متطلبات أعمال متنوعة.]",
-        gradientFrom: "from-yellow-400",
-        gradientTo: "to-orange-500",
+        title: 'ذكاء العملاء التنبؤي',
+        brief: 'توقع احتياجات العملاء قبل ظهورها.',
+        detail: 'خوارزميات التعلم الآلي التي تتنبأ بأنماط السلوك وتوصي بحلول استباقية.',
+        gradientFrom: 'from-yellow-400',
+        gradientTo: 'to-orange-500',
         icon: FaServer,
       },
       {
-        title: "[translate:دعم التحليلات 24/7]",
-        brief: "[translate:دعم خبير مخصص للحفاظ على سير التحليلات بسلاسة.]",
-        detail: "[translate:ضمان رؤى موثوقة ومتواصلة طوال الوقت.]",
-        gradientFrom: "from-cyan-500",
-        gradientTo: "to-sky-600",
+        title: 'تحسين رحلة العميل',
+        brief: 'التحسين المستمر لنقاط الاتصال مع العملاء والعمليات.',
+        detail: 'رؤى معتمدة على البيانات لتحسين كل مرحلة من مراحل دورة حياة العميل.',
+        gradientFrom: 'from-cyan-500',
+        gradientTo: 'to-sky-600',
         icon: FaDatabase,
       },
     ],
 
-    benefitsSectionTitle: "[translate:لماذا تختار خدمات ذكاء الأعمال لدينا؟]",
+    benefitsSectionTitle: 'حوّل تجربة عملاؤك',
     benefitsSectionDescription:
-      "[translate:نقدم منصات ذكاء أعمال متقدمة تؤمن البيانات وتكشف قيمتها لتسريع نجاح الأعمال.]",
+      'نقدّم حلول شاملة لتجربة العملاء تعزز الولاء وترفع الرضا وتعجّل النمو من خلال الأتمتة الذكية والتفاعل الشخصي.',
     benefitsList: [
-      "[translate:كشف فرص النمو من خلال رؤى عميقة مستندة إلى البيانات]",
-      "[translate:التفاعل مع الاتجاهات والتحديات من خلال ذكاء فوري]",
-      "[translate:تحسين العمليات والأداء باستخدام تحليلات تنبؤية]",
-      "[translate:حماية المعلومات الحساسة بحوكمة بيانات على مستوى عالمي]",
-      "[translate:تمكين جميع أعضاء الفريق من أدوات استكشاف البيانات بثقة]",
-      "[translate:تحقيق مرونة الأعمال وميزة استراتيجية دائمة]",
+      'اكشف تفضيلات العملاء من خلال تحليلات السلوك المتقدمة',
+      'عزز التفاعل من خلال استراتيجيات التخصيص الذكية',
+      'بسّط سير عمل الدعم مع الأتمتة المدعومة بالذكاء الاصطناعي',
+      'حمي بيانات العملاء باستخدام بروتوكولات أمنية على مستوى المؤسسات',
+      'مكّن تجارب واجهة سلسة عبر المنصات المختلفة',
+      'حقّق تحسينات قابلة للقياس في رضا العملاء والاحتفاظ بهم',
     ],
 
-    galleryTitle: "[translate:محفظة مشاريع ذكاء الأعمال]",
-    gallerySubtitle: "[translate:شاهد كيف ساعدنا الأعمال على النمو بحلول ذكاء الأعمال والتحليلات المبتكرة.]",
+    galleryTitle: 'محفظة حلول تجربة العملاء',
+    gallerySubtitle: 'شاهد كيف ساعدنا الأعمال على تحسين رضا العملاء وتجاوز التوقعات.',
 
-    costEstimatorTitle: "[translate:قدّر استثمارك في التحليلات]",
-    costEstimatorDescription: "[translate:استخدم أداتنا التفاعلية للحصول على تقدير فوري وواضح لمتطلبات تحليلات ذكاء الأعمال.]",
+    costEstimatorTitle: 'قدّر استثمارك في تجربة العملاء',
+    costEstimatorDescription:
+      'استخدم أداتنا التفاعلية للحصول على تقدير واضح وفوري لحلول تغربة العملاء المتخصصة.',
     sliderLabels: {
-      vcpu: "[translate:تعقيد النموذج (%)]",
-      ram: "[translate:ذاكرة المعالجة (جيجابايت)]",
-      storage: "[translate:سعة تخزين البيانات (جيجابايت)]",
+      vcpu: 'تعقيد نقاط التفاعل (%)',
+      ram: 'ذاكرة التخصيص (جيجابايت)',
+      storage: 'سعة بيانات العملاء (جيجابايت)',
     },
-    totalCostLabel: "[translate:التكلفة الشهرية المقدرة لتحليلات ذكاء الأعمال]",
-    contactButton: "[translate:اتصل بنا لطلب عرض مخصص]",
+    totalCostLabel: 'التكلفة الشهرية المقدرة لحلول تجربة العملاء',
+    contactButton: 'اتصل بنا لطلب عرض مخصص',
 
-    ctaTitle: "[translate:هل أنت مستعد لتعزيز ذكاء أعمالك؟]",
-    ctaParagraph: "[translate:اتصل بنا اليوم لتعزيز نموك باستخدام تحليلات متقدمة وذكاء قابل للتنفيذ.]",
-    ctaStartButton: "[translate:ابدأ رحلتك]", 
-    ctaLearnMoreButton: "[translate:تعرف علينا أكثر]",
+    ctaTitle: 'هل أنت مستعد لتحويل تجربة عملاؤك؟',
+    ctaParagraph: 'اتصل بنا اليوم للبدء في رحلة تحسين تجربة العملاء وتحقيق ولاء أكبر.',
+    ctaStartButton: 'ابدأ التحسين',
+    ctaLearnMoreButton: 'تعرف علينا أكثر',
   },
 
   he: {
-    documentTitle:
-      "[translate:ניתוח עסקי מונחה נתונים - פתרונות פורסטאקלי לעסקים]",
-    heroTitle: "[translate:פתרונות חווית לקוח]",
+    documentTitle: 'פתרונות חווית לקוח - פתרונות פורסטאקלי לעסקים',
+    heroTitle: 'פתרונות חווית לקוח',
     heroParagraph:
-      "[translate:מספקים חוויות לקוח חלקות ואישיות המונעות על ידי תובנות מונחות נתונים, אנליטיקה מתקדמת ואופטימיזציה מתמשכת לחיזוק נאמנות וצמיחה עסקית.]",
-    heroButton: "[translate:צור קשר]",
+      'מספקים חוויות לקוח חלקות ואישיות המונעות על ידי תובנות מונחות נתונים, אנליטיקה מתקדמת ואופטימיזציה מתמשכת לחיזוק נאמנות וצמיחה עסקית.',
+    heroButton: 'צור קשר',
 
-    benefitsTitle:
-      "[translate:מדוע לבחור בפתרונות ניהול עסק מונחי נתונים שלנו?]",
+    benefitsTitle: 'מדוע לבחור בפתרונות חווית הלקוח שלנו?',
     benefitsCards: [
       {
-        title: "[translate:ארכיטקטורת אנליטיקה ניתנת להרחבה]",
-        brief:
-          "[translate:הרחב את צינורות האנליטיקה שלך בקלות להתמודדות עם נפחי נתונים גדלים.]",
-        detail: "[translate:תשתית גמישה המתוכננת להתפתח עם צורכי העסק שלך.]",
-        gradientFrom: "from-indigo-500",
-        gradientTo: "to-blue-600",
+        title: 'אנליטיקה מתקדמת של לקוחות',
+        brief: 'תובנות עמוקות על התנהגות הלקוחות והעדפותיהם.',
+        detail: 'מנף אנליטיקה מתקדמת להבנת מסעות הלקוחות ואופטימיזציה של החוויות.',
+        gradientFrom: 'from-indigo-500',
+        gradientTo: 'to-blue-600',
         icon: FaCode,
       },
       {
-        title: "[translate:אבטחת נתונים חזקה]",
-        brief:
-          "[translate:הגן על הנתונים הרגישים שלך עם הצפנה מתקדמת, בקרות גישה ומעקב תאימות.]",
-        detail: "[translate:שמור על אמון ועמידה בתקנים רגולטוריים.]",
-        gradientFrom: "from-green-500",
-        gradientTo: "to-teal-600",
+        title: 'מנוע ההתאמה האישית',
+        brief: 'התאמת חוויות לצרכים ולהעדפות של כל לקוח בנפרד.',
+        detail: 'המלצות מונעות בינה מלאכותית ואספקת תוכן דינמי לסימום ההתקשרות.',
+        gradientFrom: 'from-green-500',
+        gradientTo: 'to-teal-600',
         icon: FaLaptopCode,
       },
       {
-        title: "[translate:ביצועים מותאמים]",
-        brief:
-          "[translate:ספק אנליטיקה מהירה ואמינה לקבלת החלטות בזמן ובביטחון.]",
-        detail: "[translate:הקצאת משאבים דינמית בשיא העומס.]",
-        gradientFrom: "from-red-500",
-        gradientTo: "to-pink-600",
+        title: 'ניהול אינטראקציה בזמן אמת',
+        brief: 'יכולות תגובה מיידיות בכל נקודות המגע עם הלקוח.',
+        detail: 'תמיכה רב-ערוצית חלקה עם ניתוב חכם ושימור קונטקסט.',
+        gradientFrom: 'from-red-500',
+        gradientTo: 'to-pink-600',
         icon: FaMobileAlt,
       },
       {
-        title: "[translate:ניטור פרואקטיבי]",
-        brief:
-          "[translate:השגחה רציפה על תהליכי הנתונים והאנליטיקה שלך.]",
-        detail: "[translate:זיהוי מוקדם ופתרון מהיר של אנומליות.]",
-        gradientFrom: "from-purple-500",
-        gradientTo: "to-indigo-600",
+        title: 'אינטגרציה רב-ערוצית',
+        brief: 'חווית לקוח אחידה על פני כל הערוצים והפלטפורמות.',
+        detail: 'העברת מסרים ואיכות שירות עקבית ללא קשר לדרך האינטראקציה הנבחרת.',
+        gradientFrom: 'from-purple-500',
+        gradientTo: 'to-indigo-600',
         icon: FaEye,
       },
       {
-        title: "[translate:אינטגרציה חלקה]",
-        brief:
-          "[translate:חיבור קל בין מקורות נתונים ופלטפורמות אנליטיות שונות.]",
-        detail: "[translate:גמישות והתאמה לדרישות עסק מגוונות.]",
-        gradientFrom: "from-yellow-400",
-        gradientTo: "to-orange-500",
+        title: 'בינה חיזויית של לקוחות',
+        brief: 'צפיית הצרכים של הלקוח לפני שהם מתפתחים.',
+        detail: 'אלגוריתמי למידת מכונה שמנבאים דפוסי התנהגות וממליצים על פתרונות פרואקטיביים.',
+        gradientFrom: 'from-yellow-400',
+        gradientTo: 'to-orange-500',
         icon: FaServer,
       },
       {
-        title: "[translate:תמיכה באנליטיקה 24/7]",
-        brief:
-          "[translate:תמיכה מקצועית ייעודית לשמירת פעילות רציפה ואמינה של האנליטיקה.]",
-        detail: "[translate:הבטחת תובנות אמינות וזמינות מסביב לשעון.]",
-        gradientFrom: "from-cyan-500",
-        gradientTo: "to-sky-600",
+        title: 'אופטימיזציה של מסע הלקוח',
+        brief: 'שיפור מתמיד של נקודות מגע עם הלקוח ותהליכים.',
+        detail: 'תובנות מונחות נתונים לשכלול כל שלב במחזור חיי הלקוח.',
+        gradientFrom: 'from-cyan-500',
+        gradientTo: 'to-sky-600',
         icon: FaDatabase,
       },
     ],
 
-    benefitsSectionTitle:
-      "[translate:מדוע לבחור בשירותי מדעי הנתונים והאנליטיקה שלנו?]",
+    benefitsSectionTitle: 'הפוך את חווית הלקוח שלך',
     benefitsSectionDescription:
-      "[translate:אנו מספקים פלטפורמות BI מתקדמות שמאפשרות חשיפת ערך, אבטחת מידע והמחשת תובנות לצמיחה עסקית מהירה.]",
+      'אנו מספקים פתרונות מקיפים לחווית לקוח שמניעים נאמנות, מעלים את שביעות הרצון ומאיצים את הצמיחה העסקית באמצעות אוטומציה חכמה והתקשרות אישית.',
     benefitsList: [
-      "[translate:חשיפת מגמות והזדמנויות מתוך נתוני ארגון גולמיים]",
-      "[translate:קבלת BI בזמן אמת להובלה בענף שלך]",
-      "[translate:אופטימיזציה של קבלת החלטות באמצעות אנליטיקה חזויה ומייעצת]",
-      "[translate:שמירה על פרטיות ואבטחת מידע ברמה הגבוהה ביותר]",
-      "[translate:העצמת צוותים לחקירת נתונים ללא צורך במומחיות טכנית]",
-      "[translate:תמיכה בצמיחה קיימת באמצעות פעולות אסטרטגיות מבוססות נתונים]",
+      'גלה העדפות לקוחות עם אנליטיקה מתקדמת של התנהגות',
+      'עצום את העניין באמצעות אסטרטגיות התאמה אישית חכמות',
+      'הפשט תהליכי תמיכה עם אוטומציה מונעת בינה מלאכותית',
+      'הגן על נתוני לקוחות עם פרוטוקולי אבטחה ברמת ארגון',
+      'אפשר חוויות חלקות על פני פלטפורמות שונות',
+      'השג שיפורים הניתנים למדידה בשביעות רצון הלקוח והחזקתם',
     ],
 
-    galleryTitle: "[translate:פורטפוליו פרויקטים ל-BI]",
-    gallerySubtitle:
-      "[translate:חקור את ההיסטוריה שלנו בקידום צמיחה עסקית דרך יוזמות BI מוצלחות.]",
+    galleryTitle: 'פורטפוליו חווית לקוח',
+    gallerySubtitle: 'ראה איך עזרנו לעסקים לשפר את שביעות רצון הלקוחות ולעבור הציפיות.',
 
-    costEstimatorTitle: "[translate:הערך את ההשקעה האנליטית שלך]",
+    costEstimatorTitle: 'הערך את השקעתך בחוויית לקוח',
     costEstimatorDescription:
-      "[translate:השתמש בכלי האינטראקטיבי שלנו לקבלת הערכה מדויקת ומהירה לצרכי תשתית BI מונחה נתונים.]",
+      'השתמש בכלי ה-interactive שלנו לקבלת הערכה ברורה ומיידית לפתרונות חווית לקוח מותאמים.',
     sliderLabels: {
-      vcpu: "[translate:מורכבות מודל (%)]",
-      ram: "[translate:זיכרון עיבוד (GB)]",
-      storage: "[translate:קיבולת אחסון נתונים (GB)]",
+      vcpu: 'מורכבות נקודות מגע (%)',
+      ram: 'זיכרון התאמה אישית (GB)',
+      storage: 'קיבולת נתוני לקוח (GB)',
     },
-    totalCostLabel: "[translate:עלות BI חודשית מוערכת]",
-    contactButton: "[translate:צור קשר לקבלת הצעת מחיר מותאמת]",
+    totalCostLabel: 'עלות חודשית משוערת של חווית לקוח',
+    contactButton: 'צור קשר לקבלת הצעת מחיר מותאמת',
 
-    ctaTitle: "[translate:מוכן להאיץ את BI העסקי שלך?]",
-    ctaParagraph:
-      "[translate:צור קשר עוד היום להניע את הצמיחה שלך עם אנליטיקה מתקדמת ותובנות אפקטיביות.]",
-    ctaStartButton: "[translate:התחל את המסע שלך]",
-    ctaLearnMoreButton: "[translate:למידע נוסף עלינו]",
+    ctaTitle: 'מוכן להפוך את חווית הלקוח שלך?',
+    ctaParagraph: 'צור קשר עוד היום להתחלת מסע השיפור בחווית הלקוח והשגת נאמנות רבה יותר.',
+    ctaStartButton: 'התחל אופטימיזציה',
+    ctaLearnMoreButton: 'למידע נוסף עלינו',
   },
 };
 
-const Service1 = () => {
+const Service5 = () => {
   const { language } = useLanguage();
   const t = translations[language] || translations.en;
 
@@ -325,7 +314,7 @@ const Service1 = () => {
   }, [vcpu, ram, storage]);
 
   const handleGetQuote = () => {
-    navigate("/contact");
+    navigate('/contact');
   };
 
   return (
@@ -348,10 +337,10 @@ const Service1 = () => {
           </div>
         </section>
 
-        {/* Features/Benefits Cards */}
+        {/* Benefits Section */}
         <section
           className="py-16 md:py-24 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-inner my-12 text-gray-800 dark:text-gray-200"
-          style={{ backgroundColor: "var(--bg-color)" }}
+          style={{ backgroundColor: 'var(--bg-color)' }}
         >
           <h2 className="text-center text-3xl md:text-4xl font-bold mb-12">{t.benefitsTitle}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
@@ -373,7 +362,7 @@ const Service1 = () => {
           </div>
         </section>
 
-        {/* Benefits Section */}
+        {/* Benefits Detail Section */}
         <section className="section benefits-section">
           <div className="container">
             <div className="grid-2">
@@ -386,6 +375,7 @@ const Service1 = () => {
               >
                 <h2>{t.benefitsSectionTitle}</h2>
                 <p>{t.benefitsSectionDescription}</p>
+
                 <div className="benefits-list">
                   {t.benefitsList.map((benefit, idx) => (
                     <motion.div
@@ -401,10 +391,12 @@ const Service1 = () => {
                     </motion.div>
                   ))}
                 </div>
+
                 <Link to="/contact" className="btn btn-primary">
                   {t.contactButton} <FaArrowRight />
                 </Link>
               </motion.div>
+
               <motion.div
                 className="benefits-visual"
                 initial={{ opacity: 0, x: 50 }}
@@ -413,7 +405,7 @@ const Service1 = () => {
                 viewport={{ once: true }}
               >
                 <div className="benefits-image">
-                  <img src="images/bs59.jpg" alt="Data-Driven BI Visual" />
+                  <img src="images/bs59.jpg" alt="Customer Experience Solutions Visual" />
                 </div>
               </motion.div>
             </div>
@@ -433,6 +425,7 @@ const Service1 = () => {
               <h2 className="gallery-title">{t.galleryTitle}</h2>
               <p className="gallery-subtitle">{t.gallerySubtitle}</p>
             </motion.div>
+
             <div className="gallery-container">
               <div className="gallery-row">
                 <div className="gallery-big">
@@ -445,6 +438,7 @@ const Service1 = () => {
                   <img src="images/bs50.jpg" alt="Project 4" />
                 </div>
               </div>
+
               <div className="gallery-row reverse">
                 <div className="gallery-big">
                   <img src="images/bs55.jpg" alt="Global network map" />
@@ -463,15 +457,20 @@ const Service1 = () => {
         {/* Cost Estimator Section */}
         <main className="container mx-auto px-4 md:px-8">
           <section
-            className="py-16 md:py-4 bg-[var(--bg-color)] rounded-xl shadow-2xl my-12 text-[var(--text-color)] transition-colors"
-            style={{ boxShadow: "var(--shadow)" }}
+            className="py-16 md:py-4 bg-[var(--bg-color)] rounded-xl shadow-2xl my-12 text-[var(--text-color)] transition-colors duration-300"
+            style={{ boxShadow: 'var(--shadow)' }}
           >
             <h2 className="text-center text-3xl md:text-4xl font-bold mb-4">{t.costEstimatorTitle}</h2>
             <p className="text-center text-lg text-[var(--text-muted)] max-w-2xl mx-auto mb-12">{t.costEstimatorDescription}</p>
+
             <div className="max-w-4xl mx-auto p-8 rounded-xl bg-gradient-to-br from-indigo-50 to-blue-100 dark:from-[#1a202c] dark:to-[#2d3748] shadow-xl transition-colors duration-300">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Touchpoint Complexity */}
                 <div className="group bg-[var(--card-bg)] dark:bg-[#2d3748] p-6 rounded-xl shadow-lg hover:shadow-[var(--shadow-hover)] transition-all duration-300 border-2 border-yellow-400">
-                  <label htmlFor="vcpu-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+                  <label
+                    htmlFor="vcpu-slider"
+                    className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white"
+                  >
                     {t.sliderLabels.vcpu}
                   </label>
                   <div className="flex items-center space-x-4">
@@ -483,47 +482,47 @@ const Service1 = () => {
                       value={vcpu}
                       onChange={(e) => setVcpu(Number(e.target.value))}
                       className="w-full h-2 bg-[var(--input-bg)] rounded-lg appearance-none cursor-pointer"
-                      style={{ boxShadow: "var(--shadow)", transition: "all 0.2s ease-in-out" }}
+                      style={{ boxShadow: 'var(--shadow)', transition: 'all 0.2s ease-in-out' }}
                     />
                     <span className="w-16 text-center text-xl font-bold text-gray-800 dark:text-white">
                       {vcpu}%
                     </span>
                   </div>
                 </div>
+
+                {/* Personalization Memory */}
                 <div className="group bg-[var(--card-bg)] dark:bg-[#2d3748] p-6 rounded-xl shadow-lg hover:shadow-[var(--shadow-hover)] transition-all duration-300 border-2 border-yellow-400">
-                  <label htmlFor="ram-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">
-                    {t.sliderLabels.ram}
-                  </label>
+                  <label className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white" htmlFor="ram-slider">{t.sliderLabels.ram}</label>
                   <div className="flex items-center space-x-4">
                     <input
                       type="range"
                       id="ram-slider"
-                      min="1"
-                      max="256"
+                      min="4"
+                      max="64"
                       value={ram}
                       onChange={(e) => setRam(Number(e.target.value))}
                       className="w-full h-2 bg-[var(--input-bg)] rounded-lg appearance-none cursor-pointer"
-                      style={{ boxShadow: "var(--shadow)", transition: "all 0.2s ease-in-out" }}
+                      style={{ boxShadow: 'var(--shadow)', transition: 'all 0.2s ease-in-out' }}
                     />
                     <span className="w-16 text-center text-xl font-bold text-gray-800 dark:text-white">
                       {ram} GB
                     </span>
                   </div>
                 </div>
+
+                {/* Customer Data Storage */}
                 <div className="group bg-[var(--card-bg)] dark:bg-[#2d3748] p-6 rounded-xl shadow-lg hover:shadow-[var(--shadow-hover)] transition-all duration-300 border-2 border-yellow-400">
-                  <label htmlFor="storage-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">
-                    {t.sliderLabels.storage}
-                  </label>
+                  <label htmlFor="storage-slider" className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white">{t.sliderLabels.storage}</label>
                   <div className="flex items-center space-x-4">
                     <input
                       type="range"
                       id="storage-slider"
-                      min="10"
-                      max="5000"
+                      min="100"
+                      max="4000"
                       value={storage}
                       onChange={(e) => setStorage(Number(e.target.value))}
                       className="w-full h-2 bg-[var(--input-bg)] rounded-lg appearance-none cursor-pointer"
-                      style={{ boxShadow: "var(--shadow)", transition: "all 0.2s ease-in-out" }}
+                      style={{ boxShadow: 'var(--shadow)', transition: 'all 0.2s ease-in-out' }}
                     />
                     <span className="w-16 text-center text-xl font-bold text-gray-800 dark:text-white">
                       {storage} GB
@@ -531,6 +530,7 @@ const Service1 = () => {
                   </div>
                 </div>
               </div>
+
               <div className="mt-12 text-center">
                 <p className="text-3xl font-light mb-2 text-gray-800 dark:text-white">
                   {t.totalCostLabel}
@@ -553,19 +553,28 @@ const Service1 = () => {
         <section className="cta-section">
           <div className="cta-overlay">
             <div className="container">
-              <motion.div className="cta-content text-center" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }}>
+              <motion.div
+                className="cta-content text-center"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
                 <h2>{t.ctaTitle}</h2>
                 <p>{t.ctaParagraph}</p>
                 <div className="cta-buttons">
-                  <Link to="/contact" className="btn btn-primary btn-large">{t.ctaStartButton} <FaArrowRight /></Link>
-                  <Link to="/about" className="btn btn-outline btn-large">{t.ctaLearnMoreButton}</Link>
+                  <Link to="/contact" className="btn btn-primary btn-large">
+                    {t.ctaStartButton} <FaArrowRight />
+                  </Link>
+                  <Link to="/about" className="btn btn-outline btn-large">
+                    {t.ctaLearnMoreButton}
+                  </Link>
                 </div>
               </motion.div>
             </div>
           </div>
         </section>
-   
-
+    
 
               
 
@@ -622,7 +631,7 @@ const Service1 = () => {
   }
 
   .hero-title {
-    color: #fff; /* ✅ force white text so it’s visible on dark video background in light mode */
+    color: #fff; /* ✅ force white text so it's visible on dark video background in light mode */
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 1.1;
@@ -687,190 +696,12 @@ const Service1 = () => {
     100% { opacity: 1; transform: translateY(0);}
   }
 
-          .hero-text h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            color: white;
-          }
-
-          .gradient-text {
-            background: linear-gradient(45deg, #ffd700, #ff6b6b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-          }
-
-          .hero-text p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0.9;
-          }
-
-          .hero-buttons {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-          }
-
-          .hero-visual {
-            position: relative;
-          }
-
-          .hero-image {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            border-radius: 200px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-          }
-
-          .hero-image img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-          }
-
-          @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-          }
-
-          
-
-          .card-icon {
-            font-size: 2rem;
-            color: var(--primary-color);
-          }
-
-          .card-content h4 {
-            color: var(--heading-color);
-            margin: 0 0 5px 0;
-            font-size: 1rem;
-          }
-
-          .card-content p {
-            color: var(--text-muted);
-            margin: 0;
-            font-size: 0.9rem;
-          }
-
-  .features-section {
-    background: var(--sidebar-bg);
-    padding: 80px 0;
-  }
-
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 60px;
-  }
-    .feature-card {
-    background: var(--card-bg, #111);
-    border: 1px solid rgba(0, 123, 255, 0.4);
-    border-radius: 16px;
-    padding: 32px 24px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* Center horizontally */
-    justify-content: flex-start; /* Keep content top-aligned */
-  }
-
-  .feature-card.premium-card {
-    position: relative;
-    background: rgba(20, 20, 20, 0.9);
-    padding: 40px 30px;
-    border-radius: 20px;
-    text-align: center;
-    overflow: hidden;
-    color: #fff;
-    z-index: 1;
-  }
-
-  .feature-card.premium-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 2px;
-    background: linear-gradient(270deg, #4f9fff, #a855f7, #4f9fff);
-    background-size: 600% 600%;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    animation: borderMove 6s linear infinite;
-    z-index: -1;
-  }
-
-  @keyframes borderMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .feature-icon {
-    font-size: 3rem;
-    color: #4f9fff;
-    margin-bottom: 20px;
-  }
-
-  .feature-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-    color: #fff;
-  }
-
-  .feature-card p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #bbb;
-  }
-
-  .btn-learn {
-    margin-top: 40px;
-  }
-  .btn-learn-wrapper {
-    display: flex;
-    justify-content: center;  /* horizontal center */
-    align-items: center;      /* vertical center */
-    width: 100%;
-    margin-top: 20px;         /* optional spacing */
-  }
-
-  .btn-learn {
-    background: linear-gradient(90deg, #3b82f6, #a855f7);
-    color: #fff;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 9999px;  /* pill shape */
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;               /* spacing between text & arrow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .btn-learn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-
-
-
           .benefits-section {
             background: var(--bg-color);
           }
 
           .benefits-content h2 {
-            font-size: 1.9rem;
+            font-size: 2.0rem;
             color: var(--heading-color);
             margin-bottom: 20px;
           }
@@ -900,25 +731,25 @@ const Service1 = () => {
 
         .check-icon {
     color: var(--accent-color, #28a745);
-    font-size: 1.15rem;                 /* Slightly larger for visibility */
-    background: var(--accent-bg, #e0f7e9); /* Soft green for light mode */
+    font-size: 1.15rem;                
+    background: var(--accent-bg, #e0f7e9); 
     padding: 8px;
     border-radius: 50%;
-    box-shadow: 0 0 6px var(--accent-color, #28a745); /* Glow/silhouette effect */
+    box-shadow: 0 0 6px var(--accent-color, #28a745); 
     transition: background 0.3s, color 0.3s;
   }
 
     /* Light theme (optional, if you use a root variable) */
     :root {
-    --accent-color: #111;     /* Black for icon color */
-    --accent-bg: #eaeaea;     /* Light grey for background dot */
+    --accent-color: #111;     
+    --accent-bg: #eaeaea;     
   }
 
 
   /* Dark theme (assuming body.dark is toggled for dark mode) */
   body.dark .check-icon {
-    color: #5cffb1;                          /* Bright green for dark */
-    background: rgba(40,167,69,0.22);        /* Slightly brighter dot */
+    color: #5cffb1;                          
+    background: rgba(40,167,69,0.22);        
     box-shadow: 0 0 8px #5cffb1;
   }
 
@@ -937,10 +768,10 @@ const Service1 = () => {
           }
 
           .gallery-wrapper {
-    background: var(--sidebar-bg); /* Uses sidebar background for both themes */
+    background: var(--sidebar-bg); 
     padding: 80px 40px;
     font-family: "Segoe UI", sans-serif;
-    transition: background-color 0.3s ease; /* Smooth transition on theme change */
+    transition: background-color 0.3s ease; 
   }
 
 
@@ -1023,16 +854,15 @@ const Service1 = () => {
     }
   }
 
-
            .cta-section {
   position: relative;
-  background: url('/images/CTAServices.jpg') center/cover no-repeat fixed; /* fixed background */
+  background: url('/images/CTAServices.jpg') center/cover no-repeat fixed; 
   padding: 0 0;
   color: white;
 }
 
   .cta-overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 100px 0;
   }
 
@@ -1067,14 +897,6 @@ const Service1 = () => {
     transition: 0.3s;
   }
 
-  .btn-primary {
-    background: #ff6600;
-    color: white;
-  }
-
-  .btn-primary:hover {
-    background: #e65c00;
-  }
 
   .btn-outline {
     border: 2px solid white;
@@ -1086,33 +908,6 @@ const Service1 = () => {
     color: black;
   }
 
-
-  .btn {
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .btn-primary {
-    background: #ffd700;
-    color: #000;
-  }
-
-  .btn-primary:hover {
-    background: #e6c200;
-  }
-
-  .btn-outline {
-    border: 2px solid white;
-    color: white;
-  }
-
-  .btn-outline:hover {
-    background: white;
-    color: black;
-  }
   .btn-primary, .btn-outline, .btn-large {
     display: inline-flex;
     align-items: center;
@@ -1124,70 +919,16 @@ const Service1 = () => {
     vertical-align: middle;
   }
 
-
-
-          .faq-section {
-            background: var(--sidebar-bg);
-            padding: 0 0;
-            padding-bottom: 40px;
-            margin-top:-40px;
-          }
-
-          .faq-list {
-            max-width: 800px;
-            margin: 60px auto 0;
-          }
-
-          .faq-item {
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border-color);
-          }
-
-          .faq-item h4 {
-            color: var(--heading-color);
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-          }
-
-          .faq-item p {
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-          }
-
-        src/pages/Home2.jsx
-
-            .hero-text h1 {
-              font-size: 2.5rem;
-            }
-
-            .process-step {
-              flex-direction: column;
-              text-align: center;
-            }
-
-            .step-number {
-              width: auto;
-            }
-
-            .testimonials-grid {
-              grid-template-columns: 1fr;
-            }
-          }
             .gallery-row {
   display: flex;
   flex-direction: row;
   gap: 20px;
   align-items: stretch;
-  margin-bottom: 40px; /* Adds space between rows */
+  margin-bottom: 40px; 
 }
 .gallery-row.reverse {
   flex-direction: row-reverse;
-  padding-top: 20px; /* Adds top padding for reverse rows */
+  padding-top: 20px; 
 }
 
         `}</style>
@@ -1196,4 +937,4 @@ const Service1 = () => {
     );
   };
 
-  export default Service1;
+  export default Service5;

@@ -8,7 +8,7 @@ const translations = {
     enterCredentials: "Enter your credentials",
     emailAddress: "Email Address",
     password: "Password",
-    forgotPassword: "Forgot Password?",
+    forgotPassword: "Forgot Password? Reset",
     loginBtn: "Sign In",
     dontHaveAccount: "Don't have an account?",
     signupLink: "Sign up",
@@ -430,16 +430,19 @@ const Login = () => {
                   </div>
                 </div>
                 <div className="form-options" style={{ textAlign: 'right' }}>
-                  <button
-                    type="button"
-                    className="forgot-link"
-                    onClick={() => {
-                      setError('');
-                      setShowForgot(true);
-                    }}
-                  >
-                    {translations[language].forgotPassword}
-                  </button>
+                  <span className="forgot-text">
+                    Forgot Password?{' '}
+                    <button
+                      type="button"
+                      className="forgot-link"
+                      onClick={() => {
+                        setError('');
+                        setShowForgot(true);
+                      }}
+                    >
+                      Reset
+                    </button>
+                  </span>
                 </div>
                 <motion.button
                   type="submit"
@@ -774,6 +777,7 @@ const Login = () => {
           box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
         }
         .signup-link, .form-header p { color: #f0f0f0; }
+        .forgot-text { color: #f0f0f0; }
         .inline-link, .forgot-link {
           background: none; border: none; color: #ffd700; text-decoration: underline; font-weight: 700; cursor: pointer; transition: color 0.16s;
         }

@@ -11,7 +11,7 @@ import {
   FaCheck,
   FaArrowRight,
 } from 'react-icons/fa';
-import { useLanguage } from '../context.jsx/LanguageContext'; // Adjust path as needed
+import { useLanguage } from '../context.jsx/LanguageContext'; // Adjust the path as needed
 
 const translations = {
   en: {
@@ -82,6 +82,14 @@ const translations = {
     benefitsSectionTitle: 'Digital Transformation Consulting',
     benefitsSectionDescription:
       'We deliver customized strategies and expert guidance to help your business leverage digital technologies for sustained success.',
+    benefitsList: [
+      'Custom digital transformation strategies for your industry',
+      'Automation to boost efficiency and reduce costs',
+      'Robust integration of systems and technologies',
+      'Data insights that empower smarter business decisions',
+      'Agile methodologies tailored to your team',
+      'Ongoing support for sustained transformation success',
+    ],
 
     galleryTitle: 'Digital Transformation Portfolio',
     gallerySubtitle:
@@ -104,63 +112,63 @@ const translations = {
     ctaLearnMoreButton: 'Learn More About Us',
   },
   ar: {
-    documentTitle: '[translate:استشارات التحول الرقمي - حلول الأعمال فورستاكلي]',
-    heroTitle: '[translate:استشارات التحول الرقمي]',
+    documentTitle: 'استشارات التحول الرقمي - حلول الأعمال فورستاكلي',
+    heroTitle: 'استشارات التحول الرقمي',
     heroParagraph:
-      '[translate:نرشد مؤسستك عبر مبادرات رقمية استراتيجية تعزز الابتكار، وتحسّن تجربة العملاء، وتخلق قيمة تجارية ملموسة.]',
-    heroButton: '[translate:اتصل بنا]', 
+      'نرشد مؤسستك عبر مبادرات رقمية استراتيجية تعزز الابتكار، وتحسّن تجربة العملاء، وتخلق قيمة تجارية ملموسة.',
+    heroButton: 'اتصل بنا', 
 
-    benefitsTitle: '[translate:لماذا تختار استشارات التحول الرقمي الخاصة بنا؟]',
+    benefitsTitle: 'لماذا تختار استشارات التحول الرقمي الخاصة بنا؟',
     benefitsCards: [
       {
-        title: '[translate:تطوير خارطة طريق استراتيجية]',
-        brief: '[translate:إنشاء خطط واضحة وقابلة للتنفيذ مصممة خصيصاً لرؤية مؤسستك الفريدة.]',
-        detail: '[translate:مواءمة المبادرات التقنية مع أهداف العمل لتحقيق تأثير ملموس.]',
+        title: 'تطوير خارطة طريق استراتيجية',
+        brief: 'إنشاء خطط واضحة وقابلة للتنفيذ مصممة خصيصاً لرؤية مؤسستك الفريدة.',
+        detail: 'مواءمة المبادرات التقنية مع أهداف العمل لتحقيق تأثير ملموس.',
         gradientFrom: 'from-indigo-500',
         gradientTo: 'to-blue-600',
         iconPath:
           'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2z',
       },
       {
-        title: '[translate:أتمتة العمليات]',
-        brief: '[translate:تبسيط العمليات لزيادة الكفاءة وتقليل التكاليف.]',
-        detail: '[translate:الاستفادة من الذكاء الاصطناعي وتعلم الآلة لأتمتة المهام المتكررة.]',
+        title: 'أتمتة العمليات',
+        brief: 'تبسيط العمليات لزيادة الكفاءة وتقليل التكاليف.',
+        detail: 'الاستفادة من الذكاء الاصطناعي وتعلم الآلة لأتمتة المهام المتكررة.',
         gradientFrom: 'from-green-500',
         gradientTo: 'to-teal-600',
         iconPath:
           'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15h2v2h-2zm0-8h2v6',
       },
       {
-        title: '[translate:رؤى معتمدة على البيانات]',
-        brief: '[translate:تحويل البيانات المعقدة إلى فرص استراتيجية.]',
-        detail: '[translate:لوحات تحكم وتحليلات مخصصة لدعم اتخاذ القرار.]',
+        title: 'رؤى معتمدة على البيانات',
+        brief: 'تحويل البيانات المعقدة إلى فرص استراتيجية.',
+        detail: 'لوحات تحكم وتحليلات مخصصة لدعم اتخاذ القرار.',
         gradientFrom: 'from-red-500',
         gradientTo: 'to-pink-600',
         iconPath:
           'M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 14l5-5h-4V7h-2v4h-3z',
       },
       {
-        title: '[translate:إدارة التغيير]',
-        brief: '[translate:توجيه فريقك خلال ممارسات التبني الفعالة.]',
-        detail: '[translate:استراتيجيات لتقليل الانقطاعات وتعظيم القبول.]',
+        title: 'إدارة التغيير',
+        brief: 'توجيه فريقك خلال ممارسات التبني الفعالة.',
+        detail: 'استراتيجيات لتقليل الانقطاعات وتعظيم القبول.',
         gradientFrom: 'from-purple-500',
         gradientTo: 'to-indigo-600',
         iconPath:
           'M19.4 14.8c-.8.8-2.2.8-3 0l-3.5-3.5c-.8-.8-.8-2.2 0-3l3.5-3.5c.8-.8 2.2-.8 3 0l3.5 3.5c.8.8.8 2.2 0 3l-3.5 3.5zm-5.7-5.7L12 12l2.7 2.7 2.7-2.7-2.7-2.7zM11 2a9 9 0 100 18A9 9 0 0011 2zm0 16a7 7 0 110-14A7 7 0 0111 18zm-.5-5.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z',
       },
       {
-        title: '[translate:تحديث الأنظمة القديمة]',
-        brief: '[translate:تحديث ودمج البنية التحتية التقنية القديمة.]',
-        detail: '[translate:تأمين استمرارية العمليات مع تقليل المخاطر.]',
+        title: 'تحديث الأنظمة القديمة',
+        brief: 'تحديث ودمج البنية التحتية التقنية القديمة.',
+        detail: 'تأمين استمرارية العمليات مع تقليل المخاطر.',
         gradientFrom: 'from-yellow-400',
         gradientTo: 'to-orange-500',
         iconPath:
           'M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.85 2.14-7.48 6.27C2.45 11.08 1 12 1 15c0 3.31 2.69 6 6 6h12c3.31 0 6-2.69 6-6 0-2.22-1.45-3.92-3.65-4.96zM12 18l-4-4h3v-4h2v4h3z',
       },
       {
-        title: '[translate:التحسين المستمر]',
-        brief: '[translate:تحسينات مستمرة للحفاظ على مرونة وتنافسية عملك.]',
-        detail: '[translate:الاستفادة من أحدث التقنيات للنجاح الدائم.]',
+        title: 'التحسين المستمر',
+        brief: 'تحسينات مستمرة للحفاظ على مرونة وتنافسية عملك.',
+        detail: 'الاستفادة من أحدث التقنيات للنجاح الدائم.',
         gradientFrom: 'from-cyan-500',
         gradientTo: 'to-sky-600',
         iconPath:
@@ -168,90 +176,98 @@ const translations = {
       },
     ],
 
-    benefitsSectionTitle: '[translate:استشارات التحول الرقمي]',
+    benefitsSectionTitle: 'استشارات التحول الرقمي',
     benefitsSectionDescription:
-      '[translate:نقدم استراتيجيات مخصصة وتوجيهًا خبيرًا لمساعدتك على الاستفادة من التقنيات الرقمية للنجاح المستدام.]',
+      'نقدم استراتيجيات مخصصة وتوجيهًا خبيرًا لمساعدتك على الاستفادة من التقنيات الرقمية للنجاح المستدام.',
+    benefitsList: [
+      'استراتيجيات رقمية مخصصة لصناعتك',
+      'أتمتة لزيادة الكفاءة وتقليل التكاليف',
+      'تكامل قوي للأنظمة والتقنيات',
+      'رؤى بيانات تمكن من قرارات أذكى',
+      'منهجيات رشيقة مصممة لفريقك',
+      'دعم مستمر لنجاح التحول',
+    ],
 
-    galleryTitle: '[translate:محفظة التحول الرقمي]',
+    galleryTitle: 'محفظة التحول الرقمي',
     gallerySubtitle:
-      '[translate:عرض لمشاريع تقدم حلول رقمية تحويلية عبر الصناعات.]',
+      'عرض لمشاريع تقدم حلول رقمية تحويلية عبر الصناعات.',
 
-    costEstimatorTitle: '[translate:قدّر تكاليف تحولك الرقمي]',
+    costEstimatorTitle: 'قدّر تكاليف تحولك الرقمي',
     costEstimatorDescription:
-      '[translate:استخدم أداتنا التفاعلية للحصول على تقدير شفاف وفوري لمشروعك.]',
+      'استخدم أداتنا التفاعلية للحصول على تقدير شفاف وفوري لمشروعك.',
     sliderLabels: {
-      vcpu: '[translate:ساعات الاستشارات الاستراتيجية]',
-      ram: '[translate:ساعات الأتمتة والأدوات]',
-      storage: '[translate:مستوى تعقيد التكامل]',
+      vcpu: 'ساعات الاستشارات الاستراتيجية',
+      ram: 'ساعات الأتمتة والأدوات',
+      storage: 'مستوى تعقيد التكامل',
     },
-    totalCostLabel: '[translate:التكلفة المقدرة لمشروعك]',
-    contactButton: '[translate:اتصل بنا لطلب عرض مخصص]',
+    totalCostLabel: 'التكلفة المقدرة لمشروعك',
+    contactButton: 'اتصل بنا لطلب عرض مخصص',
 
-    ctaTitle: '[translate:هل أنت مستعد لتحويل عملك؟]',
+    ctaTitle: 'هل أنت مستعد لتحويل عملك؟',
     ctaParagraph:
-      '[translate:اتصل بنا اليوم لبدء رحلة التحول الرقمي والابتكار بثقة.]',
-    ctaStartButton: '[translate:ابدأ تحولك]',
-    ctaLearnMoreButton: '[translate:تعرف علينا أكثر]',
+      'اتصل بنا اليوم لبدء رحلة التحول الرقمي والابتكار بثقة.',
+    ctaStartButton: 'ابدأ تحولك',
+    ctaLearnMoreButton: 'تعرف علينا أكثر',
   },
 
   he: {
-    documentTitle: '[translate:ייעוץ טרנספורמציה דיגיטלית - פתרונות עסקיים פורסטאקלי]',
-    heroTitle: '[translate:ייעוץ טרנספורמציה דיגיטלית]',
+    documentTitle: 'ייעוץ טרנספורמציה דיגיטלית - פתרונות עסקיים פורסטאקלי',
+    heroTitle: 'ייעוץ טרנספורמציה דיגיטלית',
     heroParagraph:
-      '[translate:מנחים את הארגון שלך ביוזמות דיגיטליות אסטרטגיות שמקדמות חדשנות, משפרות את חווית הלקוח ויוצרות ערך עסקי מדיד.]',
-    heroButton: '[translate:צור קשר]',
+      'מנחים את הארגון שלך ביוזמות דיגיטליות אסטרטגיות שמקדמות חדשנות, משפרות את חווית הלקוח ויוצרות ערך עסקי מדיד.',
+    heroButton: 'צור קשר',
 
-    benefitsTitle: '[translate:למה לבחור בייעוץ הטרנספורמציה הדיגיטלית שלנו?]',
+    benefitsTitle: 'למה לבחור בייעוץ הטרנספורמציה הדיגיטלית שלנו?',
     benefitsCards: [
       {
-        title: '[translate:פיתוח מפת דרכים אסטרטגית]',
-        brief: '[translate:יצירת תוכניות ברורות וברות ביצוע המותאמות לחזון הייחודי של הארגון שלך.]',
-        detail: '[translate:התאמת יוזמות טכנולוגיות למטרות העסק להשגת השפעה משמעותית.]',
+        title: 'פיתוח מפת דרכים אסטרטגית',
+        brief: 'יצירת תוכניות ברורות וברות ביצוע המותאמות לחזון הייחודי של הארגון שלך.',
+        detail: 'התאמת יוזמות טכנולוגיות למטרות העסק להשגת השפעה משמעותית.',
         gradientFrom: 'from-indigo-500',
         gradientTo: 'to-blue-600',
         iconPath:
           'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2z',
       },
       {
-        title: '[translate:אוטומציית תהליכים]',
-        brief: '[translate:פישוט תהליכים להגברת יעילות והפחתת עלויות.]',
-        detail: '[translate:ניצול בינה מלאכותית ולמידת מכונה לאוטומציה של משימות חוזרות.]',
+        title: 'אוטומציית תהליכים',
+        brief: 'פישוט תהליכים להגברת יעילות והפחתת עלויות.',
+        detail: 'ניצול בינה מלאכותית ולמידת מכונה לאוטומציה של משימות חוזרות.',
         gradientFrom: 'from-green-500',
         gradientTo: 'to-teal-600',
         iconPath:
           'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15h2v2h-2zm0-8h2v6',
       },
       {
-        title: '[translate:תובנות מבוססות נתונים]',
-        brief: '[translate:הפיכת נתונים מורכבים להזדמנויות אסטרטגיות.]',
-        detail: '[translate:לוחות מחוונים וניתוחים מותאמים לקבלת החלטות.]',
+        title: 'תובנות מבוססות נתונים',
+        brief: 'הפיכת נתונים מורכבים להזדמנויות אסטרטגיות.',
+        detail: 'לוחות מחוונים וניתוחים מותאמים לקבלת החלטות.',
         gradientFrom: 'from-red-500',
         gradientTo: 'to-pink-600',
         iconPath:
           'M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 14l5-5h-4V7h-2v4h-3z',
       },
       {
-        title: '[translate:ניהול שינוי]',
-        brief: '[translate:הנחיית הצוות שלך באמצעות אימוץ יעיל.]',
-        detail: '[translate:אסטרטגיות לצמצום הפרעות ומקסום הקבלה.]',
+        title: 'ניהול שינוי',
+        brief: 'הנחיית הצוות שלך באמצעות אימוץ יעיל.',
+        detail: 'אסטרטגיות לצמצום הפרעות ומקסום הקבלה.',
         gradientFrom: 'from-purple-500',
         gradientTo: 'to-indigo-600',
         iconPath:
           'M19.4 14.8c-.8.8-2.2.8-3 0l-3.5-3.5c-.8-.8-.8-2.2 0-3l3.5-3.5c.8-.8 2.2-.8 3 0l3.5 3.5c.8.8.8 2.2 0 3l-3.5 3.5zm-5.7-5.7L12 12l2.7 2.7 2.7-2.7-2.7-2.7zM11 2a9 9 0 100 18A9 9 0 0011 2zm0 16a7 7 0 110-14A7 7 0 0111 18zm-.5-5.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z',
       },
       {
-        title: '[translate:מודרניזציה של מערכות ישנות]',
-        brief: '[translate:עדכון ואינטגרציה של תשתיות IT מיושנות.]',
-        detail: '[translate:הבטחת המשכיות הפעילות תוך הפחתת סיכונים.]',
+        title: 'מודרניזציה של מערכות ישנות',
+        brief: 'עדכון ואינטגרציה של תשתיות IT מיושנות.',
+        detail: 'הבטחת המשכיות הפעילות תוך הפחתת סיכונים.',
         gradientFrom: 'from-yellow-400',
         gradientTo: 'to-orange-500',
         iconPath:
           'M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.85 2.14-7.48 6.27C2.45 11.08 1 12 1 15c0 3.31 2.69 6 6 6h12c3.31 0 6-2.69 6-6 0-2.22-1.45-3.92-3.65-4.96zM12 18l-4-4h3v-4h2v4h3z',
       },
       {
-        title: '[translate:שיפור מתמיד]',
-        brief: '[translate:שיפורים שוטפים לשמירה על גמישות ותחרותיות העסק שלך.]',
-        detail: '[translate:שימוש בטכנולוגיות העדכניות להצלחה מתמשכת.]',
+        title: 'שיפור מתמיד',
+        brief: 'שיפורים שוטפים לשמירה על גמישות ותחרותיות העסק שלך.',
+        detail: 'שימוש בטכנולוגיות העדכניות להצלחה מתמשכת.',
         gradientFrom: 'from-cyan-500',
         gradientTo: 'to-sky-600',
         iconPath:
@@ -259,30 +275,38 @@ const translations = {
       },
     ],
 
-    benefitsSectionTitle: '[translate:ייעוץ טרנספורמציה דיגיטלית]',
+    benefitsSectionTitle: 'ייעוץ טרנספורמציה דיגיטלית',
     benefitsSectionDescription:
-      '[translate:אנו מספקים אסטרטגיות מותאמות והכוונה מקצועית כדי לעזור לעסק שלך להשתמש בטכנולוגיות דיגיטליות להצלחה מתמשכת.]',
+      'אנו מספקים אסטרטגיות מותאמות והכוונה מקצועית כדי לעזור לעסק שלך להשתמש בטכנולוגיות דיגיטליות להצלחה מתמשכת.',
+    benefitsList: [
+      'אסטרטגיות טרנספורמציה דיגיטלית מותאמות לתעשייה שלך',
+      'אוטומציה להגברת היעילות והפחתת עלויות',
+      'אינטגרציה חזקה של מערכות וטכנולוגיות',
+      'תובנות נתונים להחלטות חכמות יותר',
+      'מתודולוגיות אגיל מותאמות לצוות שלך',
+      'תמיכה מתמשכת להצלחת הטרנספורמציה',
+    ],
 
-    galleryTitle: '[translate:פורטפוליו טרנספורמציה דיגיטלית]',
+    galleryTitle: 'פורטפוליו טרנספורמציה דיגיטלית',
     gallerySubtitle:
-      '[translate:תצוגת פרויקטים המדגימים פתרונות דיגיטליים משני תעשיות שונות.]',
+      'תצוגת פרויקטים המדגימים פתרונות דיגיטליים משני תעשיות שונות.',
 
-    costEstimatorTitle: '[translate:הערך את עלויות הטרנספורמציה הדיגיטלית שלך]',
+    costEstimatorTitle: 'הערך את עלויות הטרנספורמציה הדיגיטלית שלך',
     costEstimatorDescription:
-      '[translate:השתמש בכלי האינטראקטיבי שלנו לקבלת הערכה שקופה ומיידית עבור הפרויקט שלך.]',
+      'השתמש בכלי האינטראקטיבי שלנו לקבלת הערכה שקופה ומיידית עבור הפרויקט שלך.',
     sliderLabels: {
-      vcpu: '[translate:שעות ייעוץ אסטרטגי]',
-      ram: '[translate:שעות אוטומציה וכלים]',
-      storage: '[translate:רמת מורכבות אינטגרציה]',
+      vcpu: 'שעות ייעוץ אסטרטגי',
+      ram: 'שעות אוטומציה וכלים',
+      storage: 'רמת מורכבות אינטגרציה',
     },
-    totalCostLabel: '[translate:העלות המשוערת של הפרויקט שלך]',
-    contactButton: '[translate:צור קשר לקבלת הצעת מחיר מותאמת]',
+    totalCostLabel: 'העלות המשוערת של הפרויקט שלך',
+    contactButton: 'צור קשר לקבלת הצעת מחיר מותאמת',
 
-    ctaTitle: '[translate:מוכן לשנות את העסק שלך?]',
+    ctaTitle: 'מוכן לשנות את העסק שלך?',
     ctaParagraph:
-      '[translate:צור קשר עוד היום כדי להתחיל את מסע הטרנספורמציה הדיגיטלית ולחדש בביטחון.]',
-    ctaStartButton: '[translate:התחל את הטרנספורמציה]',
-    ctaLearnMoreButton: '[translate:למידע נוסף עלינו]',
+      'צור קשר עוד היום כדי להתחיל את מסע הטרנספורמציה הדיגיטלית ולחדש בביטחון.',
+    ctaStartButton: 'התחל את הטרנספורמציה',
+    ctaLearnMoreButton: 'למידע נוסף עלינו',
   },
 };
 
@@ -359,7 +383,7 @@ const Service1 = () => {
           </div>
         </section>
 
-        {/* Benefits Detail Section */}
+        {/* Benefits List Section */}
         <section className="section benefits-section">
           <div className="container">
             <div className="grid-2">
@@ -374,7 +398,7 @@ const Service1 = () => {
                 <p>{t.benefitsSectionDescription}</p>
 
                 <div className="benefits-list">
-                  {[...Array(6)].map((_, idx) => (
+                  {t.benefitsList.map((benefit, idx) => (
                     <motion.div
                       key={idx}
                       className="benefit-item"
@@ -384,42 +408,13 @@ const Service1 = () => {
                       viewport={{ once: true }}
                     >
                       <FaCheck className="check-icon" />
-                      <span>
-                        {[
-                          language === 'ar'
-                            ? [
-                                'استراتيجيات رقمية مخصصة لصناعتك',
-                                'أتمتة لزيادة الكفاءة وتقليل التكاليف',
-                                'تكامل قوي للأنظمة والتقنيات',
-                                'رؤى بيانات تمكن من قرارات أذكى',
-                                'منهجيات رشيقة مصممة لفريقك',
-                                'دعم مستمر لنجاح التحول',
-                              ]
-                            : language === 'he'
-                            ? [
-                                'אסטרטגיות טרנספורמציה דיגיטלית מותאמות לתעשייה שלך',
-                                'אוטומציה להגברת היעילות והפחתת עלויות',
-                                'אינטגרציה חזקה של מערכות וטכנולוגיות',
-                                'תובנות נתונים להחלטות חכמות יותר',
-                                'מתודולוגיות אג’יל מותאמות לצוות שלך',
-                                'תמיכה מתמשכת להצלחת הטרנספורמציה',
-                              ]
-                            : [
-                                'Custom digital transformation strategies for your industry',
-                                'Automation to boost efficiency and reduce costs',
-                                'Robust integration of systems and technologies',
-                                'Data insights that empower smarter business decisions',
-                                'Agile methodologies tailored to your team',
-                                'Ongoing support for sustained transformation success',
-                              ],
-                        ][0][idx]}
-                      </span>
+                      <span>{benefit}</span>
                     </motion.div>
                   ))}
                 </div>
 
                 <Link to="/contact" className="btn btn-primary">
-                  {t.contactButton || 'Get Started'} <FaArrowRight />
+                  {t.contactButton} <FaArrowRight />
                 </Link>
               </motion.div>
 
@@ -1236,6 +1231,6 @@ const Service1 = () => {
         </div>
       </div>
     );
-  };
+};
 
-  export default Service1;
+export default Service1;

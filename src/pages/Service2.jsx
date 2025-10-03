@@ -114,63 +114,63 @@ const translations = {
   },
 
   ar: {
-    documentTitle: '[translate:تحديث تكنولوجيا المعلومات المؤسسي - حلول الأعمال فورستاكلي]',
-    heroTitle: '[translate:تحديث تكنولوجيا المعلومات المؤسسي]',
+    documentTitle: 'تحديث تكنولوجيا المعلومات المؤسسي - حلول الأعمال فورستاكلي',
+    heroTitle: 'تحديث تكنولوجيا المعلومات المؤسسي',
     heroParagraph:
-      '[translate:تمكين المؤسسات من تحديث استراتيجي يعزز القابلية للتوسع، يقوي الأمن، يقلل التكاليف، ويسرع الابتكار لتحقيق مرونة أعمال مستدامة.]',
-    heroButton: '[translate:اتصل بنا]',
+      'تمكين المؤسسات من تحديث استراتيجي يعزز القابلية للتوسع، يقوي الأمن، يقلل التكاليف، ويسرع الابتكار لتحقيق مرونة أعمال مستدامة.',
+    heroButton: 'اتصل بنا',
 
-    benefitsTitle: '[translate:لماذا تختار تحديث تكنولوجيا المعلومات المؤسسي الخاص بنا؟]',
+    benefitsTitle: 'لماذا تختار تحديث تكنولوجيا المعلومات المؤسسي الخاص بنا؟',
     benefitsCards: [
       {
-        title: '[translate:كفاءة تشغيلية معززة]',
-        brief: '[translate:تبسيط العمليات باستخدام أنظمة تكنولوجيا حديثة تقلل التأخير والمهام اليدوية.]',
-        detail: '[translate:تحسين التعاون، وقت تشغيل النظام، وتمكين الموظفين من التركيز على الأعمال الاستراتيجية.]',
+        title: 'كفاءة تشغيلية معززة',
+        brief: 'تبسيط العمليات باستخدام أنظمة تكنولوجيا حديثة تقلل التأخير والمهام اليدوية.',
+        detail: 'تحسين التعاون، وقت تشغيل النظام، وتمكين الموظفين من التركيز على الأعمال الاستراتيجية.',
         gradientFrom: 'from-indigo-500',
         gradientTo: 'to-blue-600',
         iconPath:
           'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2z',
       },
       {
-        title: '[translate:تحسين الأمن السيبراني والامتثال]',
-        brief: '[translate:حماية مؤسستك من خلال أطر أمان متقدمة والمراقبة اللحظية.]',
-        detail: '[translate:تحقيق الامتثال التنظيمي وحماية بياناتك من التهديدات الناشئة.]',
+        title: 'تحسين الأمن السيبراني والامتثال',
+        brief: 'حماية مؤسستك من خلال أطر أمان متقدمة والمراقبة اللحظية.',
+        detail: 'تحقيق الامتثال التنظيمي وحماية بياناتك من التهديدات الناشئة.',
         gradientFrom: 'from-green-500',
         gradientTo: 'to-teal-600',
         iconPath:
           'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15h2v2h-2zm0-8h2v6',
       },
       {
-        title: '[translate:خفض التكاليف وتحسين الموارد]',
-        brief: '[translate:خفض مصاريف التشغيل باستخدام بنى تحتية قائمة على السحابة ومؤتمتة.]',
-        detail: '[translate:توزيع موارد تكنولوجيا المعلومات بكفاءة مع التركيز على الأنشطة ذات القيمة.]',
+        title: 'خفض التكاليف وتحسين الموارد',
+        brief: 'خفض مصاريف التشغيل باستخدام بنى تحتية قائمة على السحابة ومؤتمتة.',
+        detail: 'توزيع موارد تكنولوجيا المعلومات بكفاءة مع التركيز على الأنشطة ذات القيمة.',
         gradientFrom: 'from-red-500',
         gradientTo: 'to-pink-600',
         iconPath:
           'M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 14l5-5h-4V7h-2v4h-3z',
       },
       {
-        title: '[translate:مرونة وقابلية التوسع أكبر]',
-        brief: '[translate:تكيف بنية تكنولوجيا المعلومات بسرعة مع متطلبات العمل المتغيرة.]',
-        detail: '[translate:توسيع موارد السحابة وحلول البرامج بسلاسة لدعم النمو.]',
+        title: 'مرونة وقابلية التوسع أكبر',
+        brief: 'تكيف بنية تكنولوجيا المعلومات بسرعة مع متطلبات العمل المتغيرة.',
+        detail: 'توسيع موارد السحابة وحلول البرامج بسلاسة لدعم النمو.',
         gradientFrom: 'from-purple-500',
         gradientTo: 'to-indigo-600',
         iconPath:
           'M19.4 14.8c-.8.8-2.2.8-3 0l-3.5-3.5c-.8-.8-.8-2.2 0-3l3.5-3.5c.8-.8 2.2-.8 3 0l3.5 3.5c.8.8.8 2.2 0 3l-3.5 3.5zm-5.7-5.7L12 12l2.7 2.7 2.7-2.7-2.7-2.7zM11 2a9 9 0 100 18A9 9 0 0011 2zm0 16a7 7 0 110-14A7 7 0 0111 18zm-.5-5.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z',
       },
       {
-        title: '[translate:أمان متقدم والامتثال]',
-        brief: '[translate:حماية بيانات مؤسستك باستخدام معايير أمان على مستوى المؤسسات.]',
-        detail: '[translate:ضمان الامتثال للمعايير واللوائح الصناعية.]',
+        title: 'أمان متقدم والامتثال',
+        brief: 'حماية بيانات مؤسستك باستخدام معايير أمان على مستوى المؤسسات.',
+        detail: 'ضمان الامتثال للمعايير واللوائح الصناعية.',
         gradientFrom: 'from-yellow-400',
         gradientTo: 'to-orange-500',
         iconPath:
           'M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.85 2.14-7.48 6.27C2.45 11.08 1 12 1 15c0 3.31 2.69 6 6 6h12c3.31 0 6-2.69 6-6 0-2.22-1.45-3.92-3.65-4.96zM12 18l-4-4h3v-4h2v4h3z',
       },
       {
-        title: '[translate:تحسين ودعم مستمر]',
-        brief: '[translate:تحسينات وصيانة مستمرة لضمان جاهزية المستقبل.]',
-        detail: '[translate:تمكين مؤسستك من خلال أحدث التكنولوجيا والدعم الخبير.]',
+        title: 'تحسين ودعم مستمر',
+        brief: 'تحسينات وصيانة مستمرة لضمان جاهزية المستقبل.',
+        detail: 'تمكين مؤسستك من خلال أحدث التكنولوجيا والدعم الخبير.',
         gradientFrom: 'from-cyan-500',
         gradientTo: 'to-sky-600',
         iconPath:
@@ -178,98 +178,98 @@ const translations = {
       },
     ],
 
-    benefitsSectionTitle: '[translate:نهج تحديث المؤسسات]',
+    benefitsSectionTitle: 'نهج تحديث المؤسسات',
     benefitsSectionDescription:
-      '[translate:نقدم خطط تحديث مصممة خصيصًا تركز على دمج الأنظمة القديمة، والهجرة إلى السحابة، وتطوير بيئة تكنولوجيا المعلومات لدعم احتياجات العمل الحالية والمستقبلية.]',
+      'نقدم خطط تحديث مصممة خصيصًا تركز على دمج الأنظمة القديمة، والهجرة إلى السحابة، وتطوير بيئة تكنولوجيا المعلومات لدعم احتياجات العمل الحالية والمستقبلية.',
     benefitsList: [
-      '[translate:تقليل تكاليف التشغيل من خلال بنية تحتية فعالة]',
-      '[translate:زيادة المرونة باستخدام هندسة سحابية قابلة للتوسع]',
-      '[translate:تعزيز الأمن والامتثال باستخدام حلول مؤسسية]',
-      '[translate:تحسين أداء واعتمادية التطبيقات]',
-      '[translate:تمكين اتخاذ قرارات مبنية على البيانات باستخدام تحليلات حديثة]',
-      '[translate:ضمان تحديث مستمر ومستدام للمؤسسة]',
+      'تقليل تكاليف التشغيل من خلال بنية تحتية فعالة',
+      'زيادة المرونة باستخدام هندسة سحابية قابلة للتوسع',
+      'تعزيز الأمن والامتثال باستخدام حلول مؤسسية',
+      'تحسين أداء واعتمادية التطبيقات',
+      'تمكين اتخاذ قرارات مبنية على البيانات باستخدام تحليلات حديثة',
+      'ضمان تحديث مستمر ومستدام للمؤسسة',
     ],
 
-    galleryTitle: '[translate:محفظة تحديث المؤسسات]',
+    galleryTitle: 'محفظة تحديث المؤسسات',
     gallerySubtitle:
-      '[translate:عرض مشاريع تحديث ناجحة تعزز الأداء والمرونة والقابلية للتوسع.]',
+      'عرض مشاريع تحديث ناجحة تعزز الأداء والمرونة والقابلية للتوسع.',
 
-    costEstimatorTitle: '[translate:قدّر تكاليف تحديث تكنولوجيا المعلومات]',
+    costEstimatorTitle: 'قدّر تكاليف تحديث تكنولوجيا المعلومات',
     costEstimatorDescription:
-      '[translate:استخدم أداتنا التفاعلية لتوقع استثمارات التحديث بناءً على احتياجاتك.]',
+      'استخدم أداتنا التفاعلية لتوقع استثمارات التحديث بناءً على احتياجاتك.',
     sliderLabels: {
-      vcpu: '[translate:ساعات الاستشارات]',
-      ram: '[translate:ساعات الأتمتة والأدوات]',
-      storage: '[translate:مستوى تعقيد التكامل]',
+      vcpu: 'ساعات الاستشارات',
+      ram: 'ساعات الأتمتة والأدوات',
+      storage: 'مستوى تعقيد التكامل',
     },
-    totalCostLabel: '[translate:التكلفة المقدرة لتحديث تكنولوجيا المعلومات]',
-    contactButton: '[translate:اتصل بنا لطلب عرض سعر مخصص]',
+    totalCostLabel: 'التكلفة المقدرة لتحديث تكنولوجيا المعلومات',
+    contactButton: 'اتصل بنا لطلب عرض سعر مخصص',
 
-    ctaTitle: '[translate:هل أنت مستعد لتحديث تكنولوجيا المعلومات المؤسسية؟]',
+    ctaTitle: 'هل أنت مستعد لتحديث تكنولوجيا المعلومات المؤسسية؟',
     ctaParagraph:
-      '[translate:اتصل بنا اليوم لبدء رحلة تحديث تكنولوجيا المعلومات المؤسسية واكتشاف فرص جديدة.]',
-    ctaStartButton: '[translate:ابدأ التحديث]',
-    ctaLearnMoreButton: '[translate:تعرف علينا أكثر]',
+      'اتصل بنا اليوم لبدء رحلة تحديث تكنولوجيا المعلومات المؤسسية واكتشاف فرص جديدة.',
+    ctaStartButton: 'ابدأ التحديث',
+    ctaLearnMoreButton: 'تعرف علينا أكثر',
   },
 
   he: {
-    documentTitle: '[translate:מודרניזציה של IT ארגוני - פתרונות עסקיים פורסטאקלי]',
-    heroTitle: '[translate:מודרניזציה של IT ארגוני]',
+    documentTitle: 'מודרניזציה של IT ארגוני - פתרונות עסקיים פורסטאקלי',
+    heroTitle: 'מודרניזציה של IT ארגוני',
     heroParagraph:
-      '[translate:העצמת ארגונים עם מודרניזציה אסטרטגית שמשפרת גמישות, מחזקת אבטחה, מפחיתה עלויות ומאיצה חדשנות עבור גמישות עסקית מתמשכת.]',
-    heroButton: '[translate:צור קשר]',
+      'העצמת ארגונים עם מודרניזציה אסטרטגית שמשפרת גמישות, מחזקת אבטחה, מפחיתה עלויות ומאיצה חדשנות עבור גמישות עסקית מתמשכת.',
+    heroButton: 'צור קשר',
 
-    benefitsTitle: '[translate:למה לבחור במודרניזציה של IT ארגוני שלנו?]',
+    benefitsTitle: 'למה לבחור במודרניזציה של IT ארגוני שלנו?',
     benefitsCards: [
       {
-        title: '[translate:ייעול תפעולי משופר]',
-        brief: '[translate:פישוט תהליכים באמצעות מערכות IT מודרניות שמפחיתות עיכובים ומשימות ידניות.]',
-        detail: '[translate:שיפור שיתוף פעולה, זמינות מערכות ואפשרות לעובדים להתרכז בעבודות אסטרטגיות.]',
+        title: 'ייעול תפעולי משופר',
+        brief: 'פישוט תהליכים באמצעות מערכות IT מודרניות שמפחיתות עיכובים ומשימות ידניות.',
+        detail: 'שיפור שיתוף פעולה, זמינות מערכות ואפשרות לעובדים להתרכז בעבודות אסטרטגיות.',
         gradientFrom: 'from-indigo-500',
         gradientTo: 'to-blue-600',
         iconPath:
           'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2z',
       },
       {
-        title: '[translate:שיפור אבטחת סייבר וציות]',
-        brief: '[translate:הגנה על הארגון שלך עם מסגרות אבטחה מתקדמות ומעקב בזמן אמת.]',
-        detail: '[translate:הבטחת ציות ויכולת הגנה מפני איומים חדשים.]',
+        title: 'שיפור אבטחת סייבר וציות',
+        brief: 'הגנה על הארגון שלך עם מסגרות אבטחה מתקדמות ומעקב בזמן אמת.',
+        detail: 'הבטחת ציות ויכולת הגנה מפני איומים חדשים.',
         gradientFrom: 'from-green-500',
         gradientTo: 'to-teal-600',
         iconPath:
           'M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 15h2v2h-2zm0-8h2v6',
       },
       {
-        title: '[translate:הפחתת עלויות ואופטימיזציה של משאבים]',
-        brief: '[translate:הפחתת הוצאות תפעוליות עם תשתיות אוטומטיות מבוססות ענן.]',
-        detail: '[translate:הקצאת משאבי IT בצורה יעילה תוך התמקדות בפעילויות שמניבות ערך.]',
+        title: 'הפחתת עלויות ואופטימיזציה של משאבים',
+        brief: 'הפחתת הוצאות תפעוליות עם תשתיות אוטומטיות מבוססות ענן.',
+        detail: 'הקצאת משאבי IT בצורה יעילה תוך התמקדות בפעילויות שמניבות ערך.',
         gradientFrom: 'from-red-500',
         gradientTo: 'to-pink-600',
         iconPath:
           'M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 14l5-5h-4V7h-2v4h-3z',
       },
       {
-        title: '[translate:גמישות ויכולת הרחבה גבוהה יותר]',
-        brief: '[translate:התאמת תשתיות IT במהירות לדרישות עסקיות מתפתחות.]',
-        detail: '[translate:הרחבת משאבי ענן ופתרונות תוכנה בצורה חלקה לתמיכה בצמיחה.]',
+        title: 'גמישות ויכולת הרחבה גבוהה יותר',
+        brief: 'התאמת תשתיות IT במהירות לדרישות עסקיות מתפתחות.',
+        detail: 'הרחבת משאבי ענן ופתרונות תוכנה בצורה חלקה לתמיכה בצמיחה.',
         gradientFrom: 'from-purple-500',
         gradientTo: 'to-indigo-600',
         iconPath:
           'M19.4 14.8c-.8.8-2.2.8-3 0l-3.5-3.5c-.8-.8-.8-2.2 0-3l3.5-3.5c.8-.8 2.2-.8 3 0l3.5 3.5c.8.8.8 2.2 0 3l-3.5 3.5zm-5.7-5.7L12 12l2.7 2.7 2.7-2.7-2.7-2.7zM11 2a9 9 0 100 18A9 9 0 0011 2zm0 16a7 7 0 110-14A7 7 0 0111 18zm-.5-5.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z',
       },
       {
-        title: '[translate:אבטחה מתקדמת וציות]',
-        brief: '[translate:הגנה על נכסי מידע עם אמצעי אבטחה ברמת הארגון.]',
-        detail: '[translate:הבטחת ציות לתקנים ורגולציות בתעשייה.]',
+        title: 'אבטחה מתקדמת וציות',
+        brief: 'הגנה על נכסי מידע עם אמצעי אבטחה ברמת הארגון.',
+        detail: 'הבטחת ציות לתקנים ורגולציות בתעשייה.',
         gradientFrom: 'from-yellow-400',
         gradientTo: 'to-orange-500',
         iconPath:
           'M19.35 10.04C18.67 6.59 15.64 4 12 4c-3.72 0-6.85 2.14-7.48 6.27C2.45 11.08 1 12 1 15c0 3.31 2.69 6 6 6h12c3.31 0 6-2.69 6-6 0-2.22-1.45-3.92-3.65-4.96zM12 18l-4-4h3v-4h2v4h3z',
       },
       {
-        title: '[translate:שיפורים מתמשכים ותמיכה]',
-        brief: '[translate:שיפורים ותחזוקה שוטפים להבטחת מוכנות עתידית.]',
-        detail: '[translate:העצמת הארגון עם הטכנולוגיה העדכנית ותמיכה מקצועית.]',
+        title: 'שיפורים מתמשכים ותמיכה',
+        brief: 'שיפורים ותחזוקה שוטפים להבטחת מוכנות עתידית.',
+        detail: 'העצמת הארגון עם הטכנולוגיה העדכנית ותמיכה מקצועית.',
         gradientFrom: 'from-cyan-500',
         gradientTo: 'to-sky-600',
         iconPath:
@@ -277,41 +277,41 @@ const translations = {
       },
     ],
 
-    benefitsSectionTitle: '[translate:גישת מודרניזציה ארגונית]',
+    benefitsSectionTitle: 'גישת מודרניזציה ארגונית',
     benefitsSectionDescription:
-      '[translate:אנו מספקים תוכניות מודרניזציה מותאמות המתמקדות באינטגרציה של מערכות ישנות, הגירה לענן, ופיתוח סצנת ה-IT כדי לתמוך בצרכי העסק הנוכחיים והעתידיים.]',
+      'אנו מספקים תוכניות מודרניזציה מותאמות המתמקדות באינטגרציה של מערכות ישנות, הגירה לענן, ופיתוח סצנת ה-IT כדי לתמוך בצרכי העסק הנוכחיים והעתידיים.',
     benefitsList: [
-      '[translate:צמצום עלויות תפעול באמצעות תשתיות IT יעילות]',
-      '[translate:הגברת גמישות עם ארכיטקטורות ענן ניתנות להרחבה]',
-      '[translate:שיפור אבטחה וציות עם פתרונות ברמת הארגון]',
-      '[translate:שיפור ביצועים ואמינות יישומים]',
-      '[translate:העצמת קבלת החלטות מבוססת נתונים עם ניתוח מתקדם]',
-      '[translate:הכנת הארגון לעתיד עם מודרניזציה מתמדת]',
+      'צמצום עלויות תפעול באמצעות תשתיות IT יעילות',
+      'הגברת גמישות עם ארכיטקטורות ענן ניתנות להרחבה',
+      'שיפור אבטחה וציות עם פתרונות ברמת הארגון',
+      'שיפור ביצועים ואמינות יישומים',
+      'העצמת קבלת החלטות מבוססת נתונים עם ניתוח מתקדם',
+      'הכנת הארגון לעתיד עם מודרניזציה מתמדת',
     ],
 
-    galleryTitle: '[translate:פורטפוליו מודרניזציה ארגונית]',
+    galleryTitle: 'פורטפוליו מודרניזציה ארגונית',
     gallerySubtitle:
-      '[translate:הצגת פרויקטים מוצלחים שמשפרים ביצועים, עמידות וגמישות.]',
+      'הצגת פרויקטים מוצלחים שמשפרים ביצועים, עמידות וגמישות.',
 
-    costEstimatorTitle: '[translate:הערך את עלויות מודרניזציית IT]',
+    costEstimatorTitle: 'הערך את עלויות מודרניזציית IT',
     costEstimatorDescription:
-      '[translate:השתמש בכלי האינטראקטיבי שלנו כדי לחזות את ההשקעה במודרניזציה בהתאם לצרכיך.]',
+      'השתמש בכלי האינטראקטיבי שלנו כדי לחזות את ההשקעה במודרניזציה בהתאם לצרכיך.',
     sliderLabels: {
-      vcpu: '[translate:שעות ייעוץ]',
-      ram: '[translate:שעות אוטומציה וכלים]',
-      storage: '[translate:רמת מורכבות אינטגרציה]',
+      vcpu: 'שעות ייעוץ',
+      ram: 'שעות אוטומציה וכלים',
+      storage: 'רמת מורכבות אינטגרציה',
     },
-    totalCostLabel: '[translate:עלות משוערת של מודרניזציית IT]',
-    contactButton: '[translate:צור קשר לקבלת הצעת מחיר מותאמת]',
+    totalCostLabel: 'עלות משוערת של מודרניזציית IT',
+    contactButton: 'צור קשר לקבלת הצעת מחיר מותאמת',
 
-    ctaTitle: '[translate:מוכן למודרניזציה של IT ארגוני?]',
-    ctaParagraph: '[translate:צור קשר היום כדי להתחיל את מסע המודרניזציה ולפתוח אפשרויות חדשות.]',
-    ctaStartButton: '[translate:התחל מודרניזציה]',
-    ctaLearnMoreButton: '[translate:למידע נוסף עלינו]',
+    ctaTitle: 'מוכן למודרניזציה של IT ארגוני?',
+    ctaParagraph: 'צור קשר היום כדי להתחיל את מסע המודרניזציה ולפתוח אפשרויות חדשות.',
+    ctaStartButton: 'התחל מודרניזציה',
+    ctaLearnMoreButton: 'למידע נוסף עלינו',
   },
 };
 
-const Service1 = () => {
+const Service2 = () => {
   const { language } = useLanguage();
   const t = translations[language] || translations.en;
 
@@ -323,7 +323,7 @@ const Service1 = () => {
 
   const [vcpu, setVcpu] = useState(8);
   const [ram, setRam] = useState(16);
-  const [storage, setStorage] = useState(500);
+  const [storage, setStorage] = useState(5);
   const [totalCost, setTotalCost] = useState(0);
 
   const VCPU_COST = 0.05;
@@ -401,7 +401,7 @@ const Service1 = () => {
                 <p>{t.benefitsSectionDescription}</p>
 
                 <div className="benefits-list">
-                  {t.benefitsList.map((benefit, idx) => (
+                  {[...Array(6)].map((_, idx) => (
                     <motion.div
                       key={idx}
                       className="benefit-item"
@@ -411,7 +411,36 @@ const Service1 = () => {
                       viewport={{ once: true }}
                     >
                       <FaCheck className="check-icon" />
-                      <span>{benefit}</span>
+                      <span>
+                        {[
+                          language === 'ar'
+                            ? [
+                                'تقليل تكاليف التشغيل من خلال بنية تحتية فعالة',
+                                'زيادة المرونة باستخدام هندسة سحابية قابلة للتوسع',
+                                'تعزيز الأمن والامتثال باستخدام حلول مؤسسية',
+                                'تحسين أداء واعتمادية التطبيقات',
+                                'تمكين اتخاذ قرارات مبنية على البيانات باستخدام تحليلات حديثة',
+                                'ضمان تحديث مستمر ومستدام للمؤسسة',
+                              ]
+                            : language === 'he'
+                            ? [
+                                'צמצום עלויות תפעול באמצעות תשתיות IT יעילות',
+                                'הגברת גמישות עם ארכיטקטורות ענן ניתנות להרחבה',
+                                'שיפור אבטחה וציות עם פתרונות ברמת הארגון',
+                                'שיפור ביצועים ואמינות יישומים',
+                                'העצמת קבלת החלטות מבוססת נתונים עם ניתוח מתקדם',
+                                'הכנת הארגון לעתיד עם מודרניזציה מתמדת',
+                              ]
+                            : [
+                                'Reduce operational costs through efficient IT infrastructure',
+                                'Increase agility with scalable cloud-native architectures',
+                                'Enhance security and compliance with enterprise-grade solutions',
+                                'Improve application performance and reliability',
+                                'Enable data-driven decision making with modern analytics',
+                                'Future-proof your enterprise with continuous modernization',
+                              ]
+                        ][0][idx]}
+                      </span>
                     </motion.div>
                   ))}
                 </div>
@@ -493,7 +522,6 @@ const Service1 = () => {
                 <div className="group bg-[var(--card-bg)] dark:bg-[#2d3748] p-6 rounded-xl shadow-lg hover:shadow-[var(--shadow-hover)] transition-all duration-300 border-2 border-yellow-400">
                   <label
                     htmlFor="vcpu-slider"
-                    className="block text-xl font-semibold mb-2"
                     className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white"
                   >
                     {t.sliderLabels.vcpu}
@@ -519,7 +547,6 @@ const Service1 = () => {
                 <div className="group bg-[var(--card-bg)] dark:bg-[#2d3748] p-6 rounded-xl shadow-lg hover:shadow-[var(--shadow-hover)] transition-all duration-300 border-2 border-yellow-400">
                   <label
                     htmlFor="ram-slider"
-                    className="block text-xl font-semibold mb-2"
                     className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white"
                   >
                     {t.sliderLabels.ram}
@@ -545,7 +572,6 @@ const Service1 = () => {
                 <div className="group bg-[var(--card-bg)] dark:bg-[#2d3748] p-6 rounded-xl shadow-lg hover:shadow-[var(--shadow-hover)] transition-all duration-300 border-2 border-yellow-400">
                   <label
                     htmlFor="storage-slider"
-                    className="block text-xl font-semibold mb-2"
                     className="block text-xl font-semibold mb-2 text-gray-800 dark:text-white"
                   >
                     {t.sliderLabels.storage}
@@ -912,7 +938,11 @@ const Service1 = () => {
 
 
           .benefits-section {
-            background: var(--bg-color);
+            background: #f5f5f5;
+          }
+
+          [data-theme="dark"] .benefits-section {
+            background: #2d2d2d;
           }
 
           .benefits-content h2 {
@@ -1242,4 +1272,4 @@ const Service1 = () => {
     );
   };
 
-  export default Service1;
+  export default Service2;

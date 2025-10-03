@@ -77,9 +77,6 @@ function AppContent() {
 
 function App() {
   const [language, setLanguage] = useState(() => {
-    // Force reset to English for now - remove this line after testing
-    localStorage.setItem('language', 'en');
-    
     // Load language from localStorage on app start, default to English
     const storedLanguage = localStorage.getItem('language');
     console.log('App.jsx - Initial language check:', { storedLanguage });
@@ -99,12 +96,6 @@ function App() {
     localStorage.setItem('language', language);
     console.log('App.jsx - Language changed to:', language);
   }, [language]);
-
-  // Force reset language on app start (temporary fix)
-  useEffect(() => {
-    console.log('App.jsx - Force resetting language to English');
-    setLanguage('en');
-  }, []);
 
   return (
     <Router>
